@@ -13,23 +13,23 @@ app.use(express.static('public'));
 
 let savedFilters = [];
 
-async function getItems(search) {
-    console.log('getItems called with search:', JSON.stringify(search));
+async function getItems(filter) {
+    console.log('getItems called with filter:', JSON.stringify(filter, null, 2));
     try {
-        const source = await scrape.getSource({
-            city: search.city,
-            query: search.query,
-            maxPrice: search.maxPrice
-        });
+        if (!filter || !filter.city || !filter.query) {
+            throw new Error('Invalid filter object');
+        }
+        const source = await scrape.getSource(filter);
         console.log('Source fetched successfully');
         let items = await parse.getSearchResults(source.data);
         console.log(`Parsed ${items.length} items`);
         return items;
     } catch (err) {
-        console.error(`Error processing search: ${err}`);
+        console.error(`Error processing search:`, err);
         return [];
     }
 }
+
 // API route to get all filters
 app.get('/api/filters', (req, res) => {
     res.json(savedFilters);
@@ -46,8 +46,8 @@ app.get('/api/items/:filterId', (req, res) => {
     }
 });
 
-// API route to add a new filter and start scraping
-app.post('/api/filters', async (req, res) => {
+// API route to add a new filter
+app.post('/api/filters', (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
     const newFilter = {
@@ -60,34 +60,20 @@ app.post('/api/filters', async (req, res) => {
 
     savedFilters.push(newFilter);
     console.log('New filter added:', newFilter);
-
-    try {
-        const newItems = await getItems(newFilter);
-        newFilter.items = newItems;
-        res.json(newFilter);
-    } catch (error) {
-        console.error('Error during scraping:', error);
-        res.status(500).json({ error: 'Internal server error during scraping' });
-    }
+    res.json(newFilter);
 });
 
-// API route to update items for a specific filter
+// API route to trigger scraping for a specific filter
 app.post('/api/scrape/:filterId', async (req, res) => {
     console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
 
     if (filter) {
-        console.log('Found filter:', filter);
+        console.log('Found filter:', JSON.stringify(filter, null, 2));
         try {
             const newItems = await getItems(filter);
-
-            // Merge new items with existing items, avoiding duplicates
-            const existingIds = new Set(filter.items.map(item => item.id));
-            const uniqueNewItems = newItems.filter(item => !existingIds.has(item.id));
-
-            filter.items = [...uniqueNewItems, ...filter.items];
-            console.log(`Updated filter with ${uniqueNewItems.length} new items`);
+            filter.items = newItems;
             res.json(filter);
         } catch (error) {
             console.error('Error during scraping:', error);

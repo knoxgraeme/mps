@@ -8,15 +8,7 @@ async function getSource(search) {
     console.log('API Key:', process.env.scrapingbee_api_key);
 
     try {
-        let url = `https://www.facebook.com/marketplace/${search.city}/search/?`;
-
-        if (search.query) {
-            url += `query=${encodeURIComponent(search.query)}&`;
-        }
-
-        if (search.maxPrice) {
-            url += `maxPrice=${encodeURIComponent(search.maxPrice)}`;
-        }
+        const url = `https://www.facebook.com/marketplace/${search.city}/search/?query=${encodeURIComponent(search.query)}&maxPrice=${encodeURIComponent(search.maxPrice)}`;
 
         console.log('Constructed URL:', url);
 
@@ -29,13 +21,9 @@ async function getSource(search) {
             }
         });
         console.log(`ScrapingBee API response status: ${response.status}`);
-        console.log(`ScrapingBee API response headers: ${JSON.stringify(response.headers)}`);
         return response;
     } catch (error) {
-        console.error('Error in getSource:', error);
-        if (error.response) {
-            console.error('ScrapingBee API error response:', error.response.data);
-        }
+        console.error('Error in getSource:', error.message);
         throw error;
     }
 }
@@ -76,6 +64,7 @@ module.exports = { getSource };
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.1.3",
+    "cheerio": "^1.0.0",
     "config": "^3.3.8",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -106,14 +95,10 @@ app.use(express.static('public'));
 
 let savedFilters = [];
 
-async function getItems(search) {
-    console.log('getItems called with search:', JSON.stringify(search));
+async function getItems(filter) {
+    console.log('getItems called with filter:', JSON.stringify(filter));
     try {
-        const source = await scrape.getSource({
-            city: search.city,
-            query: search.query,
-            maxPrice: search.maxPrice
-        });
+        const source = await scrape.getSource(filter);
         console.log('Source fetched successfully');
         let items = await parse.getSearchResults(source.data);
         console.log(`Parsed ${items.length} items`);
@@ -140,8 +125,8 @@ app.get('/api/items/:filterId', (req, res) => {
     }
 });
 
-// API route to add a new filter and start scraping
-app.post('/api/filters', async (req, res) => {
+// API route to add a new filter
+app.post('/api/filters', (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
     const newFilter = {
@@ -154,41 +139,25 @@ app.post('/api/filters', async (req, res) => {
 
     savedFilters.push(newFilter);
     console.log('New filter added:', newFilter);
-
-    try {
-        const newItems = await getItems(newFilter);
-        newFilter.items = newItems;
-        res.json(newFilter);
-    } catch (error) {
-        console.error('Error during scraping:', error);
-        res.status(500).json({ error: 'Internal server error during scraping' });
-    }
+    res.json(newFilter);
 });
 
-// API route to update items for a specific filter
+// API route to trigger scraping for a specific filter
 app.post('/api/scrape/:filterId', async (req, res) => {
     console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
 
     if (filter) {
-        console.log('Found filter:', filter);
         try {
             const newItems = await getItems(filter);
-
-            // Merge new items with existing items, avoiding duplicates
-            const existingIds = new Set(filter.items.map(item => item.id));
-            const uniqueNewItems = newItems.filter(item => !existingIds.has(item.id));
-
-            filter.items = [...uniqueNewItems, ...filter.items];
-            console.log(`Updated filter with ${uniqueNewItems.length} new items`);
+            filter.items = newItems;
             res.json(filter);
         } catch (error) {
             console.error('Error during scraping:', error);
             res.status(500).json({ error: 'Internal server error during scraping' });
         }
     } else {
-        console.log('Filter not found for id:', filterId);
         res.status(404).json({ error: 'Filter not found' });
     }
 });
@@ -666,30 +635,6 @@ dist
 
 ```
 
-# config/default.json
-
-```json
-{   
-    "Searches": [
-        {
-            "term": "bicycle",
-            "location": "sydney"
-        },
-        {
-            "term": "couch ",
-            "location": "vancouver"
-        }
-    ]
-}
-```
-
-# .upm/store.json
-
-```json
-{"version":2,"languages":{"nodejs-npm":{"specfileHash":"0c9408cb93d7c100886a903bae88a197","lockfileHash":"aa7710d4f8ae0cdc73ecff9354f2e2fc","guessedImports":["axios","express"],"guessedImportsHash":"b7efbdd39db48c4025d60e486d97be71"}}}
-
-```
-
 # controllers/scrape.js
 
 ```js
@@ -819,6 +764,13 @@ async function send(newItems){
 
 module.exports = {send}
 
+
+```
+
+# .upm/store.json
+
+```json
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"613204116636df2664d59181a3e074a7","lockfileHash":"d9a66e2427466a93efb7146df0eabebd","guessedImports":["axios","express"],"guessedImportsHash":"b7efbdd39db48c4025d60e486d97be71"}}}
 
 ```
 
