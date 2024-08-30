@@ -1,8 +1,16 @@
+const express = require('express');
+const path = require('path');
 const scrape = require("./controllers/scrape.js");
 const parse = require("./controllers/parse.js");
 const nodemailer = require("nodemailer");
 const cron = require("node-cron");
 const fs = require("fs");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 async function getItems() {
     let arrayOfItems = { pastItems: [] };
@@ -57,5 +65,16 @@ async function getItems() {
     fs.writeFileSync("./pastItems.json", JSON.stringify(arrayOfItems), "utf-8");
     console.log("Updated past items.");
 }
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 // Call the function directly for testing
 getItems();
