@@ -14,6 +14,10 @@ app.use(express.static('public'));
 
 // Serve environment variables to the client
 app.get('/env', (req, res) => {
+  if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) {
+    console.error('Supabase environment variables are not set');
+    return res.status(500).json({ error: 'Server configuration error' });
+  }
   res.json({
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY
