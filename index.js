@@ -13,12 +13,10 @@ app.use(express.static('public'));
 
 let savedFilters = [];
 
-// Function to save filters to a JSON file
 async function saveFilters() {
     await fs.writeFile('savedFilters.json', JSON.stringify(savedFilters, null, 2));
 }
 
-// Function to load filters from a JSON file
 async function loadFilters() {
     try {
         const data = await fs.readFile('savedFilters.json', 'utf8');
@@ -46,12 +44,10 @@ async function getItems(filter) {
     }
 }
 
-// API route to get all filters
 app.get('/api/filters', (req, res) => {
     res.json(savedFilters);
 });
 
-// API route to get items for a specific filter
 app.get('/api/items/:filterId', (req, res) => {
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
@@ -62,7 +58,6 @@ app.get('/api/items/:filterId', (req, res) => {
     }
 });
 
-// API route to add a new filter
 app.post('/api/filters', async (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
@@ -80,7 +75,6 @@ app.post('/api/filters', async (req, res) => {
     res.json(newFilter);
 });
 
-// API route to trigger scraping for a specific filter
 app.post('/api/scrape/:filterId', async (req, res) => {
     console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
@@ -103,12 +97,20 @@ app.post('/api/scrape/:filterId', async (req, res) => {
     }
 });
 
-// Serve the main HTML file
+app.get('/', async (req, res) => {
+    try {
+        const items = savedFilters.length > 0 ? savedFilters[0].items : [];
+        res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    } catch (error) {
+        console.error('Error loading items for the homepage:', error);
+        res.status(500).send('Error loading items');
+    }
+});
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Load saved filters when the server starts
 loadFilters().then(() => {
     app.listen(port, () => {
         console.log(`Server listening at http://localhost:${port}`);

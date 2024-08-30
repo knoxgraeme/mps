@@ -18,13 +18,27 @@ function getSearchResults(source) {
             return items;
         } else {
             searchResult['edges'].forEach(element => {
-                let id = element['node']['listing']['id'];
-                let link = `https://www.facebook.com/marketplace/item/${id}`;
-                let title = element['node']['listing']['marketplace_listing_title'];
-                let price = element['node']['listing']['listing_price']['formatted_amount'];
-                let img = element['node']['listing']['primary_listing_photo']['image']['uri'];
+                let listingData = element['node']['listing'];
 
-                const item = { "id": id, "link": link, "title": title, "price": price, "image": img };
+                // Capture the selected fields
+                let item = {
+                    id: listingData.id || null,
+                    url: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
+                    primary_listing_photo: listingData.primary_listing_photo ? listingData.primary_listing_photo.image.uri : null,
+                    formatted_amount: listingData.listing_price ? listingData.listing_price.formatted_amount : null,
+                    city: listingData.location ? listingData.location.reverse_geocode.city : null,
+                    state: listingData.location ? listingData.location.reverse_geocode.state : null,
+                    marketplace_category_id: listingData.marketplace_listing_category_id || null,
+                    marketplace_title: listingData.marketplace_listing_title || null,
+                    link: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
+                    seller_id: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.id : null,
+                    seller_name: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.name : null,
+                    is_hidden: listingData.is_hidden || false,
+                    is_live: listingData.is_live || false,
+                    is_pending: listingData.is_pending || false,
+                    is_sold: listingData.is_sold || false,
+                    create_date: new Date().toISOString() // Capture the current date and time
+                };
 
                 items.push(item);
             });
@@ -39,7 +53,6 @@ function getSearchResults(source) {
     return items;
 }
 
-
 async function getNewItems(items) {
     console.log(`Checking for new items among ${items.length} parsed items`);
     let newItems = [];
@@ -50,7 +63,7 @@ async function getNewItems(items) {
         if (duplicates.length === 0) {
             newItems.push(item);
             await storage.setItem(item.id, item);
-            console.log(`New item found: ${item.title}`);
+            console.log(`New item found: ${item.marketplace_title}`);
         }
     }
 
