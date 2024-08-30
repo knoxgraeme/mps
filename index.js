@@ -3,9 +3,15 @@ const fs = require('fs').promises;
 const path = require('path');
 const scrape = require("./controllers/scrape.js");
 const parse = require("./controllers/parse.js");
+const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Initialize Supabase client
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -47,18 +53,32 @@ async function getItems(filter) {
 }
 
 // API route to get all filters
-app.get('/api/filters', (req, res) => {
-    res.json(savedFilters);
+app.get('/api/filters', async (req, res) => {
+    const { data, error } = await supabase
+        .from('filters')
+        .select('*');
+    
+    if (error) {
+        res.status(500).json({ error: error.message });
+    } else {
+        res.json(data);
+    }
 });
 
 // API route to get items for a specific filter
-app.get('/api/items/:filterId', (req, res) => {
+app.get('/api/items/:filterId', async (req, res) => {
     const filterId = parseInt(req.params.filterId);
-    const filter = savedFilters.find(f => f.id === filterId);
-    if (filter) {
-        res.json(filter.items);
+    const { data, error } = await supabase
+        .from('items')
+        .select('*')
+        .eq('filter_id', filterId);
+    
+    if (error) {
+        res.status(500).json({ error: error.message });
+    } else if (data.length === 0) {
+        res.status(404).json({ error: 'No items found for this filter' });
     } else {
-        res.status(404).json({ error: 'Filter not found' });
+        res.json(data);
     }
 });
 
@@ -66,40 +86,55 @@ app.get('/api/items/:filterId', (req, res) => {
 app.post('/api/filters', async (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
-    const newFilter = {
-        id: savedFilters.length + 1,
-        city,
-        query,
-        maxPrice,
-        items: []
-    };
+    const { data, error } = await supabase
+        .from('filters')
+        .insert({ city, query, max_price: maxPrice })
+        .select();
 
-    savedFilters.push(newFilter);
-    await saveFilters();
-    console.log('New filter added:', newFilter);
-    res.json(newFilter);
+    if (error) {
+        console.error('Error adding new filter:', error);
+        res.status(500).json({ error: error.message });
+    } else {
+        console.log('New filter added:', data[0]);
+        res.json(data[0]);
+    }
 });
 
 // API route to trigger scraping for a specific filter
 app.post('/api/scrape/:filterId', async (req, res) => {
     console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
-    const filter = savedFilters.find(f => f.id === filterId);
+    
+    const { data: filter, error: filterError } = await supabase
+        .from('filters')
+        .select('*')
+        .eq('id', filterId)
+        .single();
 
-    if (filter) {
-        console.log('Found filter:', JSON.stringify(filter, null, 2));
-        try {
-            const newItems = await getItems(filter);
-            filter.items = newItems;
-            await saveFilters();
-            res.json(filter);
-        } catch (error) {
-            console.error('Error during scraping:', error);
-            res.status(500).json({ error: 'Internal server error during scraping' });
-        }
-    } else {
+    if (filterError) {
         console.log('Filter not found for id:', filterId);
         res.status(404).json({ error: 'Filter not found' });
+        return;
+    }
+
+    console.log('Found filter:', JSON.stringify(filter, null, 2));
+    try {
+        const newItems = await getItems(filter);
+        
+        // Insert new items into the database
+        const { data: insertedItems, error: insertError } = await supabase
+            .from('items')
+            .insert(newItems.map(item => ({ ...item, filter_id: filterId })))
+            .select();
+
+        if (insertError) {
+            throw insertError;
+        }
+
+        res.json(insertedItems);
+    } catch (error) {
+        console.error('Error during scraping:', error);
+        res.status(500).json({ error: 'Internal server error during scraping' });
     }
 });
 
