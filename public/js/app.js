@@ -1,20 +1,24 @@
 let supabase;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const response = await fetch('/env');
-    const { SUPABASE_URL, SUPABASE_ANON_KEY } = await response.json();
-    supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    try {
+        const response = await fetch('/env');
+        const { SUPABASE_URL, SUPABASE_ANON_KEY } = await response.json();
+        supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    const authContainer = document.getElementById('auth-container');
-    const contentContainer = document.getElementById('content');
-    
-    updateAuthUI(authContainer);
-    updateContent(contentContainer);
-
-    supabase.auth.onAuthStateChange(() => {
+        const authContainer = document.getElementById('auth-container');
+        const contentContainer = document.getElementById('content');
+        
         updateAuthUI(authContainer);
         updateContent(contentContainer);
-    });
+
+        supabase.auth.onAuthStateChange(() => {
+            updateAuthUI(authContainer);
+            updateContent(contentContainer);
+        });
+    } catch (error) {
+        console.error('Error initializing app:', error);
+    }
 });
 
 function updateAuthUI(container) {
