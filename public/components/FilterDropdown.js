@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-
 const FilterDropdown = ({ filters, onSelect }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <div className="relative">
@@ -31,5 +29,3 @@ const FilterDropdown = ({ filters, onSelect }) => {
         </div>
     );
 };
-
-export default FilterDropdown;
