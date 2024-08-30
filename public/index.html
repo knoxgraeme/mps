@@ -102,6 +102,21 @@
         return isNaN(date.getTime()) ? 'Invalid Date' : date.toLocaleString();
     };
 
+    const formatRelativeTime = (dateString) => {
+        if (!dateString) return 'Unknown';
+        const date = new Date(dateString);
+        if (isNaN(date.getTime())) return 'Invalid Date';
+
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - date) / 1000);
+
+        if (diffInSeconds < 60) return 'Just now';
+        if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} minutes ago`;
+        if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
+        if (diffInSeconds < 2592000) return `${Math.floor(diffInSeconds / 86400)} days ago`;
+        return formatDate(dateString);
+    };
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {sortedItems.map((item) => (
@@ -115,7 +130,7 @@
                     <div className="p-4">
                         <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
                         <p className="text-gray-700 text-base mb-2">{item.price}</p>
-                        <p className="text-gray-500 text-sm mb-4">Posted: {formatDate(item.postedDate)}</p>
+                        <p className="text-gray-500 text-sm mb-4">Posted: {formatRelativeTime(item.postedDate)}</p>
                         <a 
                             href={item.link} 
                             target="_blank" 
