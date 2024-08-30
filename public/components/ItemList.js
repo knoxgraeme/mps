@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ItemList = ({ items, newItems }) => {
     const formatRelativeTime = (dateString) => {
         if (!dateString) return 'Unknown';
@@ -46,5 +44,3 @@ const ItemList = ({ items, newItems }) => {
         </div>
     );
 };
-
-export default ItemList;
