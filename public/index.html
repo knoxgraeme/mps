@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Scraper</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const SearchForm = ({ onSubmit }) => {
+            const [city, setCity] = useState('');
+            const [query, setQuery] = useState('');
+            const [maxPrice, setMaxPrice] = useState('');
+
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                onSubmit({ city, query, maxPrice });
+                setCity('');
+                setQuery('');
+                setMaxPrice('');
+            };
+
+            return (
+                <form onSubmit={handleSubmit} className="mb-4">
+                    <input
+                        type="text"
+                        placeholder="City"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                        className="mr-2 p-2 border rounded"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Query"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        className="mr-2 p-2 border rounded"
+                    />
+                    <input
+                        type="number"
+                        placeholder="Max Price"
+                        value={maxPrice}
+                        onChange={(e) => setMaxPrice(e.target.value)}
+                        className="mr-2 p-2 border rounded"
+                    />
+                    <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+                        Add Filter & Scrape
+                    </button>
+                </form>
+            );
+        };
+
+        const FilterList = ({ filters, onSelect, onScrape }) => (
+            <div className="mb-4">
+                <h2 className="text-xl font-bold mb-2">Saved Filters</h2>
+                {filters.map((filter) => (
+                    <div key={filter.id} className="flex items-center mb-2">
+                        <button
+                            onClick={() => onSelect(filter.id)}
+                            className="bg-gray-200 p-2 rounded mr-2"
+                        >
+                            {filter.city} - {filter.query} (Max: ${filter.maxPrice})
+                        </button>
+                        <button
+                            onClick={() => onScrape(filter.id)}
+                            className="bg-green-500 text-white p-2 rounded"
+                        >
+                            Scrape
+                        </button>
+                    </div>
+                ))}
+            </div>
+        );
+
+        const ItemList = ({ items }) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {items.map((item) => (
+                    <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg">
+                        <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
+                            <p className="text-gray-700 text-base mb-2">{item.price}</p>
+                            <a 
+                                href={item.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block"
+                            >
+                                View Item
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        );
+
+        const MarketplaceFeed = () => {
+            const [filters, setFilters] = useState([]);
+            const [selectedFilterId, setSelectedFilterId] = useState(null);
+            const [items, setItems] = useState([]);
+            const [loading, setLoading] = useState(false);
+            const [error, setError] = useState(null);
+
+            const fetchFilters = async () => {
+                try {
+                    const response = await fetch('/api/filters');
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch filters');
+                    }
+                    const data = await response.json();
+                    setFilters(data);
+                } catch (err) {
+                    setError(err.message);
+                }
+            };
+
+            const fetchItems = async (filterId) => {
+                setLoading(true);
+                try {
+                    const response = await fetch(`/api/items/${filterId}`);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch items');
+                    }
+                    const data = await response.json();
+                    setItems(data);
+                    setError(null);
+                } catch (err) {
+                    setError(err.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            const handleAddFilter = async (filterParams) => {
+                setLoading(true);
+                try {
+                    const response = await fetch('/api/filters', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(filterParams),
+                    });
+                    if (!response.ok) {
+                        throw new Error('Failed to add filter and start scraping');
+                    }
+                    await fetchFilters();
+                    setError(null);
+                } catch (err) {
+                    setError(err.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            const handleScrape = async (filterId) => {
+                setLoading(true);
+                try {
+                    const response = await fetch(`/api/scrape/${filterId}`, {
+                        method: 'POST',
+                    });
+                    if (!response.ok) {
+                        throw new Error('Failed to scrape for filter');
+                    }
+                    await fetchFilters();
+                    if (selectedFilterId === filterId) {
+                        await fetchItems(filterId);
+                    }
+                    setError(null);
+                } catch (err) {
+                    setError(err.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            const handleSelectFilter = (filterId) => {
+                setSelectedFilterId(filterId);
+                fetchItems(filterId);
+            };
+
+            useEffect(() => {
+                fetchFilters();
+            }, []);
+
+            if (loading) {
+                return <div className="flex justify-center items-center h-screen">Loading...</div>;
+            }
+
+            if (error) {
+                return <div className="text-red-500 text-center">{error}</div>;
+            }
+
+            return (
+                <div className="container mx-auto px-4 py-8">
+                    <div className="mb-6">
+                        <h1 className="text-2xl font-bold mb-4">Marketplace Scraper</h1>
+                        <SearchForm onSubmit={handleAddFilter} />
+                    </div>
+                    <FilterList
+                        filters={filters}
+                        onSelect={handleSelectFilter}
+                        onScrape={handleScrape}
+                    />
+                    {selectedFilterId && <ItemList items={items} />}
+                </div>
+            );
+        };
+
+        const App = () => {
+            return (
+                <div className="bg-gray-100 min-h-screen">
+                    <header className="bg-blue-600 text-white p-4">
+                        <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
+                    </header>
+                    <main>
+                        <MarketplaceFeed />
+                    </main>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
