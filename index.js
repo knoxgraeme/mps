@@ -2,12 +2,20 @@ const express = require('express');
 const fs = require('fs').promises;
 const scrape = require("./controllers/scrape.js");
 const parse = require("./controllers/parse.js");
-const cron = require('node-cron');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-async function getItems() {
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+let userPreferences = {
+  city: '',
+  query: '',
+  maxPrice: ''
+};
+
+async function getItems(search) {
     let arrayOfItems = { pastItems: [] };
 
     try {
@@ -21,35 +29,28 @@ async function getItems() {
         console.log("Error reading pastItems.json, starting fresh.");
     }
 
-    const searches = [
-        { term: "bicycle", location: "sydney" },
-        { term: "car", location: "la" }
-    ];
+    try {
+        const source = await scrape.getSource(search);
+        let items = await parse.getSearchResults(source.data);
 
-    for (const search of searches) {
-        try {
-            const source = await scrape.getSource(search);
-            let items = await parse.getSearchResults(source.data);
-
-            let newItems = items.filter((item) => {
-                if (!arrayOfItems.pastItems.some(pastItem => pastItem.id === item.id)) {
-                    arrayOfItems.pastItems.push(item);
-                    return true;
-                }
-                return false;
-            });
-
-            console.log(`New items found: ${newItems.length}`);
-
-            if (newItems.length > 0) {
-                console.log(`Found ${newItems.length} new items.`);
-                // Process newItems (e.g., send an email notification)
-            } else {
-                console.log("No new items found.");
+        let newItems = items.filter((item) => {
+            if (!arrayOfItems.pastItems.some(pastItem => pastItem.id === item.id)) {
+                arrayOfItems.pastItems.push(item);
+                return true;
             }
-        } catch (err) {
-            console.error(`Error processing search ${search.term}: ${err}`);
+            return false;
+        });
+
+        console.log(`New items found: ${newItems.length}`);
+
+        if (newItems.length > 0) {
+            console.log(`Found ${newItems.length} new items.`);
+            // Process newItems (e.g., send an email notification)
+        } else {
+            console.log("No new items found.");
         }
+    } catch (err) {
+        console.error(`Error processing search: ${err}`);
     }
 
     await fs.writeFile("./pastItems.json", JSON.stringify(arrayOfItems), "utf-8");
@@ -65,6 +66,26 @@ app.get('/api/items', async (req, res) => {
   } catch (error) {
     console.error('Error reading pastItems.json:', error);
     res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// API route to start scraping
+app.post('/api/scrape', async (req, res) => {
+  const { city, query, maxPrice } = req.body;
+  userPreferences = { city, query, maxPrice };
+
+  const search = {
+    term: query,
+    location: city,
+    maxPrice: maxPrice
+  };
+
+  try {
+    await getItems(search);
+    res.json({ message: 'Scraping completed successfully' });
+  } catch (error) {
+    console.error('Error during scraping:', error);
+    res.status(500).json({ error: 'Internal server error during scraping' });
   }
 });
 
@@ -85,10 +106,52 @@ app.get('*', (req, res) => {
     <body>
         <div id="root"></div>
         <script type="text/babel">
+            const { useState, useEffect } = React;
+
+            const SearchForm = ({ onSubmit }) => {
+                const [city, setCity] = useState('');
+                const [query, setQuery] = useState('');
+                const [maxPrice, setMaxPrice] = useState('');
+
+                const handleSubmit = (e) => {
+                    e.preventDefault();
+                    onSubmit({ city, query, maxPrice });
+                };
+
+                return (
+                    <form onSubmit={handleSubmit} className="mb-4">
+                        <input
+                            type="text"
+                            placeholder="City"
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
+                            className="mr-2 p-2 border rounded"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Query"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            className="mr-2 p-2 border rounded"
+                        />
+                        <input
+                            type="number"
+                            placeholder="Max Price"
+                            value={maxPrice}
+                            onChange={(e) => setMaxPrice(e.target.value)}
+                            className="mr-2 p-2 border rounded"
+                        />
+                        <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+                            Start Scraping
+                        </button>
+                    </form>
+                );
+            };
+
             const MarketplaceFeed = () => {
-                const [items, setItems] = React.useState([]);
-                const [loading, setLoading] = React.useState(true);
-                const [error, setError] = React.useState(null);
+                const [items, setItems] = useState([]);
+                const [loading, setLoading] = useState(false);
+                const [error, setError] = useState(null);
 
                 const fetchItems = async () => {
                     setLoading(true);
@@ -107,7 +170,28 @@ app.get('*', (req, res) => {
                     }
                 };
 
-                React.useEffect(() => {
+                const handleSearch = async (searchParams) => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch('/api/scrape', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(searchParams),
+                        });
+                        if (!response.ok) {
+                            throw new Error('Failed to start scraping');
+                        }
+                        await fetchItems();
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                useEffect(() => {
                     fetchItems();
                 }, []);
 
@@ -121,14 +205,9 @@ app.get('*', (req, res) => {
 
                 return (
                     <div className="container mx-auto px-4 py-8">
-                        <div className="flex justify-between items-center mb-6">
-                            <h1 className="text-2xl font-bold">Marketplace Feed</h1>
-                            <button 
-                                onClick={fetchItems}
-                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
-                            >
-                                Refresh
-                            </button>
+                        <div className="mb-6">
+                            <h1 className="text-2xl font-bold mb-4">Marketplace Scraper</h1>
+                            <SearchForm onSubmit={handleSearch} />
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                             {items.map((item) => (
@@ -173,15 +252,6 @@ app.get('*', (req, res) => {
   `);
 });
 
-// Schedule the scraping task
-cron.schedule('*/10 * * * *', function() {
-    console.log('Running scraping task...');
-    getItems();
-});
-
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
-
-// Initial scrape on server start
-getItems();

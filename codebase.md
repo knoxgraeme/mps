@@ -8,26 +8,60 @@ const cron = require('node-cron');
 var fs = require('fs');
 
 async function getItems() {
-    fs.readFile('./pastItems.json', 'utf-8', function(err, data) {
+    let arrayOfItems = [];
+    try {
+        const data = await fs.promises.readFile('./pastItems.json', 'utf-8');
         arrayOfItems = JSON.parse(data);
-    });
+        console.log(`Loaded ${arrayOfItems.length} items from pastItems.json`);
+    } catch (err) {
+        console.error('Error reading pastItems.json:', err);
+        console.log('Starting with an empty array of items');
+    }
 
     const searches = [ /* Your search terms here */ ];
+    console.log(`Starting scraping process with ${searches.length} search terms`);
 
     for (const search of searches) {
         try {
+            console.log(`Processing search: ${JSON.stringify(search)}`);
             const source = await scrape.getSource(search);
+            console.log('Source fetched successfully. Response status:', source.status);
+            console.log('Response data preview:', source.data.substring(0, 200) + '...');
+            
             let items = await parse.getSearchResults(source.data);
-            // Process items...
+            console.log(`Parsed ${items.length} items from the source`);
+            
+            if (items.length === 0) {
+                console.log('No items found in this search. Moving to next search term.');
+                continue;
+            }
+            
+            let newItems = await parse.getNewItems(items);
+            console.log(`Found ${newItems.length} new items for search: ${JSON.stringify(search)}`);
+            
+            // Output details of new items
+            newItems.forEach((item, index) => {
+                console.log(`New item ${index + 1}:`);
+                console.log(JSON.stringify(item, null, 2));
+                console.log('---');
+            });
+            
+            // Add new items to arrayOfItems
+            arrayOfItems = arrayOfItems.concat(newItems);
         } catch (err) {
-            console.error(err);
+            console.error(`Error processing search ${JSON.stringify(search)}:`, err);
+            console.error('Error stack:', err.stack);
         }
     }
 
-    fs.writeFile('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8', function(err) {
-        if (err) throw err;
-        console.log('Updated past items');
-    });
+    try {
+        await fs.promises.writeFile('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8');
+        console.log(`Updated past items. Total items: ${arrayOfItems.length}`);
+    } catch (err) {
+        console.error('Error writing to pastItems.json:', err);
+    }
+    
+    console.log('Scraping process completed.');
 }
 
 // Schedule the scraping task
@@ -40,7 +74,7 @@ cron.schedule('*/10 * * * *', function() {
 # pastItems.json
 
 ```json
-{"pastItems":[]}
+{"pastItems":[{"id":"528415796235039","link":"https://www.facebook.com/marketplace/item/528415796235039","title":"bicycle /ladies /retro","price":"A$85","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457089731_1299096261066467_3627014669760006237_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=tWx7q0OW3EIQ7kNvgFAnFEd&_nc_ht=scontent-mia3-1.xx&oh=00_AYDIsZwb7FMy3ox4MR1a3dV79dpZi90qFJ8jyL20oagPdQ&oe=66D70F0D"},{"id":"1544303852824977","link":"https://www.facebook.com/marketplace/item/1544303852824977","title":"Bicycle","price":"A$180","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457502838_1612865572973535_2868433982739875043_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=CXs5L41YcFkQ7kNvgGdm5dH&_nc_ht=scontent-mia3-1.xx&oh=00_AYDfzCR9Oanb66pI_Dpc3SvclcB02s_TlL_F5hOJlhDKhQ&oe=66D6FD4F"},{"id":"1235655927458893","link":"https://www.facebook.com/marketplace/item/1235655927458893","title":"Women's Vintage Bicycle - White","price":"A$75","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457569055_478124495121239_1247721564595446514_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=zbk3PtBINlkQ7kNvgGLDRN0&_nc_ht=scontent-mia3-2.xx&oh=00_AYBdsx4-OIanbn4cQq-chljXHFk9QfPwmDY86ojx3tgZPQ&oe=66D70212"},{"id":"2062131214184648","link":"https://www.facebook.com/marketplace/item/2062131214184648","title":"Bicycle trailer","price":"A$79","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457087512_1252196262614936_5322047818442949659_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=hmqRuT7ukPAQ7kNvgHqsdJ0&_nc_ht=scontent-mia3-2.xx&oh=00_AYCZCde0LxxfYTB1cfenoVBJ-kijDpDbCQeNd8vZ9WlF5g&oe=66D70F0D"},{"id":"976065870940740","link":"https://www.facebook.com/marketplace/item/976065870940740","title":"Chapelli Commuter Bicycle","price":"A$100","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457334943_787565616648709_1815438026931291365_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=tdeSjDXc6WQQ7kNvgFcLewG&_nc_ht=scontent-mia3-1.xx&oh=00_AYDSh3l3EsH7eoZh-D_Zrj6CBnvxxnCH2PKDd4YkRQijkg&oe=66D6F64A"},{"id":"1017382733354367","link":"https://www.facebook.com/marketplace/item/1017382733354367","title":"Good Bicycle","price":"A$60","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457457803_3662672030649206_5788731270677063423_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=Wo88ZIO6bS4Q7kNvgHDX2pq&_nc_ht=scontent-mia3-1.xx&oh=00_AYBnw7bgoCypW1sSrrvzl9jp9trwypGFiCWLtH6lvxwGxg&oe=66D70130"},{"id":"1659161378213021","link":"https://www.facebook.com/marketplace/item/1659161378213021","title":"Used electric bicycle","price":"A$250","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457460798_3776846095921807_5565883585096611972_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=1I6js2Kbe6wQ7kNvgHtQN6N&_nc_ht=scontent-mia3-2.xx&oh=00_AYBlyNB1sUa-F3WimPFoz6KxKVCRjzghUjiiTU51E8vRHw&oe=66D71372"},{"id":"1229542011802142","link":"https://www.facebook.com/marketplace/item/1229542011802142","title":"Bicycle","price":"A$50","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457332285_1085970439807666_6494333130549353610_n.jpg?stp=c0.159.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=YZjzTt1VjccQ7kNvgHLAkfH&_nc_ht=scontent-mia3-1.xx&oh=00_AYCalettxMuUFUVPAEb9WYnu1-T1pvmie8FPBwz4JdLEBw&oe=66D6F89A"},{"id":"1497385101147273","link":"https://www.facebook.com/marketplace/item/1497385101147273","title":"Vintage Holland Cruiser Bike","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457019139_1034868004484918_8687252812557356822_n.jpg?stp=c42.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=pNsGAUOg6Z4Q7kNvgHKFT0V&_nc_ht=scontent-mia3-2.xx&oh=00_AYAy1Ji0vkA2v1UDxJqe0AC9tRA68ft80C7FbjXQGLLF1A&oe=66D71179"},{"id":"1887785408397022","link":"https://www.facebook.com/marketplace/item/1887785408397022","title":"Bicycle","price":"A$30","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457409316_532298589144921_6732519351999471078_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=8I0LsM42TKUQ7kNvgFn257a&_nc_ht=scontent-mia3-2.xx&oh=00_AYCg72iPSYuGGs00_JrzyrVVmbajie1BQLHmPUxiwdMg7Q&oe=66D703DA"},{"id":"1203170197629056","link":"https://www.facebook.com/marketplace/item/1203170197629056","title":"Vintage bicycle Gazelle for project or spares","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457419705_1918003268682995_3466665656538657865_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=py9sD_SiUHsQ7kNvgGM7aOf&_nc_ht=scontent-mia3-2.xx&oh=00_AYBys7oP9Ox3YSWoR_Q7Vr9eVAbBkGhB2cDT6j9Poxwr4Q&oe=66D7137D"},{"id":"527894826382926","link":"https://www.facebook.com/marketplace/item/527894826382926","title":"Bicycle","price":"A$30","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457096505_905748454943567_231387661312239319_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=9SWjS6zNT1sQ7kNvgHACzMC&_nc_ht=scontent-mia3-2.xx&oh=00_AYBSvnDtQQb_DSjsP27-nQNKSzLPpUauLfrxb2kNgVqA7g&oe=66D70BD8"},{"id":"429526050236627","link":"https://www.facebook.com/marketplace/item/429526050236627","title":"Women's bike XDS \ns/m size Pickup North Curl Curl","price":"A$130","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457460889_2826149467541918_8304892581363095179_n.jpg?stp=c100.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=iabvxoa-IvUQ7kNvgGcs-iU&_nc_ht=scontent-mia3-1.xx&oh=00_AYAi8UU6ZRYZRwa2u8H9VbosYXoPFaGJzlUQZQLS9RCiDQ&oe=66D7075B"},{"id":"528278703212910","link":"https://www.facebook.com/marketplace/item/528278703212910","title":"Selling a GIANT Bicycle.","price":"A$100","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457332227_1192528338690307_7027977086747660425_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=_PU_eQ7tI_sQ7kNvgE2k5GA&_nc_ht=scontent-mia3-1.xx&oh=00_AYCZpvbOpRZ2Hjcvuax8e2CYqoA7iDH3DbypOpjMCsEXyQ&oe=66D71165"},{"id":"831134482335023","link":"https://www.facebook.com/marketplace/item/831134482335023","title":"Bike","price":"A$70","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457370331_874037934610655_7789206141913382705_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=DarYwru0xJsQ7kNvgEoilNa&_nc_ht=scontent-mia3-2.xx&oh=00_AYDnkQVF5T2QDa42N8O8OdCKGdCzCkb6whEbok-YWBZoBg&oe=66D6EF57"},{"id":"1024817552360433","link":"https://www.facebook.com/marketplace/item/1024817552360433","title":"Repco road bike","price":"A$95","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457278448_591369663217325_504795930536183021_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=15TsoD477A0Q7kNvgFIeo4E&_nc_ht=scontent-mia3-2.xx&oh=00_AYBtyDeMcwB7xLU9fqqFYv7XJj1axCn3bR7GauH2iKq0UQ&oe=66D6F496"},{"id":"1044909997284388","link":"https://www.facebook.com/marketplace/item/1044909997284388","title":"REID cruiser bicycle with basket bike","price":"A$250","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457210947_3654144171516289_899823468156401925_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=h-YES0FMno0Q7kNvgGOJj-v&_nc_ht=scontent-mia3-2.xx&oh=00_AYCiFZYyGQI8FUsmO6G3SOxUowWrLJWANfCZLfCtzcnruQ&oe=66D70C81"},{"id":"1020079539660012","link":"https://www.facebook.com/marketplace/item/1020079539660012","title":"Bicycle for toddlers","price":"A$350","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457339642_523803653663135_435669763107581601_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=Q3_77QuCifMQ7kNvgH0gIF2&_nc_ht=scontent-mia3-2.xx&oh=00_AYCqPCB0yjfsVYavDTdvE744oeqgsBXVXA7N4nZxCViPFg&oe=66D71E63"},{"id":"2397275610458684","link":"https://www.facebook.com/marketplace/item/2397275610458684","title":"Zephyr Boardwalk Cruiser Bicycle in good condition - frame 17 in","price":"A$140","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457340601_816254367388120_5251448843052106312_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=-gOSINEXIqQQ7kNvgGil4B4&_nc_ht=scontent-mia3-2.xx&oh=00_AYB1mqGlzHQv687rHhVgVMxIaHJ-fe6ZRgLVzVkvEAP5Ug&oe=66D7124B"},{"id":"1241610660526494","link":"https://www.facebook.com/marketplace/item/1241610660526494","title":"XDS Hollywood Retro 8 sp Alloy Turquoise Blue Bicycle RRP$599","price":"A$150","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457096622_873579584832151_2117909573059009889_n.jpg?stp=c54.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=j-gRd1Dya4YQ7kNvgEL0dUG&_nc_ht=scontent-mia3-1.xx&oh=00_AYCzGT-P76R4HMmXNwdFTpSl5bVyIRYk-x0IksCYIuuedQ&oe=66D6F667"},{"id":"396768989782598","link":"https://www.facebook.com/marketplace/item/396768989782598","title":"Penny Farthing Bicycle Wall Sculpture","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456938337_507376735213215_2298220530125376695_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=0p7V76M5vuAQ7kNvgGIkafY&_nc_ht=scontent-mia3-2.xx&oh=00_AYBVAQVltokFYfGJS681jWF-OVVGOv5hDAkcfvzb6O3dKg&oe=66D71060"},{"id":"1508160343399434","link":"https://www.facebook.com/marketplace/item/1508160343399434","title":"Specialized","price":"A$380","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457450235_362159113494531_4908235415779333458_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=fKJOOLdwEzYQ7kNvgG2BtBG&_nc_ht=scontent-mia3-1.xx&oh=00_AYCyVP6I71HRWp5v3tAk-CyHxrkbj6ChE-YGFvmKuai6Yg&oe=66D71488"},{"id":"1162408294989242","link":"https://www.facebook.com/marketplace/item/1162408294989242","title":"Mountain bicycle","price":"A$200","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/456973076_8107389422682577_3993046402077088957_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=oF0xB3-twXMQ7kNvgHSX1vl&_nc_ht=scontent-mia3-1.xx&oh=00_AYDuJR0dQQ6yfCQNDaOY6id8tJE71RyH_yrZpbzl1uEr1Q&oe=66D71065"},{"id":"422027870426119","link":"https://www.facebook.com/marketplace/item/422027870426119","title":"Vintage bike","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457617204_427242346452916_1999345804802053291_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=i1XKfqPvm2kQ7kNvgGhNWM-&_nc_ht=scontent-mia3-2.xx&oh=00_AYCV9pknbHCQmY8ziEWcNtUZaih1ieCRQmsdR3zKUcu7SQ&oe=66D6FAEB"},{"id":"1273079280792232","link":"https://www.facebook.com/marketplace/item/1273079280792232","title":"2016 Honda Honda Accord EX-L Sedan 4D","price":"$2,900","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457357847_1705040093604240_1691140503480674246_n.jpg?stp=c45.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=YmNxxYOWKS8Q7kNvgF5oIGK&_nc_ht=scontent.fmem1-1.fna&oh=00_AYBGNET0Z-qiSg-AfO5QRzvtGLX0gbmEiiqH7jL9vkAiqg&oe=66D71F1B"},{"id":"1444687816239229","link":"https://www.facebook.com/marketplace/item/1444687816239229","title":"2018 Chevrolet Chevrolet Cruze LS Sedan 4D","price":"$0","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457703213_1082728479860474_1364390082353493031_n.jpg?stp=c0.34.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=fgCUOraXxuAQ7kNvgF4ugLx&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCieRPunV2e-NrSiAzve8KUJ8pJaW9oAPqY2wJZoZ3Esg&oe=66D70119"},{"id":"1511403426146147","link":"https://www.facebook.com/marketplace/item/1511403426146147","title":"2003 Lincoln Town Car · Cartier L Sedan 4D","price":"$1,500","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457524839_522654896972079_221084747913885438_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=g59b6nddC-cQ7kNvgFWrxLP&_nc_ht=scontent.fmem1-2.fna&oh=00_AYA66G5DNRnm36YpZ6scuikBs51xyGuzMxLWcEVCRr0wRQ&oe=66D70A85"},{"id":"485190411043414","link":"https://www.facebook.com/marketplace/item/485190411043414","title":"2006 Kia Sedona · Xle ","price":"$2,400","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457691585_531713182572929_7952832974997011882_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=100&ccb=1-7&_nc_sid=946e27&_nc_ohc=1JfMGQihvPsQ7kNvgEj0ocw&_nc_ht=scontent.fmem1-1.fna&oh=00_AYD51Yn9nKrX2tgbvWqa_zD7XNkQS10DnXI6G8bf1RqA_w&oe=66D711F5"},{"id":"1211495600131826","link":"https://www.facebook.com/marketplace/item/1211495600131826","title":"2010 Honda Civic · EX Sedan 4D","price":"$5,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457326071_122125919396352328_6389875007245858098_n.jpg?stp=c0.119.1079.1079a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=Ax8TZkKShqMQ7kNvgGIOx5_&_nc_ht=scontent.fmem1-1.fna&oh=00_AYApSZ48DCEl0OI8EzfykCYTDM2EQQTj3CXVpnt8UegRDQ&oe=66D6FFB2"},{"id":"492107760445468","link":"https://www.facebook.com/marketplace/item/492107760445468","title":"2010 Buick LaCrosse · CX Sedan 4D","price":"$2,550","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457624633_504233128970456_2913083280993691166_n.jpg?stp=c0.132.1200.1200a_dst-jpg_s261x260&_nc_cat=107&ccb=1-7&_nc_sid=454cf4&_nc_ohc=y2_zRgldl9QQ7kNvgFWAjgI&_nc_ht=scontent.fmem1-2.fna&oh=00_AYAWQDPRZmhU3lhdcXLyGcP8i5SVkwphxzi6izbIzNCXTg&oe=66D6FF46"},{"id":"484565481207658","link":"https://www.facebook.com/marketplace/item/484565481207658","title":"2009 Nissan Altima · 2.5 Sedan 4D","price":"$1,600","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457520978_8540213232690037_5172788141586842747_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=AQdrIuJ8YckQ7kNvgE99YLb&_nc_ht=scontent.fmem1-1.fna&oh=00_AYC0PVbxI_CFe9NTgGTXQoKbV1xTWCnen37-CWlfc3TIKw&oe=66D710B5"},{"id":"1929895850823665","link":"https://www.facebook.com/marketplace/item/1929895850823665","title":"2018 Toyota Mirai · Mirai","price":"$4,995","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457440105_10226334670340568_3565084797073025597_n.jpg?stp=c253.0.1542.1542a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=pZDdIdpyRfIQ7kNvgF9XoDS&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDhs9F1YwmZLvAohvRbaCnHwBE3--A4TkBqBM6xU0frKw&oe=66D6F115"},{"id":"1224455325499899","link":"https://www.facebook.com/marketplace/item/1224455325499899","title":"2000 Toyota Solara · SE Coupe 2D","price":"$1,700","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457212144_8217663488347716_2797120728793516447_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=8oEQEpnx0FoQ7kNvgHkdkJs&_nc_ht=scontent.fmem1-1.fna&oh=00_AYBdH_U0S3CFHExWX3RGNS7pNvOk5lY_RRW8tt9D2TqCww&oe=66D6FFA9"},{"id":"1098975282235099","link":"https://www.facebook.com/marketplace/item/1098975282235099","title":"2013 Hyundai Elantra · Limited Sedan 4D","price":"$1,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457212517_1227503314934955_4109739611206563685_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=pfUTr7UPddUQ7kNvgHROSAL&_nc_ht=scontent.fmem1-2.fna&oh=00_AYB5DlbFHixH5JQoDQTwv0u5gaLOLP6r3T2m644a_qZGVg&oe=66D6F01D"},{"id":"1278377103286224","link":"https://www.facebook.com/marketplace/item/1278377103286224","title":"1999 Volkswagen New Beetle · GLS Hatchback 2D","price":"$1,800","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457363832_1353167815656852_6412278024948530219_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=O8SHfoumVI8Q7kNvgFBTNud&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDzT3Bvy8XoKbzwnt2S5bKEKLJJyYi9KBJ-gL91np6cOw&oe=66D70ABA"},{"id":"885140869621107","link":"https://www.facebook.com/marketplace/item/885140869621107","title":"2006 Honda Civic · DX Sedan 4D","price":"$4,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457317607_122135378264322711_544454152203311417_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=qkn_Q530UXEQ7kNvgGzt2Eb&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCwjVzgkGa-YdxZaQDcRhvgVUefvNn9b4ODVWWtaAQiZw&oe=66D6F050"},{"id":"542857894852885","link":"https://www.facebook.com/marketplace/item/542857894852885","title":"2008 Mercedes-Benz C-Class · C 300 Luxury Sedan 4D","price":"$6,300","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/456962481_3966275850325670_5681115794480145224_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=111&ccb=1-7&_nc_sid=454cf4&_nc_ohc=LKvEWxvnAdgQ7kNvgFHENPE&_nc_ht=scontent.fmem1-2.fna&oh=00_AYC-VocYMFkFASYq3Gu6whJh0rMxtGfwuhFQku3YFI9S4w&oe=66D709D8"},{"id":"966627445269173","link":"https://www.facebook.com/marketplace/item/966627445269173","title":"2000 Honda Accord · DX Sedan 4D","price":"$1,200","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457108104_8540156526029041_45033737724771815_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=lrTDM0EiHLMQ7kNvgHrDIg_&_nc_ht=scontent.fmem1-1.fna&oh=00_AYAbQhdt_unkNP1_WFT-lcp0rMzHnE3Y2YVk0Nl1iUMKBg&oe=66D6FE42"},{"id":"484410071237246","link":"https://www.facebook.com/marketplace/item/484410071237246","title":"2006 Audi A3 2.0T Wagon 4D","price":"$0","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457152925_880340987346240_1989378938835324953_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=a4hC8E7O0iQQ7kNvgErosV-&_nc_ht=scontent.fmem1-1.fna&oh=00_AYAC5f_TLObfhDPw8jGNdSStfKsv90Azj06NldouXZKRxQ&oe=66D6FAE2"},{"id":"7669076233197705","link":"https://www.facebook.com/marketplace/item/7669076233197705","title":"2010 Toyota Prius · III Hatchback 4D","price":"$4,800","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457524480_8026800637396702_8873155904535411169_n.jpg?stp=c529.0.991.991a_dst-jpg_s261x260&_nc_cat=101&ccb=1-7&_nc_sid=454cf4&_nc_ohc=q_OKKgd0-TIQ7kNvgFSYOBm&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDk0Eg1Jzjy1LpPU5g-Idt9ZaZnGIFB87sGwLIztHQCSQ&oe=66D6F268"},{"id":"842988658034702","link":"https://www.facebook.com/marketplace/item/842988658034702","title":"2002 Toyota Camry · XLE Sedan 4D","price":"$1,999","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457564266_122095378898508318_652523977244605276_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=101&ccb=1-7&_nc_sid=454cf4&_nc_ohc=wLq0TqNzbKEQ7kNvgG3MRYL&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDbbB7w7IhZiDKPQ7XBtV93LJuxthiz_hud8VNoCw6bYA&oe=66D70AD0"},{"id":"1179626589960621","link":"https://www.facebook.com/marketplace/item/1179626589960621","title":"1999 Toyota 4Runner","price":"$3,200","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457628858_1236776891013401_350303916082897941_n.jpg?stp=c0.364.945.945a_dst-jpg_s261x260&_nc_cat=111&ccb=1-7&_nc_sid=454cf4&_nc_ohc=1v3Jgfbd-hEQ7kNvgHwXDxy&_nc_ht=scontent.fmem1-2.fna&oh=00_AYCVcKqJhr9WWdT1W3iHoo2liQtfC0EtviPTOG0eNF25CQ&oe=66D6F41B"},{"id":"2439414429595827","link":"https://www.facebook.com/marketplace/item/2439414429595827","title":"2008 Toyota Prius · Standard Hatchback 4D","price":"$4,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457067078_3203564006446965_983507262083486058_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=a2MFjW1ru0QQ7kNvgEqJIMk&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCkr4A4svJUOfdoCP3AmjMr14j5lOtQOgyexLgAqPX6JQ&oe=66D719DA"},{"id":"531006946004871","link":"https://www.facebook.com/marketplace/item/531006946004871","title":"Honda accord .","price":"$2,300","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457281502_520043230577285_2387522566843170500_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=XsmCR1p9IIAQ7kNvgHJve-c&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCbwat_3cRJEfbLIEke9vb-4qbCNCy_mI_hXaSc0GCVfw&oe=66D71D20"},{"id":"539356765418028","link":"https://www.facebook.com/marketplace/item/539356765418028","title":"2005 Mazda Mazda3 · i Sedan 4D","price":"$2,200","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457431938_417231458044768_1236585051089220170_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=104&ccb=1-7&_nc_sid=454cf4&_nc_ohc=AlqoQXHl844Q7kNvgFq6SNj&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDmS10rT8CleGU1bgkVxLoRz4It8vgzD3nSQ9MgaPh8SA&oe=66D72061"},{"id":"1179095913138669","link":"https://www.facebook.com/marketplace/item/1179095913138669","title":"2015 Nissan Altima · 2.5 S Sedan 4D","price":"$1,700","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457327878_1243108943349221_4591603418044724279_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=104&ccb=1-7&_nc_sid=454cf4&_nc_ohc=epUpouaU8HgQ7kNvgGscb5K&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDnY_0fWaiOcLT0BR2Sa381IcPmSljPpbdoXJt5zTp5JA&oe=66D6F8E2"},{"id":"423900327394209","link":"https://www.facebook.com/marketplace/item/423900327394209","title":"2015 Audi A3 · 1.8T Premium Plus Cabriolet 2D","price":"$6,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457268429_8238682429511637_2992078667449286470_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=107&ccb=1-7&_nc_sid=454cf4&_nc_ohc=FmxAwO7iC_UQ7kNvgFft-H1&_nc_ht=scontent.fmem1-2.fna&oh=00_AYBd47VrE6FgPeVXmoa46TlKSoWZfKzxRHqGU5q9eA27ng&oe=66D6FB95"},{"id":"1223995848948652","link":"https://www.facebook.com/marketplace/item/1223995848948652","title":"2017 Hyundai Accent · SE Sedan 4D","price":"$7,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457619706_463401720030642_1379179563302746655_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=110&ccb=1-7&_nc_sid=454cf4&_nc_ohc=wLqD6arhnV0Q7kNvgGfBGW1&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDXuMYvENVuUcid8svTiQKD3MjlZvFgD9emhPvuXeRNbA&oe=66D71C9F"},{"id":"8014682018650415","link":"https://www.facebook.com/marketplace/item/8014682018650415","title":"2007 BMW 3 Series · 328i Sedan 4D","price":"$2,800","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457333928_355771007600424_9132777703742197678_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=S1OncscEkFEQ7kNvgHhH7M-&_nc_ht=scontent-ord5-1.xx&oh=00_AYCuHYjg7D6hN31KWV1gEZUUQ_lSJJuJpc6LnC9rEMBIoA&oe=66D72282"},{"id":"486627924084699","link":"https://www.facebook.com/marketplace/item/486627924084699","title":"2006 Lexus RX · RX 330 Sport Utility 4D","price":"$3,500","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457450060_8210670372381380_113268741822135538_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=Yj6egNCK5zgQ7kNvgFnSLPC&_nc_ht=scontent-ord5-1.xx&oh=00_AYA-uuDgN2KYzRlAqyEMZgke8vn7gJBlivB6QSbKrqCcYQ&oe=66D70280"},{"id":"520568093788763","link":"https://www.facebook.com/marketplace/item/520568093788763","title":"2016 Kia Soul · Wagon 4D","price":"$3,800","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/457394287_1089311419194041_78621419204352903_n.jpg?stp=c198.0.1204.1204a_dst-jpg_s261x260&_nc_cat=103&ccb=1-7&_nc_sid=454cf4&_nc_ohc=P71P0IoeXI8Q7kNvgFzRLuC&_nc_ht=scontent-ord5-2.xx&oh=00_AYDDfZME3i6lFAG12SftYVFcEHoabm78Sz9fvgFYkg6VWA&oe=66D6F6D2"},{"id":"1603487293562983","link":"https://www.facebook.com/marketplace/item/1603487293562983","title":"2004 Dodge Neon · SE Sedan 4D","price":"$1,850","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457507103_122111244800458263_3411078574010156773_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=hQF_TiyzEYYQ7kNvgEFZyDV&_nc_ht=scontent-ord5-1.xx&oh=00_AYB1faI7jjwafmKpyLFZenozFbr-8c-JaHy_PqZI8JrJuw&oe=66D6F300"}]}
 ```
 
 # package.json
@@ -52,6 +86,7 @@ cron.schedule('*/10 * * * *', function() {
   "description": "Setup email alerts for new items on Facebook Marketplace.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -70,6 +105,7 @@ cron.schedule('*/10 * * * *', function() {
     "axios": "^1.1.3",
     "config": "^3.3.8",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "node-cron": "^3.0.3",
     "node-persist": "^3.1.0",
     "nodemailer": "^6.9.14",
@@ -82,38 +118,42 @@ cron.schedule('*/10 * * * *', function() {
 # index.js
 
 ```js
-const scrape = require('./controllers/scrape.js');
-const parse = require('./controllers/parse.js');
-const nodemailer = require('nodemailer');
+const express = require('express');
+const fs = require('fs').promises;
+const scrape = require("./controllers/scrape.js");
+const parse = require("./controllers/parse.js");
 const cron = require('node-cron');
-const fs = require('fs');
+
+const app = express();
+const port = process.env.PORT || 3000;
 
 async function getItems() {
     let arrayOfItems = { pastItems: [] };
 
     try {
-        const data = fs.readFileSync('./pastItems.json', 'utf-8');
+        const data = await fs.readFile("./pastItems.json", "utf-8");
         if (data) {
             arrayOfItems = JSON.parse(data);
         } else {
-            console.log('pastItems.json is empty, starting with an empty array.');
+            console.log("pastItems.json is empty, starting with an empty array.");
         }
     } catch (err) {
-        console.log('Error reading pastItems.json, starting fresh.');
+        console.log("Error reading pastItems.json, starting fresh.");
     }
 
-    const searches = [ /* Your search terms here */ ];
+    const searches = [
+        { term: "bicycle", location: "sydney" },
+        { term: "car", location: "la" }
+    ];
 
     for (const search of searches) {
         try {
             const source = await scrape.getSource(search);
             let items = await parse.getSearchResults(source.data);
 
-            console.log(`Fetched items: ${JSON.stringify(items, null, 2)}`);
-
-            let newItems = items.filter(item => {
-                if (!arrayOfItems.pastItems.includes(item.id)) {
-                    arrayOfItems.pastItems.push(item.id);
+            let newItems = items.filter((item) => {
+                if (!arrayOfItems.pastItems.some(pastItem => pastItem.id === item.id)) {
+                    arrayOfItems.pastItems.push(item);
                     return true;
                 }
                 return false;
@@ -125,72 +165,152 @@ async function getItems() {
                 console.log(`Found ${newItems.length} new items.`);
                 // Process newItems (e.g., send an email notification)
             } else {
-                console.log('No new items found.');
+                console.log("No new items found.");
             }
         } catch (err) {
             console.error(`Error processing search ${search.term}: ${err}`);
         }
     }
 
-    fs.writeFileSync('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8');
-    console.log('Updated past items.');
+    await fs.writeFile("./pastItems.json", JSON.stringify(arrayOfItems), "utf-8");
+    console.log("Updated past items.");
 }
 
+// API route to get items
+app.get('/api/items', async (req, res) => {
+  try {
+    const data = await fs.readFile('./pastItems.json', 'utf-8');
+    const items = JSON.parse(data).pastItems;
+    res.json(items);
+  } catch (error) {
+    console.error('Error reading pastItems.json:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
-// Schedule the scraping task every 3 minutes
-cron.schedule('* * * * * *', function() {
+// Serve the HTML page with embedded React app
+app.get('*', (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace Scraper</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            const MarketplaceFeed = () => {
+                const [items, setItems] = React.useState([]);
+                const [loading, setLoading] = React.useState(true);
+                const [error, setError] = React.useState(null);
+
+                const fetchItems = async () => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch('/api/items');
+                        if (!response.ok) {
+                            throw new Error('Failed to fetch items');
+                        }
+                        const data = await response.json();
+                        setItems(data);
+                        setError(null);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                React.useEffect(() => {
+                    fetchItems();
+                }, []);
+
+                if (loading) {
+                    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+                }
+
+                if (error) {
+                    return <div className="text-red-500 text-center">{error}</div>;
+                }
+
+                return (
+                    <div className="container mx-auto px-4 py-8">
+                        <div className="flex justify-between items-center mb-6">
+                            <h1 className="text-2xl font-bold">Marketplace Feed</h1>
+                            <button 
+                                onClick={fetchItems}
+                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+                            >
+                                Refresh
+                            </button>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            {items.map((item) => (
+                                <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg">
+                                    <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
+                                    <div className="p-4">
+                                        <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
+                                        <p className="text-gray-700 text-base mb-2">{item.price}</p>
+                                        <a 
+                                            href={item.link} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block"
+                                        >
+                                            View Item
+                                        </a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                );
+            };
+
+            const App = () => {
+                return (
+                    <div className="bg-gray-100 min-h-screen">
+                        <header className="bg-blue-600 text-white p-4">
+                            <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
+                        </header>
+                        <main>
+                            <MarketplaceFeed />
+                        </main>
+                    </div>
+                );
+            };
+
+            ReactDOM.render(<App />, document.getElementById('root'));
+        </script>
+    </body>
+    </html>
+  `);
+});
+
+// Schedule the scraping task
+cron.schedule('*/10 * * * *', function() {
+    console.log('Running scraping task...');
     getItems();
 });
 
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
 
-
-
-
-
+// Initial scrape on server start
+getItems();
 ```
 
 # README.md
 
 ```md
-# Marketplace Magpie
-Setup email alerts for new items on Facebook Marketplace. Expensive due to level of proxies required to scrape.
 
-## Accounts
-
-You will need to setup the following accounts.
-
-### [ScrapingBee](https://www.scrapingbee.com/?fpr=oliver-dixon68) - Proxy API
-Start with free trial credits to test. For production upgrade to 'Startup' Plan at $100/month for ~35 search terms scraped every 15 minutes. 
-
-### [SendGrid](https://signup.sendgrid.com) - Email API
-Free account supports 100 emails / day which is plenty.
-
-
-## Setup
-
-In SendGrid under Email API, create a Dynamic Template with an arbitrary name. Add a new version and paste in code from `config/template.html`.
-
-Create `.env` file with the following format.
-
-\`\`\`
-scrapingbee_api_key = 
-sendgrid_api_key = 
-sendgrid_template_id = 
-sender = 
-recipient = 
-\`\`\`
-
-Configure searches in `default.json`. Location must be copied from Marketplace URL (`facebook.com/marketplace/COPY_LOCATION/search?query=bicycle`).
-
-\`\`\`
-{
-    "term": "bicycle",
-    "location": "nyc"
-},
-\`\`\`
-
-
- 
 
 ```
 
@@ -198,13 +318,17 @@ Configure searches in `default.json`. Location must be copied from Marketplace U
 
 ```
 modules = ["nodejs-20", "web"]
-run = "node index.js"
+run = "npm start"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "node index.js"]
+run = ["sh", "-c", "npm start"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
 
 ```
 
@@ -326,14 +450,26 @@ dist
 const axios = require('axios');
 
 async function getSource(search) {
-    return await axios.get('https://app.scrapingbee.com/api/v1', {
-        params: {
-            'api_key': process.env.scrapingbee_api_key,
-            'url': `https://www.facebook.com/marketplace/${search.location}/search?daysSinceListed=1&query=${search.term.replace(/ /g,'%20')}&exact=false`,
-            'render_js': 'true',  // Ensure JS is rendered
-            'premium_proxy': 'true' // Keep proxy settings if needed
+    console.log(`Fetching source for search: ${JSON.stringify(search)}`);
+    try {
+        const response = await axios.get('https://app.scrapingbee.com/api/v1', {
+            params: {
+                'api_key': process.env.scrapingbee_api_key,
+                'url': `https://www.facebook.com/marketplace/${search.location}/search?daysSinceListed=1&query=${search.term.replace(/ /g,'%20')}&exact=false`,
+                'render_js': 'true',  // Ensure JS is rendered
+                'premium_proxy': 'true' // Keep proxy settings if needed
+            }
+        });
+        console.log(`ScrapingBee API response status: ${response.status}`);
+        console.log(`ScrapingBee API response headers: ${JSON.stringify(response.headers)}`);
+        return response;
+    } catch (error) {
+        console.error('Error in getSource:', error);
+        if (error.response) {
+            console.error('ScrapingBee API error response:', error.response.data);
         }
-    });
+        throw error;
+    }
 }
 
 module.exports = {getSource}
@@ -346,34 +482,47 @@ module.exports = {getSource}
 const storage = require('node-persist');
 
 function getSearchResults(source) {
+    console.log('Starting to parse search results');
     let items = [];
     let searchResult = source.match(new RegExp('feed_units":(.*)},"marketplace_seo_page'));
 
     if (!searchResult || !searchResult[1]) {
+        console.log('No match found in the HTML content');
         return items; // Return empty if no valid data
     }
 
-    searchResult = JSON.parse(searchResult[1]);
+    try {
+        searchResult = JSON.parse(searchResult[1]);
 
-    if (searchResult['edges'][0]['node']['__typename'] === 'MarketplaceSearchFeedNoResults') {
-        return items;
-    } else {
-        searchResult['edges'].forEach(element => {
-            let id = element['node']['listing']['id'];
-            let link = `https://www.facebook.com/marketplace/item/${id}`;
-            let title = element['node']['listing']['marketplace_listing_title'];
-            let price = element['node']['listing']['listing_price']['formatted_amount'];
-            let img = element['node']['listing']['primary_listing_photo']['image']['uri'];
+        if (searchResult['edges'][0]['node']['__typename'] === 'MarketplaceSearchFeedNoResults') {
+            console.log('No results found in the marketplace search feed');
+            return items;
+        } else {
+            searchResult['edges'].forEach(element => {
+                let id = element['node']['listing']['id'];
+                let link = `https://www.facebook.com/marketplace/item/${id}`;
+                let title = element['node']['listing']['marketplace_listing_title'];
+                let price = element['node']['listing']['listing_price']['formatted_amount'];
+                let img = element['node']['listing']['primary_listing_photo']['image']['uri'];
 
-            const item = { "id": id, "link": link, "title": title, "price": price, "image": img };
+                const item = { "id": id, "link": link, "title": title, "price": price, "image": img };
 
-            items.push(item);
-        });
+                items.push(item);
+            });
+        }
+    } catch (err) {
+        console.error('Error parsing JSON from source:', err);
+        console.error('Error details:', err.message);
+        console.error('Partial searchResult:', searchResult ? JSON.stringify(searchResult).substring(0, 200) : 'undefined');
     }
+
+    console.log(`Parsed ${items.length} items from the search results`);
     return items;
 }
 
+
 async function getNewItems(items) {
+    console.log(`Checking for new items among ${items.length} parsed items`);
     let newItems = [];
     await storage.init();
 
@@ -382,9 +531,11 @@ async function getNewItems(items) {
         if (duplicates.length === 0) {
             newItems.push(item);
             await storage.setItem(item.id, item);
+            console.log(`New item found: ${item.title}`);
         }
     }
 
+    console.log(`Found ${newItems.length} new items`);
     return newItems;
 }
 
@@ -428,7 +579,7 @@ module.exports = {send}
 # .upm/store.json
 
 ```json
-{"version":2,"languages":{"nodejs-npm":{"specfileHash":"171a5dc7ff6a151a18976cfa5119f866","lockfileHash":"42161103999840c441764be6415518ec","guessedImports":["nodemailer","node-cron"],"guessedImportsHash":"5124cddc3ebef499ffb8e05e00cde8f6"}}}
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"0c9408cb93d7c100886a903bae88a197","lockfileHash":"aa7710d4f8ae0cdc73ecff9354f2e2fc","guessedImports":["nodemailer","node-cron","express"],"guessedImportsHash":"21e0d09e7dba488d691288b3d983ba12"}}}
 
 ```
 
@@ -530,8 +681,8 @@ module.exports = {send}
             "location": "sydney"
         },
         {
-            "term": "car ",
-            "location": "la"
+            "term": "couch ",
+            "location": "vancouver"
         }
     ]
 }
