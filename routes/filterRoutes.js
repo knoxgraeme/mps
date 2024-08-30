@@ -1,15 +1,8 @@
 const express = require('express');
-const path = require('path');
+const router = express.Router();
 const fs = require('fs').promises;
-const scrape = require("./controllers/scrape.js");
-const parse = require("./controllers/parse.js");
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+const scrape = require("../controllers/scrape.js");
+const parse = require("../controllers/parse.js");
 
 let savedFilters = [];
 
@@ -44,11 +37,11 @@ async function getItems(filter) {
     }
 }
 
-app.get('/api/filters', (req, res) => {
+router.get('/filters', (req, res) => {
     res.json(savedFilters);
 });
 
-app.get('/api/items/:filterId', (req, res) => {
+router.get('/items/:filterId', (req, res) => {
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
     if (filter) {
@@ -58,7 +51,7 @@ app.get('/api/items/:filterId', (req, res) => {
     }
 });
 
-app.post('/api/filters', async (req, res) => {
+router.post('/filters', async (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
     const newFilter = {
@@ -75,7 +68,7 @@ app.post('/api/filters', async (req, res) => {
     res.json(newFilter);
 });
 
-app.post('/api/scrape/:filterId', async (req, res) => {
+router.post('/scrape/:filterId', async (req, res) => {
     console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
@@ -97,22 +90,4 @@ app.post('/api/scrape/:filterId', async (req, res) => {
     }
 });
 
-app.get('/', async (req, res) => {
-    try {
-        const items = savedFilters.length > 0 ? savedFilters[0].items : [];
-        res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    } catch (error) {
-        console.error('Error loading items for the homepage:', error);
-        res.status(500).send('Error loading items');
-    }
-});
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-loadFilters().then(() => {
-    app.listen(port, () => {
-        console.log(`Server listening at http://localhost:${port}`);
-    });
-});
+module.exports = { router, loadFilters };
