@@ -5,9 +5,13 @@ const cron = require('node-cron');
 var fs = require('fs');
 
 async function getItems() {
-    fs.readFile('./pastItems.json', 'utf-8', function(err, data) {
+    let arrayOfItems = [];
+    try {
+        const data = await fs.promises.readFile('./pastItems.json', 'utf-8');
         arrayOfItems = JSON.parse(data);
-    });
+    } catch (err) {
+        console.error('Error reading pastItems.json:', err);
+    }
 
     const searches = [ /* Your search terms here */ ];
 
@@ -15,16 +19,26 @@ async function getItems() {
         try {
             const source = await scrape.getSource(search);
             let items = await parse.getSearchResults(source.data);
-            // Process items...
+            let newItems = await parse.getNewItems(items);
+            
+            console.log(`Found ${newItems.length} new items for search: ${search.term}`);
+            
+            // Add new items to arrayOfItems
+            arrayOfItems = arrayOfItems.concat(newItems);
+            
+            // Here you can add additional processing for new items if needed
+            // For example, sending notifications, etc.
         } catch (err) {
-            console.error(err);
+            console.error(`Error processing search ${search.term}:`, err);
         }
     }
 
-    fs.writeFile('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8', function(err) {
-        if (err) throw err;
+    try {
+        await fs.promises.writeFile('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8');
         console.log('Updated past items');
-    });
+    } catch (err) {
+        console.error('Error writing to pastItems.json:', err);
+    }
 }
 
 // Schedule the scraping task
