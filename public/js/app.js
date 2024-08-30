@@ -3,7 +3,7 @@ let supabase;
 document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('/env');
     const { SUPABASE_URL, SUPABASE_ANON_KEY } = await response.json();
-    supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     const authContainer = document.getElementById('auth-container');
     const contentContainer = document.getElementById('content');
