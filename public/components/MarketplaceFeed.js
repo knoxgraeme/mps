@@ -128,6 +128,12 @@ const MarketplaceFeed = () => {
                 }, "Update")
             ),
             React.createElement(ItemList, { items: items, newItems: newItems })
+        ),
+        !selectedFilter && filters.length > 0 && React.createElement('div', { className: "text-center text-gray-600" },
+            "Please select a filter from the dropdown to view items."
+        ),
+        filters.length === 0 && React.createElement('div', { className: "text-center text-gray-600" },
+            "No filters available. Please add a filter using the form above."
         )
     );
 };
