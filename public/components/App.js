@@ -1,42 +1,15 @@
 const Auth = () => {
     const [user, setUser] = React.useState(null);
-    const [supabase, setSupabase] = React.useState(null);
 
-    React.useEffect(() => {
-        const loadSupabase = async () => {
-            const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.21.0/+esm');
-            const supabaseUrl = 'https://YOUR_SUPABASE_URL.supabase.co';
-            const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
-            const supabaseInstance = createClient(supabaseUrl, supabaseAnonKey);
-            setSupabase(supabaseInstance);
-
-            const session = supabaseInstance.auth.session();
-            setUser(session?.user ?? null);
-
-            const { data: authListener } = supabaseInstance.auth.onAuthStateChange((event, session) => {
-                setUser(session?.user ?? null);
-            });
-
-            return () => {
-                authListener.unsubscribe();
-            };
-        };
-
-        loadSupabase();
-    }, []);
-
-    const signIn = async () => {
-        if (!supabase) return;
-        const { error } = await supabase.auth.signIn({
-            provider: 'google'
-        });
-        if (error) console.log('Error: ', error.message);
+    const signIn = () => {
+        // Placeholder for sign-in functionality
+        console.log('Sign in clicked');
     };
 
-    const signOut = async () => {
-        if (!supabase) return;
-        const { error } = await supabase.auth.signOut();
-        if (error) console.log('Error: ', error.message);
+    const signOut = () => {
+        // Placeholder for sign-out functionality
+        console.log('Sign out clicked');
+        setUser(null);
     };
 
     return React.createElement('div', null,
@@ -45,7 +18,7 @@ const Auth = () => {
                 React.createElement('p', null, `Welcome, ${user.email}!`),
                 React.createElement('button', { onClick: signOut }, "Sign Out")
             )
-            : React.createElement('button', { onClick: signIn }, "Sign In with Google")
+            : React.createElement('button', { onClick: signIn }, "Sign In")
     );
 };
 
