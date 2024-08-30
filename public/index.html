@@ -16,7 +16,7 @@
         const { useState, useEffect } = React;
         const { createClient } = supabase;
 
-        const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
+        const supabase = createClient('https://REPLACE_WITH_YOUR_SUPABASE_PROJECT_URL.supabase.co', 'REPLACE_WITH_YOUR_SUPABASE_ANON_KEY');
 
         const Auth = ({ onAuth }) => {
             const [email, setEmail] = useState('');
