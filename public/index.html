@@ -28,70 +28,90 @@
             };
 
             return (
-                <form onSubmit={handleSubmit} className="mb-4">
+                <form onSubmit={handleSubmit} className="mb-6 grid grid-cols-1 sm:grid-cols-4 gap-4">
                     <input
                         type="text"
                         placeholder="City"
                         value={city}
                         onChange={(e) => setCity(e.target.value)}
-                        className="mr-2 p-2 border rounded"
+                        className="p-2 border rounded w-full"
                     />
                     <input
                         type="text"
                         placeholder="Query"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        className="mr-2 p-2 border rounded"
+                        className="p-2 border rounded w-full"
                     />
                     <input
                         type="number"
                         placeholder="Max Price"
                         value={maxPrice}
                         onChange={(e) => setMaxPrice(e.target.value)}
-                        className="mr-2 p-2 border rounded"
+                        className="p-2 border rounded w-full"
                     />
-                    <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-                        Add Filter & Scrape
+                    <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors">
+                        Add Filter
                     </button>
                 </form>
             );
         };
 
-        const FilterList = ({ filters, onSelect, onUpdate }) => (
-            <div className="mb-4">
-                <h2 className="text-xl font-bold mb-2">Saved Filters</h2>
-                {filters.map((filter) => (
-                    <div key={filter.id} className="flex items-center mb-2">
-                        <button
-                            onClick={() => onSelect(filter.id)}
-                            className="bg-gray-200 p-2 rounded mr-2"
-                        >
-                            {filter.city} - {filter.query} (Max: ${filter.maxPrice})
-                        </button>
-                        <button
-                            onClick={() => onUpdate(filter.id)}
-                            className="bg-green-500 text-white p-2 rounded"
-                        >
-                            Update
-                        </button>
-                    </div>
-                ))}
-            </div>
-        );
+        const FilterDropdown = ({ filters, onSelect, onUpdate }) => {
+            const [isOpen, setIsOpen] = useState(false);
+
+            return (
+                <div className="relative">
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                    >
+                        Filters ({filters.length})
+                    </button>
+                    {isOpen && (
+                        <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
+                            {filters.map((filter) => (
+                                <div key={filter.id} className="p-2 border-b hover:bg-gray-100">
+                                    <div className="font-semibold mb-1">{filter.city} - {filter.query}</div>
+                                    <div className="text-sm text-gray-600 mb-2">Max: ${filter.maxPrice}</div>
+                                    <div className="flex justify-between">
+                                        <button
+                                            onClick={() => {
+                                                onSelect(filter.id);
+                                                setIsOpen(false);
+                                            }}
+                                            className="bg-blue-500 text-white px-2 py-1 rounded text-sm hover:bg-blue-600 transition-colors"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            onClick={() => onUpdate(filter.id)}
+                                            className="bg-green-500 text-white px-2 py-1 rounded text-sm hover:bg-green-600 transition-colors"
+                                        >
+                                            Update
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        };
 
         const ItemList = ({ items }) => (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {items.map((item) => (
-                    <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg">
+                    <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
                         <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
-                            <p className="text-gray-700 text-base mb-2">{item.price}</p>
+                            <p className="text-gray-700 text-base mb-4">{item.price}</p>
                             <a 
                                 href={item.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
-                                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block"
+                                className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block transition-colors"
                             >
                                 View Item
                             </a>
@@ -101,37 +121,12 @@
             </div>
         );
 
-        const NotificationDropdown = ({ notifications }) => {
-            const [isOpen, setIsOpen] = useState(false);
-
-            return (
-                <div className="relative">
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="bg-blue-500 text-white p-2 rounded"
-                    >
-                        Notifications ({notifications.length})
-                    </button>
-                    {isOpen && (
-                        <div className="absolute right-0 mt-2 w-64 bg-white border rounded shadow-lg">
-                            {notifications.map((notification, index) => (
-                                <div key={index} className="p-2 border-b">
-                                    {notification}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            );
-        };
-
         const MarketplaceFeed = () => {
             const [filters, setFilters] = useState([]);
             const [selectedFilterId, setSelectedFilterId] = useState(null);
             const [items, setItems] = useState([]);
             const [loading, setLoading] = useState(false);
             const [error, setError] = useState(null);
-            const [notifications, setNotifications] = useState([]);
 
             const fetchFilters = async () => {
                 try {
@@ -177,7 +172,6 @@
                         throw new Error('Failed to add filter and start scraping');
                     }
                     await fetchFilters();
-                    setNotifications([...notifications, `New filter added: ${filterParams.city} - ${filterParams.query}`]);
                     setError(null);
                 } catch (err) {
                     setError(err.message);
@@ -199,7 +193,6 @@
                     if (selectedFilterId === filterId) {
                         await fetchItems(filterId);
                     }
-                    setNotifications([...notifications, `Filter updated: ${filters.find(f => f.id === filterId).city} - ${filters.find(f => f.id === filterId).query}`]);
                     setError(null);
                 } catch (err) {
                     setError(err.message);
@@ -218,25 +211,26 @@
             }, []);
 
             if (loading) {
-                return <div className="flex justify-center items-center h-screen">Loading...</div>;
+                return <div className="flex justify-center items-center h-screen">
+                    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                </div>;
             }
 
             if (error) {
-                return <div className="text-red-500 text-center">{error}</div>;
+                return <div className="text-red-500 text-center p-4 bg-red-100 rounded">{error}</div>;
             }
 
             return (
                 <div className="container mx-auto px-4 py-8">
-                    <div className="mb-6 flex justify-between items-center">
-                        <h1 className="text-2xl font-bold">Marketplace Scraper</h1>
-                        <NotificationDropdown notifications={notifications} />
+                    <div className="mb-8 flex justify-between items-center">
+                        <h1 className="text-3xl font-bold text-gray-800">Marketplace Scraper</h1>
+                        <FilterDropdown
+                            filters={filters}
+                            onSelect={handleSelectFilter}
+                            onUpdate={handleUpdate}
+                        />
                     </div>
                     <SearchForm onSubmit={handleAddFilter} />
-                    <FilterList
-                        filters={filters}
-                        onSelect={handleSelectFilter}
-                        onUpdate={handleUpdate}
-                    />
                     {selectedFilterId && <ItemList items={items} />}
                 </div>
             );
@@ -245,10 +239,12 @@
         const App = () => {
             return (
                 <div className="bg-gray-100 min-h-screen">
-                    <header className="bg-blue-600 text-white p-4">
-                        <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
+                    <header className="bg-blue-600 text-white p-4 shadow-md">
+                        <div className="container mx-auto">
+                            <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
+                        </div>
                     </header>
-                    <main>
+                    <main className="mt-6">
                         <MarketplaceFeed />
                     </main>
                 </div>
