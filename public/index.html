@@ -89,10 +89,15 @@
             );
         };
 
-        const ItemList = ({ items }) => (
+        const ItemList = ({ items, newItems }) => (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {items.map((item) => (
-                    <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 relative">
+                        {newItems.includes(item.id) && (
+                            <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                                New
+                            </span>
+                        )}
                         <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
@@ -115,6 +120,7 @@
             const [filters, setFilters] = useState([]);
             const [selectedFilterId, setSelectedFilterId] = useState(null);
             const [items, setItems] = useState([]);
+            const [newItems, setNewItems] = useState([]);
             const [loading, setLoading] = useState(false);
             const [error, setError] = useState(null);
 
@@ -140,6 +146,7 @@
                     }
                     const data = await response.json();
                     setItems(data);
+                    setNewItems([]);
                     setError(null);
                 } catch (err) {
                     setError(err.message);
@@ -182,7 +189,14 @@
                         throw new Error('Failed to update filter');
                     }
                     await fetchFilters();
-                    await fetchItems(filterId);
+                    const updatedItemsResponse = await fetch(`/api/items/${filterId}`);
+                    if (!updatedItemsResponse.ok) {
+                        throw new Error('Failed to fetch updated items');
+                    }
+                    const updatedItems = await updatedItemsResponse.json();
+                    const newItemIds = updatedItems.filter(updatedItem => !items.some(item => item.id === updatedItem.id)).map(item => item.id);
+                    setItems(updatedItems);
+                    setNewItems(newItemIds);
                     setError(null);
                 } catch (err) {
                     setError(err.message);
@@ -235,7 +249,7 @@
                                     Update
                                 </button>
                             </div>
-                            <ItemList items={items} />
+                            <ItemList items={items} newItems={newItems} />
                         </div>
                     )}
                 </div>
