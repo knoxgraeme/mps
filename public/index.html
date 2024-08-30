@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.21.0"></script>
 </head>
 <body>
     <div id="root"></div>
@@ -108,13 +109,14 @@
             const [loading, setLoading] = useState(false);
             const [error, setError] = useState(null);
 
+            const supabase = supabaseClient();
+
             const fetchFilters = async () => {
                 try {
-                    const response = await fetch('/api/filters');
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch filters');
-                    }
-                    const data = await response.json();
+                    const { data, error } = await supabase
+                        .from('filters')
+                        .select('*');
+                    if (error) throw error;
                     setFilters(data);
                 } catch (err) {
                     setError(err.message);
@@ -124,11 +126,11 @@
             const fetchItems = async (filterId) => {
                 setLoading(true);
                 try {
-                    const response = await fetch(`/api/items/${filterId}`);
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch items');
-                    }
-                    const data = await response.json();
+                    const { data, error } = await supabase
+                        .from('items')
+                        .select('*')
+                        .eq('filter_id', filterId);
+                    if (error) throw error;
                     setItems(data);
                     setError(null);
                 } catch (err) {
@@ -141,16 +143,11 @@
             const handleAddFilter = async (filterParams) => {
                 setLoading(true);
                 try {
-                    const response = await fetch('/api/filters', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(filterParams),
-                    });
-                    if (!response.ok) {
-                        throw new Error('Failed to add filter and start scraping');
-                    }
+                    const { data, error } = await supabase
+                        .from('filters')
+                        .insert([filterParams])
+                        .select();
+                    if (error) throw error;
                     await fetchFilters();
                     setError(null);
                 } catch (err) {
@@ -189,6 +186,12 @@
             useEffect(() => {
                 fetchFilters();
             }, []);
+
+            const supabaseClient = () => {
+                const supabaseUrl = 'https://your-project-url.supabase.co';
+                const supabaseKey = 'your-anon-key';
+                return supabase.createClient(supabaseUrl, supabaseKey);
+            };
 
             if (loading) {
                 return <div className="flex justify-center items-center h-screen">Loading...</div>;
