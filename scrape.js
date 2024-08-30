@@ -17,17 +17,28 @@ async function getItems() {
 
     for (const search of searches) {
         try {
+            console.log(`Processing search: ${search.term}`);
             const source = await scrape.getSource(search);
-            let items = await parse.getSearchResults(source.data);
-            let newItems = await parse.getNewItems(items);
+            console.log('Source fetched successfully');
             
+            let items = await parse.getSearchResults(source.data);
+            console.log(`Parsed ${items.length} items from the source`);
+            
+            let newItems = await parse.getNewItems(items);
             console.log(`Found ${newItems.length} new items for search: ${search.term}`);
+            
+            // Output details of new items
+            newItems.forEach((item, index) => {
+                console.log(`New item ${index + 1}:`);
+                console.log(`  ID: ${item.id}`);
+                console.log(`  Title: ${item.title}`);
+                console.log(`  Price: ${item.price}`);
+                console.log(`  Link: ${item.link}`);
+                console.log('---');
+            });
             
             // Add new items to arrayOfItems
             arrayOfItems = arrayOfItems.concat(newItems);
-            
-            // Here you can add additional processing for new items if needed
-            // For example, sending notifications, etc.
         } catch (err) {
             console.error(`Error processing search ${search.term}:`, err);
         }
@@ -35,7 +46,7 @@ async function getItems() {
 
     try {
         await fs.promises.writeFile('./pastItems.json', JSON.stringify(arrayOfItems), 'utf-8');
-        console.log('Updated past items');
+        console.log(`Updated past items. Total items: ${arrayOfItems.length}`);
     } catch (err) {
         console.error('Error writing to pastItems.json:', err);
     }
