@@ -16,7 +16,11 @@ let savedFilters = [];
 async function getItems(search) {
     console.log('getItems called with search:', JSON.stringify(search));
     try {
-        const source = await scrape.getSource(search);
+        const source = await scrape.getSource({
+            city: search.city,
+            query: search.query,
+            maxPrice: search.maxPrice
+        });
         console.log('Source fetched successfully');
         let items = await parse.getSearchResults(source.data);
         console.log(`Parsed ${items.length} items`);
@@ -26,7 +30,6 @@ async function getItems(search) {
         return [];
     }
 }
-
 // API route to get all filters
 app.get('/api/filters', (req, res) => {
     res.json(savedFilters);
