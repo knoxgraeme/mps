@@ -57,7 +57,7 @@
             );
         };
 
-        const FilterDropdown = ({ filters, onSelect, onUpdate }) => {
+        const FilterDropdown = ({ filters, onSelect }) => {
             const [isOpen, setIsOpen] = useState(false);
 
             return (
@@ -71,26 +71,16 @@
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
                             {filters.map((filter) => (
-                                <div key={filter.id} className="p-2 border-b hover:bg-gray-100">
+                                <div 
+                                    key={filter.id} 
+                                    className="p-2 border-b hover:bg-gray-100 cursor-pointer"
+                                    onClick={() => {
+                                        onSelect(filter.id);
+                                        setIsOpen(false);
+                                    }}
+                                >
                                     <div className="font-semibold mb-1">{filter.city} - {filter.query}</div>
-                                    <div className="text-sm text-gray-600 mb-2">Max: ${filter.maxPrice}</div>
-                                    <div className="flex justify-between">
-                                        <button
-                                            onClick={() => {
-                                                onSelect(filter.id);
-                                                setIsOpen(false);
-                                            }}
-                                            className="bg-blue-500 text-white px-2 py-1 rounded text-sm hover:bg-blue-600 transition-colors"
-                                        >
-                                            View
-                                        </button>
-                                        <button
-                                            onClick={() => onUpdate(filter.id)}
-                                            className="bg-green-500 text-white px-2 py-1 rounded text-sm hover:bg-green-600 transition-colors"
-                                        >
-                                            Update
-                                        </button>
-                                    </div>
+                                    <div className="text-sm text-gray-600">Max: ${filter.maxPrice}</div>
                                 </div>
                             ))}
                         </div>
@@ -169,10 +159,12 @@
                         body: JSON.stringify(filterParams),
                     });
                     if (!response.ok) {
-                        throw new Error('Failed to add filter and start scraping');
+                        throw new Error('Failed to add filter');
                     }
+                    const newFilter = await response.json();
                     await fetchFilters();
-                    setError(null);
+                    setSelectedFilterId(newFilter.id);
+                    await handleUpdate(newFilter.id);
                 } catch (err) {
                     setError(err.message);
                 } finally {
@@ -190,9 +182,7 @@
                         throw new Error('Failed to update filter');
                     }
                     await fetchFilters();
-                    if (selectedFilterId === filterId) {
-                        await fetchItems(filterId);
-                    }
+                    await fetchItems(filterId);
                     setError(null);
                 } catch (err) {
                     setError(err.message);
@@ -209,6 +199,8 @@
             useEffect(() => {
                 fetchFilters();
             }, []);
+
+            const selectedFilter = filters.find(filter => filter.id === selectedFilterId);
 
             if (loading) {
                 return <div className="flex justify-center items-center h-screen">
@@ -227,11 +219,25 @@
                         <FilterDropdown
                             filters={filters}
                             onSelect={handleSelectFilter}
-                            onUpdate={handleUpdate}
                         />
                     </div>
                     <SearchForm onSubmit={handleAddFilter} />
-                    {selectedFilterId && <ItemList items={items} />}
+                    {selectedFilter && (
+                        <div className="mb-6">
+                            <div className="flex justify-between items-center mb-4">
+                                <h2 className="text-2xl font-semibold">
+                                    {selectedFilter.city} - {selectedFilter.query} (Max: ${selectedFilter.maxPrice})
+                                </h2>
+                                <button
+                                    onClick={() => handleUpdate(selectedFilterId)}
+                                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                                >
+                                    Update
+                                </button>
+                            </div>
+                            <ItemList items={items} />
+                        </div>
+                    )}
                 </div>
             );
         };
