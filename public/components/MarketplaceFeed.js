@@ -99,43 +99,35 @@ const MarketplaceFeed = () => {
     const selectedFilter = filters.find(filter => filter.id === selectedFilterId);
 
     if (loading) {
-        return (
-            <div className="flex justify-center items-center h-screen">
-                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
-            </div>
+        return React.createElement('div', { className: "flex justify-center items-center h-screen" },
+            React.createElement('div', { className: "animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500" })
         );
     }
 
     if (error) {
-        return <div className="text-red-500 text-center p-4 bg-red-100 rounded">{error}</div>;
+        return React.createElement('div', { className: "text-red-500 text-center p-4 bg-red-100 rounded" }, error);
     }
 
-    return (
-        <div className="container mx-auto px-4 py-8">
-            <div className="mb-8 flex justify-between items-center">
-                <h1 className="text-3xl font-bold text-gray-800">Marketplace Scraper</h1>
-                <FilterDropdown
-                    filters={filters}
-                    onSelect={handleSelectFilter}
-                />
-            </div>
-            <SearchForm onSubmit={handleAddFilter} />
-            {selectedFilter && (
-                <div className="mb-6">
-                    <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-2xl font-semibold">
-                            {selectedFilter.city} - {selectedFilter.query} (Max: ${selectedFilter.maxPrice})
-                        </h2>
-                        <button
-                            onClick={() => handleUpdate(selectedFilterId)}
-                            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
-                        >
-                            Update
-                        </button>
-                    </div>
-                    <ItemList items={items} newItems={newItems} />
-                </div>
-            )}
-        </div>
+    return React.createElement('div', { className: "container mx-auto px-4 py-8" },
+        React.createElement('div', { className: "mb-8 flex justify-between items-center" },
+            React.createElement('h1', { className: "text-3xl font-bold text-gray-800" }, "Marketplace Scraper"),
+            React.createElement(FilterDropdown, {
+                filters: filters,
+                onSelect: handleSelectFilter
+            })
+        ),
+        React.createElement(SearchForm, { onSubmit: handleAddFilter }),
+        selectedFilter && React.createElement('div', { className: "mb-6" },
+            React.createElement('div', { className: "flex justify-between items-center mb-4" },
+                React.createElement('h2', { className: "text-2xl font-semibold" },
+                    `${selectedFilter.city} - ${selectedFilter.query} (Max: $${selectedFilter.maxPrice})`
+                ),
+                React.createElement('button', {
+                    onClick: () => handleUpdate(selectedFilterId),
+                    className: "bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                }, "Update")
+            ),
+            React.createElement(ItemList, { items: items, newItems: newItems })
+        )
     );
 };
