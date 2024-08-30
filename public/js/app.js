@@ -41,8 +41,8 @@ function renderFilterDropdown() {
             <div id="filterDropdownContent" class="hidden absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
                 ${filters.map(filter => `
                     <div class="p-2 border-b hover:bg-gray-100 cursor-pointer" data-filter-id="${filter.id}">
-                        <div class="font-semibold mb-1">${filter.city} - ${filter.query}</div>
-                        <div class="text-sm text-gray-600">Max: $${filter.maxPrice}</div>
+                        <div class="font-semibold mb-1">${filter.city || 'N/A'} - ${filter.query || 'N/A'}</div>
+                        <div class="text-sm text-gray-600">Max: $${filter.maxPrice || 'N/A'}</div>
                     </div>
                 `).join('')}
             </div>
