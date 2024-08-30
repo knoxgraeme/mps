@@ -1,49 +1,54 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = process.env.SUPABASE_URL
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY
-
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
-
 const Auth = () => {
     const [user, setUser] = React.useState(null)
+    const [supabase, setSupabase] = React.useState(null)
 
     React.useEffect(() => {
-        const session = supabase.auth.session()
-        setUser(session?.user ?? null)
+        const initSupabase = async () => {
+            const { createClient } = await import('@supabase/supabase-js')
+            const supabaseUrl = process.env.REACT_APP_SUPABASE_URL
+            const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY
+            const supabaseInstance = createClient(supabaseUrl, supabaseAnonKey)
+            setSupabase(supabaseInstance)
 
-        const { data: authListener } = supabase.auth.onAuthStateChange(
-            (event, session) => {
-                setUser(session?.user ?? null)
+            const session = supabaseInstance.auth.session()
+            setUser(session?.user ?? null)
+
+            const { data: authListener } = supabaseInstance.auth.onAuthStateChange(async (event, session) => {
+                const currentUser = session?.user
+                setUser(currentUser ?? null)
+            })
+
+            return () => {
+                authListener.unsubscribe()
             }
-        )
-
-        return () => {
-            authListener.unsubscribe()
         }
+
+        initSupabase()
     }, [])
 
     const signIn = async () => {
-        const { error } = await supabase.auth.signIn({ provider: 'google' })
-        if (error) console.error('Error signing in:', error)
+        if (!supabase) return
+        const { error } = await supabase.auth.signIn({
+            provider: 'google'
+        })
+        if (error) console.log('Error: ', error.message)
     }
 
     const signOut = async () => {
+        if (!supabase) return
         const { error } = await supabase.auth.signOut()
-        if (error) console.error('Error signing out:', error)
+        if (error) console.log('Error: ', error.message)
     }
 
     return (
-        <div>
-            {user ? (
-                <div>
-                    <p>Welcome, {user.email}!</p>
-                    <button onClick={signOut}>Sign Out</button>
-                </div>
-            ) : (
-                <button onClick={signIn}>Sign In with Google</button>
-            )}
-        </div>
+        React.createElement('div', null,
+            user
+                ? React.createElement('div', null,
+                    React.createElement('p', null, `Welcome, ${user.email}!`),
+                    React.createElement('button', { onClick: signOut }, "Sign Out")
+                )
+                : React.createElement('button', { onClick: signIn }, "Sign In with Google")
+        )
     )
 }
 
