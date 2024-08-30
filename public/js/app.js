@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             throw new Error('Supabase credentials are missing');
         }
 
-        if (typeof supabaseJs === 'undefined' || typeof supabaseJs.createClient !== 'function') {
+        if (typeof supabase === 'undefined' || typeof supabase.createClient !== 'function') {
             throw new Error('Supabase library is not loaded correctly');
         }
 
-        supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         const authContainer = document.getElementById('auth-container');
         const contentContainer = document.getElementById('content');
@@ -37,12 +37,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function updateAuthUI(container) {
-    const session = supabase.auth.session();
-    if (session) {
-        showLoggedInState(container, session.user);
-    } else {
-        showLoggedOutState(container);
-    }
+    supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session) {
+            showLoggedInState(container, session.user);
+        } else {
+            showLoggedOutState(container);
+        }
+    });
 }
 
 function showLoggedInState(container, user) {
@@ -62,6 +63,98 @@ function showLoggedOutState(container) {
         </button>
     `;
     document.getElementById('sign-in-btn').addEventListener('click', signIn);
+}
+
+function showLoginForm() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2 class="text-xl font-bold mb-4">Login</h2>
+        <form id="login-form" class="space-y-4">
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <div>
+                <label for="password" class="block mb-1">Password</label>
+                <input type="password" id="password" name="password" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Login
+            </button>
+        </form>
+        <p class="mt-4">
+            Don't have an account? 
+            <a href="#" id="show-signup" class="text-blue-500 hover:text-blue-700">Sign up</a>
+        </p>
+    `;
+    document.getElementById('login-form').addEventListener('submit', handleLogin);
+    document.getElementById('show-signup').addEventListener('click', showSignupForm);
+}
+
+function showSignupForm() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2 class="text-xl font-bold mb-4">Sign Up</h2>
+        <form id="signup-form" class="space-y-4">
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <div>
+                <label for="password" class="block mb-1">Password</label>
+                <input type="password" id="password" name="password" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Sign Up
+            </button>
+        </form>
+        <p class="mt-4">
+            Already have an account? 
+            <a href="#" id="show-login" class="text-blue-500 hover:text-blue-700">Login</a>
+        </p>
+    `;
+    document.getElementById('signup-form').addEventListener('submit', handleSignup);
+    document.getElementById('show-login').addEventListener('click', showLoginForm);
+}
+
+async function handleLogin(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    const { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+    });
+
+    if (error) {
+        console.error('Error logging in:', error.message);
+        alert('Error logging in: ' + error.message);
+    } else {
+        console.log('Logged in successfully:', data);
+        updateAuthUI(document.getElementById('auth-container'));
+        updateContent(document.getElementById('content'));
+    }
+}
+
+async function handleSignup(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    const { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+    });
+
+    if (error) {
+        console.error('Error signing up:', error.message);
+        alert('Error signing up: ' + error.message);
+    } else {
+        console.log('Signed up successfully:', data);
+        alert('Please check your email to confirm your account.');
+        showLoginForm();
+    }
 }
 
 function updateContent(container) {
@@ -84,15 +177,17 @@ function updateContent(container) {
 }
 
 async function signIn() {
-    const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google'
-    });
-    if (error) console.error('Error signing in:', error.message);
+    showLoginForm();
 }
 
 async function signOut() {
     const { error } = await supabase.auth.signOut();
-    if (error) console.error('Error signing out:', error.message);
+    if (error) {
+        console.error('Error signing out:', error.message);
+    } else {
+        updateAuthUI(document.getElementById('auth-container'));
+        updateContent(document.getElementById('content'));
+    }
 }
 
 async function loadFilters() {
