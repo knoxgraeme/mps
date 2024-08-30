@@ -50,6 +50,21 @@ function renderFilterDropdown() {
     `;
 }
 
+function toggleFilterDropdown() {
+    const filterDropdownContent = document.getElementById('filterDropdownContent');
+    filterDropdownContent.classList.toggle('hidden');
+}
+
+function handleSelectFilter(e) {
+    const filterElement = e.target.closest('[data-filter-id]');
+    if (filterElement) {
+        const filterId = filterElement.dataset.filterId;
+        selectedFilterId = filterId;
+        fetchItems(filterId);
+        toggleFilterDropdown();
+    }
+}
+
 function renderItemList() {
     return `
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
