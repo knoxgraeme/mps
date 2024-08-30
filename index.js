@@ -13,6 +13,22 @@ app.use(express.static('public'));
 
 let savedFilters = [];
 
+// Function to save filters to a JSON file
+async function saveFilters() {
+    await fs.writeFile('savedFilters.json', JSON.stringify(savedFilters, null, 2));
+}
+
+// Function to load filters from a JSON file
+async function loadFilters() {
+    try {
+        const data = await fs.readFile('savedFilters.json', 'utf8');
+        savedFilters = JSON.parse(data);
+    } catch (error) {
+        console.log('No saved filters found. Starting with an empty array.');
+        savedFilters = [];
+    }
+}
+
 async function getItems(filter) {
     console.log('getItems called with filter:', JSON.stringify(filter, null, 2));
     try {
@@ -47,7 +63,7 @@ app.get('/api/items/:filterId', (req, res) => {
 });
 
 // API route to add a new filter
-app.post('/api/filters', (req, res) => {
+app.post('/api/filters', async (req, res) => {
     console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
     const newFilter = {
@@ -59,6 +75,7 @@ app.post('/api/filters', (req, res) => {
     };
 
     savedFilters.push(newFilter);
+    await saveFilters();
     console.log('New filter added:', newFilter);
     res.json(newFilter);
 });
@@ -74,6 +91,7 @@ app.post('/api/scrape/:filterId', async (req, res) => {
         try {
             const newItems = await getItems(filter);
             filter.items = newItems;
+            await saveFilters();
             res.json(filter);
         } catch (error) {
             console.error('Error during scraping:', error);
@@ -90,6 +108,9 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+// Load saved filters when the server starts
+loadFilters().then(() => {
+    app.listen(port, () => {
+        console.log(`Server listening at http://localhost:${port}`);
+    });
 });
