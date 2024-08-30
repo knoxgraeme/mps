@@ -26,13 +26,24 @@ function getSearchResults(source) {
                     url: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
                     primary_listing_photo: listingData.primary_listing_photo ? listingData.primary_listing_photo.image.uri : null,
                     formatted_amount: listingData.listing_price ? listingData.listing_price.formatted_amount : null,
+                    // Enhanced location information
                     city: listingData.location ? listingData.location.reverse_geocode.city : null,
                     state: listingData.location ? listingData.location.reverse_geocode.state : null,
+                    zip_code: listingData.location ? listingData.location.reverse_geocode.postal_code : null,
+                    latitude: listingData.location ? listingData.location.latitude : null,
+                    longitude: listingData.location ? listingData.location.longitude : null,
                     marketplace_category_id: listingData.marketplace_listing_category_id || null,
                     marketplace_title: listingData.marketplace_listing_title || null,
                     link: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
+                    // Enhanced seller information
                     seller_id: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.id : null,
                     seller_name: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.name : null,
+                    seller_profile_url: listingData.marketplace_listing_seller ? `https://www.facebook.com/${listingData.marketplace_listing_seller.id}` : null,
+                    // Listing description and keywords
+                    description: listingData.marketplace_listing_description || null,
+                    keywords: listingData.keywords || null,
+                    // Date posted (if available, otherwise use current date)
+                    date_posted: listingData.creation_time ? new Date(listingData.creation_time * 1000).toISOString() : new Date().toISOString(),
                     is_hidden: listingData.is_hidden || false,
                     is_live: listingData.is_live || false,
                     is_pending: listingData.is_pending || false,
