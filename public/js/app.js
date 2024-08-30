@@ -14,11 +14,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             throw new Error('Supabase credentials are missing');
         }
 
-        if (typeof supabase === 'undefined' || typeof supabase.createClient !== 'function') {
+        if (typeof supabase === 'undefined') {
             throw new Error('Supabase library is not loaded correctly');
         }
 
-        supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        const { createClient } = supabase;
+        if (typeof createClient !== 'function') {
+            throw new Error('Supabase createClient function is not available');
+        }
+
+        supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         const authContainer = document.getElementById('auth-container');
         const contentContainer = document.getElementById('content');
