@@ -3,9 +3,13 @@ const path = require('path');
 const fs = require('fs').promises;
 const scrape = require("./controllers/scrape.js");
 const parse = require("./controllers/parse.js");
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
