@@ -11,9 +11,13 @@
 </head>
 <body>
     <div id="root"></div>
+    <script type="text/babel" src="./components/App.js"></script>
+    <script type="text/babel" src="./components/SearchForm.js"></script>
+    <script type="text/babel" src="./components/FilterDropdown.js"></script>
+    <script type="text/babel" src="./components/ItemList.js"></script>
+    <script type="text/babel" src="./components/MarketplaceFeed.js"></script>
     <script type="text/babel">
-        import App from './components/App.js';
-        ReactDOM.render(<App />, document.getElementById('root'));
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
     </script>
 </body>
 </html>
