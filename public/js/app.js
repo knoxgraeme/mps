@@ -3,8 +3,22 @@ let supabase;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('/env');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const { SUPABASE_URL, SUPABASE_ANON_KEY } = await response.json();
-        supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        console.log('Supabase URL:', SUPABASE_URL);
+        console.log('Supabase Anon Key:', SUPABASE_ANON_KEY);
+
+        if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+            throw new Error('Supabase credentials are missing');
+        }
+
+        if (typeof supabaseJs === 'undefined' || typeof supabaseJs.createClient !== 'function') {
+            throw new Error('Supabase library is not loaded correctly');
+        }
+
+        supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         const authContainer = document.getElementById('auth-container');
         const contentContainer = document.getElementById('content');
@@ -18,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     } catch (error) {
         console.error('Error initializing app:', error);
+        document.body.innerHTML = `<div class="p-4 bg-red-100 text-red-700">Error: ${error.message}</div>`;
     }
 });
 
