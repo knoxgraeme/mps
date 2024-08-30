@@ -157,6 +157,8 @@ async function handleAddFilter(e) {
         await fetchFilters();
         selectedFilterId = newFilter.id;
         await handleUpdate(newFilter.id);
+        await fetchItems(newFilter.id);  // Fetch items for the new filter
+        renderMarketplaceFeed();  // Re-render the feed to show the new items
     } catch (err) {
         console.error(err);
         alert(err.message);
@@ -169,10 +171,13 @@ function toggleFilterDropdown() {
 }
 
 function handleSelectFilter(e) {
-    const filterId = e.target.closest('[data-filter-id]').dataset.filterId;
-    selectedFilterId = filterId;
-    fetchItems(filterId);
-    toggleFilterDropdown();
+    const filterElement = e.target.closest('[data-filter-id]');
+    if (filterElement) {
+        const filterId = filterElement.dataset.filterId;
+        selectedFilterId = filterId;
+        fetchItems(filterId);
+        toggleFilterDropdown();
+    }
 }
 
 async function handleUpdate(filterId) {
