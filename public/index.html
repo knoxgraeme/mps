@@ -16,7 +16,14 @@
         const { useState, useEffect } = React;
         const { createClient } = supabase;
 
-        const supabase = createClient('https://REPLACE_WITH_YOUR_SUPABASE_PROJECT_URL.supabase.co', 'REPLACE_WITH_YOUR_SUPABASE_ANON_KEY');
+        let supabase;
+
+fetch('/api/supabase-config')
+  .then(response => response.json())
+  .then(config => {
+    supabase = createClient(config.supabaseUrl, config.supabaseKey);
+  })
+  .catch(error => console.error('Error fetching Supabase config:', error));
 
         const Auth = ({ onAuth }) => {
             const [email, setEmail] = useState('');
