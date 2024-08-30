@@ -3,7 +3,7 @@ const axios = require('axios');
 async function getSource(search) {
     console.log(`Fetching source for search: ${JSON.stringify(search)}`);
     try {
-        const url = `https://www.facebook.com/marketplace/${search.city}/search/?query=${encodeURIComponent(search.query)}${search.maxPrice ? '&maxPrice=' + search.maxPrice : ''}`;
+        const url = `https://www.facebook.com/marketplace/${search.city}/search/?query=${encodeURIComponent(search.query)}&maxPrice=${search.maxPrice}`;
         const response = await axios.get('https://app.scrapingbee.com/api/v1', {
             params: {
                 'api_key': process.env.scrapingbee_api_key,
