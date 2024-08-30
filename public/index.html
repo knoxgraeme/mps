@@ -130,7 +130,9 @@
                     <div className="p-4">
                         <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
                         <p className="text-gray-700 text-base mb-2">{item.price}</p>
-                        <p className="text-gray-500 text-sm mb-4">Posted: {formatRelativeTime(item.postedDate)}</p>
+                        <p className="text-gray-500 text-sm mb-1">Location: {item.location || 'Unknown'}</p>
+                        <p className="text-gray-500 text-sm mb-1">Posted: {formatRelativeTime(item.postedDate)}</p>
+                        <p className="text-gray-500 text-sm mb-4">Date: {formatDate(item.postedDate)}</p>
                         <a 
                             href={item.link} 
                             target="_blank" 
