@@ -1,11 +1,11 @@
 modules = ["nodejs-20", "web"]
-run = "npm install && npm run build && npm start"
+run = "npm install && cd client && npm install && npm run build && cd .. && npm start"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm install && npm run build && npm start"]
+run = ["sh", "-c", "npm install && cd client && npm install && npm run build && cd .. && npm start"]
 
 [[ports]]
 localPort = 3000
