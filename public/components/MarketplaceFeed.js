@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import SearchForm from './SearchForm';
-import FilterDropdown from './FilterDropdown';
-import ItemList from './ItemList';
-
 const MarketplaceFeed = () => {
-    const [filters, setFilters] = useState([]);
-    const [selectedFilterId, setSelectedFilterId] = useState(null);
-    const [items, setItems] = useState([]);
-    const [newItems, setNewItems] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [filters, setFilters] = React.useState([]);
+    const [selectedFilterId, setSelectedFilterId] = React.useState(null);
+    const [items, setItems] = React.useState([]);
+    const [newItems, setNewItems] = React.useState([]);
+    const [loading, setLoading] = React.useState(false);
+    const [error, setError] = React.useState(null);
 
     const fetchFilters = async () => {
         try {
@@ -97,7 +92,7 @@ const MarketplaceFeed = () => {
         fetchItems(filterId);
     };
 
-    useEffect(() => {
+    React.useEffect(() => {
         fetchFilters();
     }, []);
 
@@ -144,5 +139,3 @@ const MarketplaceFeed = () => {
         </div>
     );
 };
-
-export default MarketplaceFeed;
