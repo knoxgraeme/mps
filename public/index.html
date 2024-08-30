@@ -14,6 +14,73 @@
     <div id="root"></div>
     <script type="text/babel">
         const { useState, useEffect } = React;
+        const { createClient } = supabase;
+
+        const supabase = createClient('https://your-project-url.supabase.co', 'your-anon-key');
+
+        const Auth = ({ onAuth }) => {
+            const [email, setEmail] = useState('');
+            const [password, setPassword] = useState('');
+            const [loading, setLoading] = useState(false);
+            const [error, setError] = useState(null);
+
+            const handleSignUp = async (e) => {
+                e.preventDefault();
+                setLoading(true);
+                const { error } = await supabase.auth.signUp({ email, password });
+                if (error) setError(error.message);
+                else onAuth();
+                setLoading(false);
+            };
+
+            const handleSignIn = async (e) => {
+                e.preventDefault();
+                setLoading(true);
+                const { error } = await supabase.auth.signInWithPassword({ email, password });
+                if (error) setError(error.message);
+                else onAuth();
+                setLoading(false);
+            };
+
+            return (
+                <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+                    <div className="p-6 bg-white rounded shadow-md">
+                        <h2 className="text-2xl font-bold mb-4">Authentication</h2>
+                        <form className="space-y-4">
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="w-full p-2 border rounded"
+                            />
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                className="w-full p-2 border rounded"
+                            />
+                            <button
+                                onClick={handleSignUp}
+                                disabled={loading}
+                                className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            >
+                                Sign Up
+                            </button>
+                            <button
+                                onClick={handleSignIn}
+                                disabled={loading}
+                                className="w-full p-2 bg-green-500 text-white rounded hover:bg-green-600"
+                            >
+                                Sign In
+                            </button>
+                        </form>
+                        {error && <p className="text-red-500 mt-4">{error}</p>}
+                    </div>
+                </div>
+            );
+        };
 
         const SearchForm = ({ onSubmit }) => {
             const [city, setCity] = useState('');
@@ -108,8 +175,6 @@
             const [items, setItems] = useState([]);
             const [loading, setLoading] = useState(false);
             const [error, setError] = useState(null);
-
-            const supabase = supabase.createClient('https://your-project-url.supabase.co', 'your-anon-key');
 
             const fetchFilters = async () => {
                 try {
@@ -212,6 +277,26 @@
         };
 
         const App = () => {
+            const [session, setSession] = useState(null);
+
+            useEffect(() => {
+                supabase.auth.getSession().then(({ data: { session } }) => {
+                    setSession(session);
+                });
+
+                const {
+                    data: { subscription },
+                } = supabase.auth.onAuthStateChange((_event, session) => {
+                    setSession(session);
+                });
+
+                return () => subscription.unsubscribe();
+            }, []);
+
+            if (!session) {
+                return <Auth onAuth={() => {}} />;
+            }
+
             return (
                 <div className="bg-gray-100 min-h-screen">
                     <header className="bg-blue-600 text-white p-4">
