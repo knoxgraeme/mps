@@ -109,7 +109,7 @@
             const [loading, setLoading] = useState(false);
             const [error, setError] = useState(null);
 
-            const supabase = supabaseClient();
+            const supabase = supabase.createClient('https://your-project-url.supabase.co', 'your-anon-key');
 
             const fetchFilters = async () => {
                 try {
@@ -186,12 +186,6 @@
             useEffect(() => {
                 fetchFilters();
             }, []);
-
-            const supabaseClient = () => {
-                const supabaseUrl = 'https://your-project-url.supabase.co';
-                const supabaseKey = 'your-anon-key';
-                return supabase.createClient(supabaseUrl, supabaseKey);
-            };
 
             if (loading) {
                 return <div className="flex justify-center items-center h-screen">Loading...</div>;
