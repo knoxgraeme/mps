@@ -106,16 +106,6 @@ app.post('/api/scrape/:filterId', async (req, res) => {
     }
 });
 
-app.get('/', async (req, res) => {
-    try {
-        const items = savedFilters.length > 0 ? savedFilters[0].items : [];
-        res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    } catch (error) {
-        console.error('Error loading items for the homepage:', error);
-        res.status(500).send('Error loading items');
-    }
-});
-
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
