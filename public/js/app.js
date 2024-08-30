@@ -94,21 +94,28 @@ function renderMarketplaceFeed() {
             ${renderFilterDropdown()}
         </div>
         ${renderSearchForm()}
-        ${selectedFilterId ? `
-            <div class="mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-semibold">
-                        ${filters.find(f => f.id === selectedFilterId).city} - 
-                        ${filters.find(f => f.id === selectedFilterId).query} 
-                        (Max: $${filters.find(f => f.id === selectedFilterId).maxPrice})
-                    </h2>
-                    <button id="updateBtn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">
-                        Update
-                    </button>
-                </div>
-                ${renderItemList()}
-            </div>
-        ` : ''}
+        ${selectedFilterId ? (() => {
+            const selectedFilter = filters.find(f => f.id === selectedFilterId);
+            if (selectedFilter) {
+                return `
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-2xl font-semibold">
+                                ${selectedFilter.city || 'N/A'} - 
+                                ${selectedFilter.query || 'N/A'} 
+                                (Max: $${selectedFilter.maxPrice || 'N/A'})
+                            </h2>
+                            <button id="updateBtn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors">
+                                Update
+                            </button>
+                        </div>
+                        ${renderItemList()}
+                    </div>
+                `;
+            } else {
+                return '<p>Selected filter not found.</p>';
+            }
+        })() : ''}
     `;
     attachEventListeners();
 }
