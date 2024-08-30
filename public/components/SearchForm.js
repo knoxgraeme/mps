@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-
 const SearchForm = ({ onSubmit }) => {
-    const [city, setCity] = useState('');
-    const [query, setQuery] = useState('');
-    const [maxPrice, setMaxPrice] = useState('');
+    const [city, setCity] = React.useState('');
+    const [query, setQuery] = React.useState('');
+    const [maxPrice, setMaxPrice] = React.useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,5 +40,3 @@ const SearchForm = ({ onSubmit }) => {
         </form>
     );
 };
-
-export default SearchForm;
