@@ -12,10 +12,11 @@ const Auth = () => {
         const session = supabase.auth.session()
         setUser(session?.user ?? null)
 
-        const { data: authListener } = supabase.auth.onAuthStateChange(async (event, session) => {
-            const currentUser = session?.user
-            setUser(currentUser ?? null)
-        })
+        const { data: authListener } = supabase.auth.onAuthStateChange(
+            (event, session) => {
+                setUser(session?.user ?? null)
+            }
+        )
 
         return () => {
             authListener.unsubscribe()
@@ -23,15 +24,13 @@ const Auth = () => {
     }, [])
 
     const signIn = async () => {
-        const { error } = await supabase.auth.signIn({
-            provider: 'google'
-        })
-        if (error) console.log('Error: ', error.message)
+        const { error } = await supabase.auth.signIn({ provider: 'google' })
+        if (error) console.error('Error signing in:', error)
     }
 
     const signOut = async () => {
         const { error } = await supabase.auth.signOut()
-        if (error) console.log('Error: ', error.message)
+        if (error) console.error('Error signing out:', error)
     }
 
     return (
