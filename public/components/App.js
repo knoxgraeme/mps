@@ -1,6 +1,3 @@
-import React from 'react';
-import MarketplaceFeed from './MarketplaceFeed';
-
 const App = () => {
     return (
         <div className="bg-gray-100 min-h-screen">
@@ -15,5 +12,3 @@ const App = () => {
         </div>
     );
 };
-
-export default App;
