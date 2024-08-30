@@ -36,4 +36,4 @@ async function getSource(search) {
     }
 }
 
-module.exports = {getSource}
+module.exports = { getSource };

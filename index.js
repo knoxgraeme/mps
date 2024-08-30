@@ -14,9 +14,12 @@ app.use(express.static('public'));
 let savedFilters = [];
 
 async function getItems(search) {
+    console.log('getItems called with search:', JSON.stringify(search));
     try {
         const source = await scrape.getSource(search);
+        console.log('Source fetched successfully');
         let items = await parse.getSearchResults(source.data);
+        console.log(`Parsed ${items.length} items`);
         return items;
     } catch (err) {
         console.error(`Error processing search: ${err}`);
@@ -42,6 +45,7 @@ app.get('/api/items/:filterId', (req, res) => {
 
 // API route to add a new filter and start scraping
 app.post('/api/filters', async (req, res) => {
+    console.log('Received request to add filter:', req.body);
     const { city, query, maxPrice } = req.body;
     const newFilter = {
         id: savedFilters.length + 1,
@@ -52,6 +56,7 @@ app.post('/api/filters', async (req, res) => {
     };
 
     savedFilters.push(newFilter);
+    console.log('New filter added:', newFilter);
 
     try {
         const newItems = await getItems(newFilter);
@@ -65,10 +70,12 @@ app.post('/api/filters', async (req, res) => {
 
 // API route to update items for a specific filter
 app.post('/api/scrape/:filterId', async (req, res) => {
+    console.log('Received request to scrape for filterId:', req.params.filterId);
     const filterId = parseInt(req.params.filterId);
     const filter = savedFilters.find(f => f.id === filterId);
 
     if (filter) {
+        console.log('Found filter:', filter);
         try {
             const newItems = await getItems(filter);
 
@@ -77,12 +84,14 @@ app.post('/api/scrape/:filterId', async (req, res) => {
             const uniqueNewItems = newItems.filter(item => !existingIds.has(item.id));
 
             filter.items = [...uniqueNewItems, ...filter.items];
+            console.log(`Updated filter with ${uniqueNewItems.length} new items`);
             res.json(filter);
         } catch (error) {
             console.error('Error during scraping:', error);
             res.status(500).json({ error: 'Internal server error during scraping' });
         }
     } else {
+        console.log('Filter not found for id:', filterId);
         res.status(404).json({ error: 'Filter not found' });
     }
 });
