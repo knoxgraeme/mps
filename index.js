@@ -66,6 +66,11 @@ async function getItems() {
     console.log("Updated past items.");
 }
 
+// Add a route for the root path
+app.get('/', (req, res) => {
+  res.send('Marketplace Scraper Bot is running!');
+});
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
