@@ -3,6 +3,7 @@ let filters = [];
 let selectedFilterId = null;
 let items = [];
 let newItems = [];
+let isLoading = false;
 
 // Utility functions
 function formatRelativeTime(dateString) {
@@ -66,6 +67,18 @@ function handleSelectFilter(e) {
 }
 
 function renderItemList() {
+    if (isLoading) {
+        return `
+            <div class="flex justify-center items-center h-64">
+                <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+            </div>
+        `;
+    }
+
+    if (items.length === 0) {
+        return `<p class="text-center text-gray-500">No items found for this filter.</p>`;
+    }
+
     return `
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             ${items.map(item => `
@@ -143,6 +156,9 @@ async function handleAddFilter(e) {
     const maxPrice = document.getElementById('maxPrice').value;
 
     try {
+        isLoading = true;
+        renderMarketplaceFeed();
+
         const response = await fetch('/api/filters', {
             method: 'POST',
             headers: {
@@ -160,6 +176,9 @@ async function handleAddFilter(e) {
     } catch (err) {
         console.error(err);
         alert(err.message);
+    } finally {
+        isLoading = false;
+        renderMarketplaceFeed();
     }
 }
 
@@ -169,14 +188,20 @@ function toggleFilterDropdown() {
 }
 
 function handleSelectFilter(e) {
-    const filterId = e.target.closest('[data-filter-id]').dataset.filterId;
-    selectedFilterId = filterId;
-    fetchItems(filterId);
-    toggleFilterDropdown();
+    const filterElement = e.target.closest('[data-filter-id]');
+    if (filterElement) {
+        const filterId = filterElement.dataset.filterId;
+        selectedFilterId = filterId;
+        fetchItems(filterId);
+        toggleFilterDropdown();
+    }
 }
 
 async function handleUpdate(filterId) {
     try {
+        isLoading = true;
+        renderMarketplaceFeed();
+
         const response = await fetch(`/api/scrape/${filterId}`, {
             method: 'POST',
         });
@@ -191,40 +216,52 @@ async function handleUpdate(filterId) {
         const updatedItems = await updatedItemsResponse.json();
         newItems = updatedItems.filter(updatedItem => !items.some(item => item.id === updatedItem.id)).map(item => item.id);
         items = updatedItems;
-        renderMarketplaceFeed();
     } catch (err) {
         console.error(err);
         alert(err.message);
+    } finally {
+        isLoading = false;
+        renderMarketplaceFeed();
     }
 }
 
 // API calls
 async function fetchFilters() {
     try {
+        isLoading = true;
+        renderMarketplaceFeed();
+
         const response = await fetch('/api/filters');
         if (!response.ok) {
             throw new Error('Failed to fetch filters');
         }
         filters = await response.json();
-        renderMarketplaceFeed();
     } catch (err) {
         console.error(err);
         alert(err.message);
+    } finally {
+        isLoading = false;
+        renderMarketplaceFeed();
     }
 }
 
 async function fetchItems(filterId) {
     try {
+        isLoading = true;
+        renderMarketplaceFeed();
+
         const response = await fetch(`/api/items/${filterId}`);
         if (!response.ok) {
             throw new Error('Failed to fetch items');
         }
         items = await response.json();
         newItems = [];
-        renderMarketplaceFeed();
     } catch (err) {
         console.error(err);
         alert(err.message);
+    } finally {
+        isLoading = false;
+        renderMarketplaceFeed();
     }
 }
 
