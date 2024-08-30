@@ -7,7 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build": "cd client && npm install && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
