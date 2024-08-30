@@ -82,6 +82,12 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/public/index.html'));
 });
 
+// Log all incoming requests
+app.use((req, res, next) => {
+  console.log(`Received request: ${req.method} ${req.url}`);
+  next();
+});
+
 // Schedule the scraping task
 cron.schedule('*/10 * * * *', function() {
     console.log('Running scraping task...');
