@@ -1,297 +1,497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace Scraper</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-        const { useState, useEffect } = React;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marketplace Scraper</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            const { useState, useEffect, useContext, createContext } = React;
 
-        const SearchForm = ({ onSubmit }) => {
-            const [city, setCity] = useState('');
-            const [query, setQuery] = useState('');
-            const [maxPrice, setMaxPrice] = useState('');
+            const AuthContext = createContext(null);
 
-            const handleSubmit = (e) => {
-                e.preventDefault();
-                onSubmit({ city, query, maxPrice });
-                setCity('');
-                setQuery('');
-                setMaxPrice('');
-            };
+            const AuthProvider = ({ children }) => {
+                const [supabase, setSupabase] = useState(null);
+                const [user, setUser] = useState(null);
+                const [loading, setLoading] = useState(true);
 
-            return (
-                <form onSubmit={handleSubmit} className="mb-6 grid grid-cols-1 sm:grid-cols-4 gap-4">
-                    <input
-                        type="text"
-                        placeholder="City"
-                        value={city}
-                        onChange={(e) => setCity(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Query"
-                        value={query}
-                        onChange={(e) => setQuery(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <input
-                        type="number"
-                        placeholder="Max Price"
-                        value={maxPrice}
-                        onChange={(e) => setMaxPrice(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors">
-                        Add Filter
-                    </button>
-                </form>
-            );
-        };
+                useEffect(() => {
+                    const initializeSupabase = async () => {
+                        const { createClient } = supabase;
+                        const supabaseUrl =
+                            "https://knqeawrxxrssddkzfgzy.supabase.co";
+                        const supabaseAnonKey =
+                            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtucWVhd3J4eHJzc2Rka3pmZ3p5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE2OTQwMzYsImV4cCI6MTk5NzI3MDAzNn0.hIi9nJBBJ-1FP_jxjjLLZ0u8nfJfPfvXrXXhSqpQ2As";
+                        const supabaseInstance = createClient(
+                            supabaseUrl,
+                            supabaseAnonKey,
+                        );
+                        setSupabase(supabaseInstance);
 
-        const FilterDropdown = ({ filters, onSelect }) => {
-            const [isOpen, setIsOpen] = useState(false);
+                        const {
+                            data: { session },
+                        } = await supabaseInstance.auth.getSession();
+                        setUser(session?.user ?? null);
+                        setLoading(false);
 
-            return (
-                <div className="relative">
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        const { data: authListener } =
+                            supabaseInstance.auth.onAuthStateChange(
+                                async (event, session) => {
+                                    const currentUser = session?.user;
+                                    setUser(currentUser ?? null);
+                                    setLoading(false);
+                                },
+                            );
+
+                        return () => {
+                            if (authListener && authListener.subscription) {
+                                authListener.subscription.unsubscribe();
+                            }
+                        };
+                    };
+
+                    initializeSupabase();
+                }, []);
+
+                const login = async (email, password) => {
+                    if (!supabase)
+                        return {
+                            error: { message: "Supabase not initialized" },
+                        };
+                    return supabase.auth.signInWithPassword({
+                        email,
+                        password,
+                    });
+                };
+
+                const logout = async () => {
+                    if (!supabase)
+                        return {
+                            error: { message: "Supabase not initialized" },
+                        };
+                    return supabase.auth.signOut();
+                };
+
+                return (
+                    <AuthContext.Provider
+                        value={{ user, login, logout, loading, supabase }}
                     >
-                        Filters ({filters.length})
-                    </button>
-                    {isOpen && (
-                        <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
-                            {filters.map((filter) => (
-                                <div 
-                                    key={filter.id} 
-                                    className="p-2 border-b hover:bg-gray-100 cursor-pointer"
-                                    onClick={() => {
-                                        onSelect(filter.id);
-                                        setIsOpen(false);
-                                    }}
-                                >
-                                    <div className="font-semibold mb-1">{filter.city} - {filter.query}</div>
-                                    <div className="text-sm text-gray-600">Max: ${filter.maxPrice}</div>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            );
-        };
-
-        const ItemList = ({ items, newItems }) => {
-            const formatRelativeTime = (dateString) => {
-                if (!dateString) return 'Unknown';
-                const date = new Date(dateString);
-                if (isNaN(date.getTime())) return 'Invalid Date';
-
-                const now = new Date();
-                const diffInSeconds = Math.floor((now - date) / 1000);
-
-                if (diffInSeconds < 60) return 'Just now';
-                if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} minutes ago`;
-                if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
-                if (diffInSeconds < 2592000) return `${Math.floor(diffInSeconds / 86400)} days ago`;
-                return date.toLocaleString();
+                        {children}
+                    </AuthContext.Provider>
+                );
             };
 
-            return (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {items.map((item) => (
-                        <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 relative">
-                            {newItems.includes(item.id) && (
-                                <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                                    New
-                                </span>
+            const Login = () => {
+                const [email, setEmail] = useState("");
+                const [password, setPassword] = useState("");
+                const { login } = useContext(AuthContext);
+
+                const handleLogin = async (e) => {
+                    e.preventDefault();
+                    try {
+                        const { error } = await login(email, password);
+                        if (error) throw error;
+                    } catch (error) {
+                        alert(error.message);
+                    }
+                };
+
+                return (
+                    <form onSubmit={handleLogin} className="space-y-4">
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="w-full p-2 border rounded"
+                        />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="w-full p-2 border rounded"
+                        />
+                        <button
+                            type="submit"
+                            className="w-full p-2 bg-blue-500 text-white rounded"
+                        >
+                            Log In
+                        </button>
+                    </form>
+                );
+            };
+
+            const Header = () => {
+                const { user, logout } = useContext(AuthContext);
+
+                return (
+                    <header className="bg-blue-600 text-white p-4 shadow-md">
+                        <div className="container mx-auto flex justify-between items-center">
+                            <h1 className="text-2xl font-bold">
+                                Facebook Marketplace Scraper
+                            </h1>
+                            {user && (
+                                <button
+                                    onClick={logout}
+                                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                                >
+                                    Logout
+                                </button>
                             )}
-                            <img src={item.primary_listing_photo} alt={item.marketplace_title} className="w-full h-48 object-cover" />
-                            <div className="p-4">
-                                <h2 className="font-bold text-xl mb-2 truncate">{item.marketplace_title}</h2>
-                                <p className="text-gray-700 text-base mb-2">{item.formatted_amount}</p>
-                                <p className="text-gray-500 text-sm mb-1">Location: {item.city}, {item.state}</p>
-                                <p className="text-gray-500 text-sm mb-1">Status: {item.is_sold ? 'Sold' : item.is_pending ? 'Pending' : 'Available'}</p>
-                                <p className="text-gray-500 text-sm mb-1">Seen: {formatRelativeTime(item.create_date)}</p>
-                                <a 
-                                    href={item.link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block transition-colors"
-                                >
-                                    View Listing
-                                </a>
-                            </div>
                         </div>
-                    ))}
-                </div>
-            );
-        };
-
-        const MarketplaceFeed = () => {
-            const [filters, setFilters] = useState([]);
-            const [selectedFilterId, setSelectedFilterId] = useState(null);
-            const [items, setItems] = useState([]);
-            const [newItems, setNewItems] = useState([]);
-            const [loading, setLoading] = useState(false);
-            const [error, setError] = useState(null);
-
-            const fetchFilters = async () => {
-                try {
-                    const response = await fetch('/api/filters');
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch filters');
-                    }
-                    const data = await response.json();
-                    setFilters(data);
-                } catch (err) {
-                    setError(err.message);
-                }
+                    </header>
+                );
             };
 
-            const fetchItems = async (filterId) => {
-                setLoading(true);
-                try {
-                    const response = await fetch(`/api/items/${filterId}`);
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch items');
-                    }
-                    const data = await response.json();
-                    setItems(data);
-                    setNewItems([]);
-                    setError(null);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
+            const SearchForm = ({ onSubmit }) => {
+                const [city, setCity] = useState("");
+                const [query, setQuery] = useState("");
+                const [maxPrice, setMaxPrice] = useState("");
+
+                const handleSubmit = (e) => {
+                    e.preventDefault();
+                    onSubmit({ city, query, maxPrice });
+                    setCity("");
+                    setQuery("");
+                    setMaxPrice("");
+                };
+
+                return (
+                    <form
+                        onSubmit={handleSubmit}
+                        className="mb-6 grid grid-cols-1 sm:grid-cols-4 gap-4"
+                    >
+                        <input
+                            type="text"
+                            placeholder="City"
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Query"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <input
+                            type="number"
+                            placeholder="Max Price"
+                            value={maxPrice}
+                            onChange={(e) => setMaxPrice(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <button
+                            type="submit"
+                            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        >
+                            Add Filter
+                        </button>
+                    </form>
+                );
             };
 
-            const handleAddFilter = async (filterParams) => {
-                setLoading(true);
-                try {
-                    const response = await fetch('/api/filters', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(filterParams),
-                    });
-                    if (!response.ok) {
-                        throw new Error('Failed to add filter');
-                    }
-                    const newFilter = await response.json();
-                    await fetchFilters();
-                    setSelectedFilterId(newFilter.id);
-                    await handleUpdate(newFilter.id);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
-            };
+            const FilterDropdown = ({ filters, onSelect }) => {
+                const [isOpen, setIsOpen] = useState(false);
 
-            const handleUpdate = async (filterId) => {
-                setLoading(true);
-                try {
-                    const response = await fetch(`/api/scrape/${filterId}`, {
-                        method: 'POST',
-                    });
-                    if (!response.ok) {
-                        throw new Error('Failed to update filter');
-                    }
-                    await fetchFilters();
-                    const updatedItemsResponse = await fetch(`/api/items/${filterId}`);
-                    if (!updatedItemsResponse.ok) {
-                        throw new Error('Failed to fetch updated items');
-                    }
-                    const updatedItems = await updatedItemsResponse.json();
-                    const newItemIds = updatedItems.filter(updatedItem => !items.some(item => item.id === updatedItem.id)).map(item => item.id);
-                    setItems(updatedItems);
-                    setNewItems(newItemIds);
-                    setError(null);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
-            };
-
-            const handleSelectFilter = (filterId) => {
-                setSelectedFilterId(filterId);
-                fetchItems(filterId);
-            };
-
-            useEffect(() => {
-                fetchFilters();
-            }, []);
-
-            const selectedFilter = filters.find(filter => filter.id === selectedFilterId);
-
-            if (loading) {
-                return <div className="flex justify-center items-center h-screen">
-                    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
-                                    </div>;
-                                }
-
-                                if (error) {
-                                    return <div className="text-red-500 text-center p-4 bg-red-100 rounded">{error}</div>;
-                                }
-
-                                return (
-                                    <div className="container mx-auto px-4 py-8">
-                                        <div className="mb-8 flex justify-between items-center">
-                                            <h1 className="text-3xl font-bold text-gray-800">Marketplace Scraper</h1>
-                                            <FilterDropdown
-                                                filters={filters}
-                                                onSelect={handleSelectFilter}
-                                            />
+                return (
+                    <div className="relative">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        >
+                            Filters ({filters.length})
+                        </button>
+                        {isOpen && (
+                            <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
+                                {filters.map((filter) => (
+                                    <div
+                                        key={filter.id}
+                                        className="p-2 border-b hover:bg-gray-100 cursor-pointer"
+                                        onClick={() => {
+                                            onSelect(filter.id);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <div className="font-semibold mb-1">
+                                            {filter.city} - {filter.query}
                                         </div>
-                                        <SearchForm onSubmit={handleAddFilter} />
-                                        {selectedFilter && (
-                                            <div className="mb-6">
-                                                <div className="flex justify-between items-center mb-4">
-                                                    <h2 className="text-2xl font-semibold">
-                                                        {selectedFilter.city} - {selectedFilter.query} (Max: ${selectedFilter.maxPrice})
-                                                    </h2>
-                                                    <button
-                                                        onClick={() => handleUpdate(selectedFilterId)}
-                                                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
-                                                    >
-                                                        Update
-                                                    </button>
-                                                </div>
-                                                <ItemList items={items} newItems={newItems} />
-                                            </div>
-                                        )}
+                                        <div className="text-sm text-gray-600">
+                                            Max: ${filter.maxPrice}
+                                        </div>
                                     </div>
-                                );
-                            };
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                );
+            };
 
-                            const App = () => {
-                                return (
-                                    <div className="bg-gray-100 min-h-screen">
-                                        <header className="bg-blue-600 text-white p-4 shadow-md">
-                                            <div className="container mx-auto">
-                                                <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
-                                            </div>
-                                        </header>
-                                        <main className="mt-6">
-                                            <MarketplaceFeed />
-                                        </main>
-                                    </div>
-                                );
-                            };
+            const ItemList = ({ items, newItems }) => {
+                const formatRelativeTime = (dateString) => {
+                    if (!dateString) return "Unknown";
+                    const date = new Date(dateString);
+                    if (isNaN(date.getTime())) return "Invalid Date";
 
-                            ReactDOM.render(<App />, document.getElementById('root'));
-                        </script>
-                    </body>
-                    </html>
+                    const now = new Date();
+                    const diffInSeconds = Math.floor((now - date) / 1000);
+
+                    if (diffInSeconds < 60) return "Just now";
+                    if (diffInSeconds < 3600)
+                        return `${Math.floor(diffInSeconds / 60)} minutes ago`;
+                    if (diffInSeconds < 86400)
+                        return `${Math.floor(diffInSeconds / 3600)} hours ago`;
+                    if (diffInSeconds < 2592000)
+                        return `${Math.floor(diffInSeconds / 86400)} days ago`;
+                    return date.toLocaleString();
+                };
+
+                return (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {items.map((item) => (
+                            <div
+                                key={item.id}
+                                className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 relative"
+                            >
+                                {newItems.includes(item.id) && (
+                                    <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                                        New
+                                    </span>
+                                )}
+                                <img
+                                    src={item.primary_listing_photo}
+                                    alt={item.marketplace_title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-4">
+                                    <h2 className="font-bold text-xl mb-2 truncate">
+                                        {item.marketplace_title}
+                                    </h2>
+                                    <p className="text-gray-700 text-base mb-2">
+                                        {item.formatted_amount}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Location: {item.city}, {item.state}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Status:{" "}
+                                        {item.is_sold
+                                            ? "Sold"
+                                            : item.is_pending
+                                              ? "Pending"
+                                              : "Available"}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Seen:{" "}
+                                        {formatRelativeTime(item.create_date)}
+                                    </p>
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block transition-colors"
+                                    >
+                                        View Listing
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                );
+            };
+
+            const MarketplaceFeed = () => {
+                const [filters, setFilters] = useState([]);
+                const [selectedFilterId, setSelectedFilterId] = useState(null);
+                const [items, setItems] = useState([]);
+                const [newItems, setNewItems] = useState([]);
+                const [loading, setLoading] = useState(false);
+                const [error, setError] = useState(null);
+                const { supabase } = useContext(AuthContext);
+
+                const fetchFilters = async () => {
+                    try {
+                        const { data, error } = await supabase
+                            .from("filters")
+                            .select("*");
+                        if (error) throw error;
+                        setFilters(data);
+                    } catch (err) {
+                        setError(err.message);
+                    }
+                };
+
+                const fetchItems = async (filterId) => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch(`/api/items/${filterId}`);
+                        if (!response.ok) {
+                            throw new Error("Failed to fetch items");
+                        }
+                        const data = await response.json();
+                        setItems(data);
+                        setNewItems([]);
+                        setError(null);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleAddFilter = async (filterParams) => {
+                    setLoading(true);
+                    try {
+                        const { data, error } = await supabase
+                            .from("filters")
+                            .insert([filterParams])
+                            .select();
+                        if (error) throw error;
+                        await fetchFilters();
+                        setSelectedFilterId(data[0].id);
+                        await handleUpdate(data[0].id);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleUpdate = async (filterId) => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch(
+                            `/api/scrape/${filterId}`,
+                            {
+                                method: "POST",
+                            },
+                        );
+                        if (!response.ok) {
+                            throw new Error("Failed to update filter");
+                        }
+                        await fetchFilters();
+                        const updatedItemsResponse = await fetch(
+                            `/api/items/${filterId}`,
+                        );
+                        if (!updatedItemsResponse.ok) {
+                            throw new Error("Failed to fetch updated items");
+                        }
+                        const updatedItems = await updatedItemsResponse.json();
+                        const newItemIds = updatedItems
+                            .filter(
+                                (updatedItem) =>
+                                    !items.some(
+                                        (item) => item.id === updatedItem.id,
+                                    ),
+                            )
+                            .map((item) => item.id);
+                        setItems(updatedItems);
+                        setNewItems(newItemIds);
+                        setError(null);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleSelectFilter = (filterId) => {
+                    setSelectedFilterId(filterId);
+                    fetchItems(filterId);
+                };
+
+                useEffect(() => {
+                    fetchFilters();
+                }, []);
+
+                const selectedFilter = filters.find(
+                    (filter) => filter.id === selectedFilterId,
+                );
+
+                if (loading) {
+                    return (
+                        <div className="flex justify-center items-center h-screen">
+                            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                        </div>
+                    );
+                }
+
+                if (error) {
+                    return (
+                        <div className="text-red-500 text-center p-4 bg-red-100 rounded">
+                            {error}
+                        </div>
+                    );
+                }
+
+                return (
+                    <div className="container mx-auto px-4 py-8">
+                        <div className="mb-8 flex justify-between items-center">
+                            <h1 className="text-3xl font-bold text-gray-800">
+                                Marketplace Scraper
+                            </h1>
+                            <FilterDropdown
+                                filters={filters}
+                                onSelect={handleSelectFilter}
+                            />
+                        </div>
+                        <SearchForm onSubmit={handleAddFilter} />
+                        {selectedFilter && (
+                            <div className="mb-6">
+                                <div className="flex justify-between items-center mb-4">
+                                    <h2 className="text-2xl font-semibold">
+                                        {selectedFilter.city} -{" "}
+                                        {selectedFilter.query} (Max: $
+                                        {selectedFilter.maxPrice})
+                                    </h2>
+                                    <button
+                                        onClick={() =>
+                                            handleUpdate(selectedFilterId)
+                                        }
+                                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                                    >
+                                        Update
+                                    </button>
+                                </div>
+                                <ItemList items={items} newItems={newItems} />
+                            </div>
+                        )}
+                    </div>
+                );
+            };
+
+            const App = () => {
+                const { user, loading } = useContext(AuthContext);
+
+                if (loading) {
+                    return <div>Loading...</div>;
+                }
+
+                return (
+                    <div className="bg-gray-100 min-h-screen">
+                        <Header />
+                        <main className="mt-6">
+                            {user ? <MarketplaceFeed /> : <Login />}
+                        </main>
+                    </div>
+                );
+            };
+
+            ReactDOM.render(
+                <AuthProvider>
+                    <App />
+                </AuthProvider>,
+                document.getElementById("root"),
+            );
+        </script>
+    </body>
+</html>

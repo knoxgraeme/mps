@@ -535,7 +535,440 @@
     "city": "vancouver",
     "query": "dropper post",
     "maxPrice": "300",
-    "items": []
+    "items": [
+      {
+        "id": "1272981183730764",
+        "url": "https://www.facebook.com/marketplace/item/1272981183730764",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457316379_477947301823398_6986332450223896167_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=oMsnN-QYDLYQ7kNvgGzn0EO&_nc_ht=scontent.fagc3-2.fna&oh=00_AYAGT31oiSgIW1xZNIOwLEWDTqyYRvJIFdAqIeuZFQLNng&oe=66D737AC",
+        "formatted_amount": "CA$80",
+        "city": "Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "Dropper post - lever driven",
+        "link": "https://www.facebook.com/marketplace/item/1272981183730764",
+        "seller_id": "pfbid02Dyyyf3t5zZmgxskaxQWLyqEiQxJfM1J3Tm8taaSswctUCDxTqUSC4gi5fu5nDdJSl",
+        "seller_name": "Evan Kyk",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "501348162639751",
+        "url": "https://www.facebook.com/marketplace/item/501348162639751",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457329224_495138669928915_3332406257288321714_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=OxJT_6E30tQQ7kNvgFBKQqj&_nc_ht=scontent.fagc3-2.fna&oh=00_AYDyNhPAjCkibMwmFWNrHOP-0XxIl6tzRpGAWNHYR54nYg&oe=66D728DD",
+        "formatted_amount": "CA$35",
+        "city": "Delta",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Giant Contact dropper post and saddle",
+        "link": "https://www.facebook.com/marketplace/item/501348162639751",
+        "seller_id": "pfbid02GDHeu1VFBYb5wBwtTC5pdJ5p1YSvovy8D38DDgr38XVs1xp3JMbb8r4mLrzCqxKpl",
+        "seller_name": "Leoh Francisco",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1032224028606554",
+        "url": "https://www.facebook.com/marketplace/item/1032224028606554",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457132382_1174465423664765_7427915339400833330_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=a0Qy0CM4v3IQ7kNvgFawgJ_&_nc_ht=scontent.fagc3-2.fna&oh=00_AYASX-6ExYdzZNhAhOzaVo6XPzuOAQed8cfZukdNTXzrKA&oe=66D75183",
+        "formatted_amount": "CA$75",
+        "city": "Burnaby",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "KS RAGE I dropper post",
+        "link": "https://www.facebook.com/marketplace/item/1032224028606554",
+        "seller_id": "pfbid036FEkF4mytdx8iJaN4vjuTzWTJqwDMHMdRaM6tLJA7b3BwDAUezHbwP9VjFrN2RB9l",
+        "seller_name": "Karla Koles",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "336554059491455",
+        "url": "https://www.facebook.com/marketplace/item/336554059491455",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/449105480_2024214087975951_1901980517148742518_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=ixPHsB9j_WQQ7kNvgEs024W&_nc_ht=scontent.fagc3-2.fna&oh=00_AYDwUg2WmjZSTIg8VRjQmvL8chg-mtfTfJXsufAEgo5T1Q&oe=66D726EB",
+        "formatted_amount": "CA$50",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "TransX 125 mm Dropper Post",
+        "link": "https://www.facebook.com/marketplace/item/336554059491455",
+        "seller_id": "pfbid0axUYBnmpXtbqXEsiRx7gkvcimMkJ3kUiGHs6eC4XiuPDDEn2bfcWerbZpPmHjCJwl",
+        "seller_name": "Liz Ro",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "3951415308424789",
+        "url": "https://www.facebook.com/marketplace/item/3951415308424789",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457205883_1531401781084256_4992915975413819805_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=qxOL-56TntgQ7kNvgEoiImY&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBFXSd2RYQz2ovpkLfe6fCcAO3X01Y2rrndyb-b4FGlTQ&oe=66D748AB",
+        "formatted_amount": "CA$100",
+        "city": "Surrey",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "KS dropper post",
+        "link": "https://www.facebook.com/marketplace/item/3951415308424789",
+        "seller_id": "pfbid0az1DYdLfXmYSrP3D7bPTTGRijce4CW9bSw9c5BRxfK9J5QKqErHcLwJtyVyUWYMZl",
+        "seller_name": "Phoenix Wolfe",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "473562885459142",
+        "url": "https://www.facebook.com/marketplace/item/473562885459142",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/453095178_522783600176369_5321316629272294641_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=5CWJczouZ7QQ7kNvgGSPDT5&_nc_ht=scontent.fagc3-2.fna&oh=00_AYC22UZYv8OmupFnDxxcD8FhIeDjKby7JzQNBHqenDS8cQ&oe=66D73C8A",
+        "formatted_amount": "CA$150",
+        "city": "Saanich",
+        "state": "BC",
+        "marketplace_category_id": "1670493229902393",
+        "marketplace_title": "220-240 mm One Up Dropper Post",
+        "link": "https://www.facebook.com/marketplace/item/473562885459142",
+        "seller_id": "pfbid02L2DiK1KKGqKorfyKNWDGggu5J6QCo8U8TQBYTEbjyUzNS5ccF5cuF1FYuVaM6oJ2l",
+        "seller_name": "Harry Smethurst",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "496395006570725",
+        "url": "https://www.facebook.com/marketplace/item/496395006570725",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457189473_880165060667150_4728751770988982921_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=zwMigJSI2xUQ7kNvgGv30yP&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBgmhPuTBD9EbrZy_owcYRphYIizn2fbzCAcUHHaPFALw&oe=66D739D2",
+        "formatted_amount": "CA$50",
+        "city": "Whistler",
+        "state": "BC",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Dropper post",
+        "link": "https://www.facebook.com/marketplace/item/496395006570725",
+        "seller_id": "pfbid023LQBLCVfuGeUW3yeNmhqrbZD8xFazQzY1SG2xLAwq3sACiDsEXtqwYKJjnv9amBdl",
+        "seller_name": "Dominika Yuri",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "805524521422083",
+        "url": "https://www.facebook.com/marketplace/item/805524521422083",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/435160102_1144444079928567_4113914276227461219_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=xd_KfuUo5zEQ7kNvgEN68KF&_nc_ht=scontent.fagc3-2.fna&oh=00_AYCFrnwvD9S5kak0aL2ZetYYW2mhikKADC6Mp5VBnv7o_A&oe=66D75BDF",
+        "formatted_amount": "CA$70",
+        "city": "Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "RockShox dropper post",
+        "link": "https://www.facebook.com/marketplace/item/805524521422083",
+        "seller_id": "pfbid0EWtdts1ZzfFhjXMwqcyQn48HAMfx95uYM6PiYgswn1dLcvgDZ36feuhQtm45Rn7Bl",
+        "seller_name": "Simon Noel",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1987149328372404",
+        "url": "https://www.facebook.com/marketplace/item/1987149328372404",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/455517275_872376051514182_8109152258267348892_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=UleyuEfp-PcQ7kNvgEsa5e6&_nc_ht=scontent.fagc3-2.fna&oh=00_AYCqHn6OyvY6m9T0mepW-JWjNdQLIHqlIvNOj5W76FT8TA&oe=66D729F5",
+        "formatted_amount": "CA$80",
+        "city": "Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "SDG Tellis Dropper Post 170mm",
+        "link": "https://www.facebook.com/marketplace/item/1987149328372404",
+        "seller_id": "pfbid02d5mmuNyDEH4KCbg6fBHo4UsdG6UyR8NsvW29GAmv2hVVJrLnWSZT66XHjmXgD1X3l",
+        "seller_name": "Jimmy Gunka",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "2199936687052715",
+        "url": "https://www.facebook.com/marketplace/item/2199936687052715",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/456734562_8718301154855859_3014927929095892399_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=YxuFkYwlHVUQ7kNvgE-A0qs&_nc_ht=scontent.fagc3-2.fna&oh=00_AYA7ovLFV07F3Ths5MT0hbuplP-wJ1E9EFskF8idkDwYsg&oe=66D73593",
+        "formatted_amount": "CA$150",
+        "city": "North Vancouver District",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "OneUp Dropper Post",
+        "link": "https://www.facebook.com/marketplace/item/2199936687052715",
+        "seller_id": "pfbid02jVR1b4LGUJHEBd9V7V7FbE58kKFpmr5uX4FMHYkdEy4BH4sogemG6iqaG9f11iZil",
+        "seller_name": "Roz Ar",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1682365279270830",
+        "url": "https://www.facebook.com/marketplace/item/1682365279270830",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/455852542_392103023548192_6812240113740758984_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=bSIRF5hA6U8Q7kNvgG3JhXr&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBvUu8FDR7IbO-15gEG6LBew74D7B8tiC_O8WqPAUcSuQ&oe=66D726F9",
+        "formatted_amount": "CA$80",
+        "city": "Saanich",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Rockshox reverb dropper post \n\n31.6mm size",
+        "link": "https://www.facebook.com/marketplace/item/1682365279270830",
+        "seller_id": "pfbid02qeCoDB3yTS2gq3himMMGPZ2qg5ESo59qsJJdMcGgXVBWSAez3MCtBej1kfHyCJJjl",
+        "seller_name": "EmieSai Cy",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1490022468279244",
+        "url": "https://www.facebook.com/marketplace/item/1490022468279244",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/452665467_1023923072079080_3114603143875487989_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=UOBNCdAnALMQ7kNvgH1efyR&_nc_ht=scontent.fagc3-2.fna&oh=00_AYCfZP3SDRajKGOicjCGrUcQ4LHfopZVZeuNKJPGoizVnA&oe=66D72D09",
+        "formatted_amount": "CA$50",
+        "city": "Squamish",
+        "state": "BC",
+        "marketplace_category_id": "1670493229902393",
+        "marketplace_title": "Dropper post 30.9/345",
+        "link": "https://www.facebook.com/marketplace/item/1490022468279244",
+        "seller_id": "pfbid0ky9QZNhWg3j7iJN72mGCehDtGa5GYFsDMFCkWfuLd4zzjisp48xMVzo7C6xMdrY8l",
+        "seller_name": "Emilie Green",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1309742689997011",
+        "url": "https://www.facebook.com/marketplace/item/1309742689997011",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/452415791_1652804568885515_8996612962124570207_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=nhj2cWleN8AQ7kNvgEUPkwr&_nc_ht=scontent.fagc3-2.fna&oh=00_AYC_JTtR4rFxxFMbluej6_-76Miv-unfIJ9UdZ6a7Hs_qA&oe=66D7493C",
+        "formatted_amount": "CA$50",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Rockshox reverb 150mm 31.6mm dropper post",
+        "link": "https://www.facebook.com/marketplace/item/1309742689997011",
+        "seller_id": "pfbid02vufWv33c79VHv8ukNFyi14oPSmz2SdkmrojNpNPfeiiwarf4zQ6xAJtyS33CGmrul",
+        "seller_name": "Michael Lojek",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "778016440958177",
+        "url": "https://www.facebook.com/marketplace/item/778016440958177",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/424687724_7504457772937859_5855401068413985954_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=5s_6_SK1T8EQ7kNvgHlZ22x&_nc_ht=scontent.fagc3-2.fna&oh=00_AYAiJ1i2fCnDvtajz2RluN1-vUoLoFm___ZTwI3Sdgt6oA&oe=66D7339D",
+        "formatted_amount": "CA$60",
+        "city": "Richmond",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "Dropper post  SDG Tellis 170mm 31.6mm",
+        "link": "https://www.facebook.com/marketplace/item/778016440958177",
+        "seller_id": "pfbid0eUUoGNcpjEgQuvex28sSWeGqLmgzCXBEHs8vaRnpJFDU7itEKaw3xrviA5ePAC6ml",
+        "seller_name": "Brian Guan",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1720701742034487",
+        "url": "https://www.facebook.com/marketplace/item/1720701742034487",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/456960032_1243960946958486_4061390486167846361_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=ULVcQWjt0egQ7kNvgHgVvCE&_nc_ht=scontent.fagc3-2.fna&oh=00_AYCK4sVvUrSFlOACx_FSZKa0dx1Zurh4QnDPghHUMHZEKg&oe=66D73512",
+        "formatted_amount": "CA$140",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "Dropper post 170mm 30.9mm mtb",
+        "link": "https://www.facebook.com/marketplace/item/1720701742034487",
+        "seller_id": "pfbid0Dgqa2THdfpxyUcitqSyUyeESdin6LYnoy9XyqfG2iSgm2oAuxovBhtCEt7EY3cyPl",
+        "seller_name": "Nico Stark",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "518768740548392",
+        "url": "https://www.facebook.com/marketplace/item/518768740548392",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/457340593_348402058238807_7417905950154722719_n.jpg?stp=c0.325.229.229a_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=qycwmeAQnZEQ7kNvgFJGxyv&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBpyRc6c39gLV5hdwfHBxjxP4kxTnjBB__L5-ZnjZhXvA&oe=66D7284A",
+        "formatted_amount": "CA$150",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "PNW Bachelor Dropper post (30.9mm diameter)",
+        "link": "https://www.facebook.com/marketplace/item/518768740548392",
+        "seller_id": "pfbid0snABbfDSRoicBveXLwzCEew3Q98Krx843bag8aZewhZq7vhcnAikkZmQTAwzYuYcl",
+        "seller_name": "Gregory More O'Ferrall",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "851704846427011",
+        "url": "https://www.facebook.com/marketplace/item/851704846427011",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/452965346_1224767848967520_7694809208489257422_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=2PeavApCChYQ7kNvgFbudXI&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBBOK6SUdzSuG948vg1RJ7p5EdJE03DKGTiuHF9m-xR1w&oe=66D72950",
+        "formatted_amount": "CA$100",
+        "city": "Port Moody",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "X Fusion Manic 150mm dropper post",
+        "link": "https://www.facebook.com/marketplace/item/851704846427011",
+        "seller_id": "pfbid0aRTdUERpsvty3db5XbgvCyLez84jtdKVsfp4xsqf6RgQUSzyXB72xZQotfBSyvu3l",
+        "seller_name": "Nicole Hayes",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "800277928846472",
+        "url": "https://www.facebook.com/marketplace/item/800277928846472",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/456971810_3089154541225642_373120244584527849_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=Md4MzfPhucQQ7kNvgF_cyHp&_nc_ht=scontent.fagc3-2.fna&oh=00_AYDXYkQtm9R_e8ytegeVoqX0oFQNPRUbUwfKrkEvFlXzSQ&oe=66D7597C",
+        "formatted_amount": "CA$100",
+        "city": "Nanaimo District",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "Ks dropper post",
+        "link": "https://www.facebook.com/marketplace/item/800277928846472",
+        "seller_id": "pfbid031HoAheKARPGyGKCVqPGeewGkziZ3sVEr3VYBb4vDwHRz7R31Pcno3BfB3CW4H51Ql",
+        "seller_name": "Ross Manson",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1961866710940730",
+        "url": "https://www.facebook.com/marketplace/item/1961866710940730",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/454151545_805155318112259_8478937368200061142_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=5q7IsnYbPngQ7kNvgGPHj5i&_nc_ht=scontent.fagc3-2.fna&oh=00_AYCo2XEhZhWVUT4JdvaIEI_NISihbzwAmaawO1VN-YPfrg&oe=66D742C5",
+        "formatted_amount": "CA$60",
+        "city": "Central Saanich",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "XFusion manic 150mm 31.6mm dropper post",
+        "link": "https://www.facebook.com/marketplace/item/1961866710940730",
+        "seller_id": "pfbid02EfqxP2Mpr6KNrjM388vw2ey9gwaaQrFQKYJidAo1f4t2unhVR9F5Fc1Jibe3Kci9l",
+        "seller_name": "Dean Steinke",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1835027030313406",
+        "url": "https://www.facebook.com/marketplace/item/1835027030313406",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/445450635_942954904193708_5851093074079525895_n.jpg?stp=c47.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=SPXwVrqSR_8Q7kNvgE9IVhB&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBQxHpm8drK7PExxmySS09BBsWyUgMJ0ntTlFo9c7bhCg&oe=66D75B6A",
+        "formatted_amount": "CA$125",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "Fox Transfer Dropper Post 125mm",
+        "link": "https://www.facebook.com/marketplace/item/1835027030313406",
+        "seller_id": "pfbid02XuLTF5LK8CQL6j6eZHxXWLBeTN2BHaBToCgGu9Zr2r8N4Q7zSTnZJjFFAQwAvsMxl",
+        "seller_name": "Louie Hughs",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "715561364039910",
+        "url": "https://www.facebook.com/marketplace/item/715561364039910",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/452241501_459763496864154_4770550538777619638_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=nzxOm9YvLUkQ7kNvgHp5BaR&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBWn40WNlZE4rp5dGWUDaOtsCfgla4xL-Oj1lJjxi0bOg&oe=66D73021",
+        "formatted_amount": "CA$100",
+        "city": "Squamish",
+        "state": "BC",
+        "marketplace_category_id": "1658310421102081",
+        "marketplace_title": "FOX/Easton Gravel Dropper Posts",
+        "link": "https://www.facebook.com/marketplace/item/715561364039910",
+        "seller_id": "pfbid02JNLJD4fCAf7jQzU14hWw2wsenynoe7XPu9wouj9XbCw4wj4f9RcwswcpUeqsQpoYl",
+        "seller_name": "Nicholas Nigel Kupiak",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1547601162820339",
+        "url": "https://www.facebook.com/marketplace/item/1547601162820339",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/453128032_518594244169976_7038117199847435897_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=KO3QEyNMzRsQ7kNvgH3HFP7&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBX1H12o6MVei_3ICNEg4IA2AiL0LEMC6pc7aPw8UltNQ&oe=66D729FE",
+        "formatted_amount": "CA$100",
+        "city": "Victoria",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "One up V2 dropper post 210mm",
+        "link": "https://www.facebook.com/marketplace/item/1547601162820339",
+        "seller_id": "pfbid02c9H1tFMfyRseREVcim88tkzaJSxGE2UfotjUqs55mG9qLeH22CqGCfqcWpAoS4SUl",
+        "seller_name": "Jesse Higgins",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "1011944383689472",
+        "url": "https://www.facebook.com/marketplace/item/1011944383689472",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/436554197_425156860442619_891617725462117953_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=b-B61c79WPMQ7kNvgE4nHZy&_nc_ht=scontent.fagc3-2.fna&oh=00_AYDjMsnUcmah92ti8wxkwkXVfj3LUBQWtPuZcJ_54ZwZmg&oe=66D72E4A",
+        "formatted_amount": "CA$100",
+        "city": "North Vancouver",
+        "state": "BC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "SDG tellis dropper post",
+        "link": "https://www.facebook.com/marketplace/item/1011944383689472",
+        "seller_id": "pfbid02HpSjs7v6vPopQri8LA1cL9y3tixewFELUySviBv9UdghhpZgCZ4NCk376ExyCemRl",
+        "seller_name": "Bella Roeleveld",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      },
+      {
+        "id": "869756148341513",
+        "url": "https://www.facebook.com/marketplace/item/869756148341513",
+        "primary_listing_photo": "https://scontent.fagc3-2.fna.fbcdn.net/v/t45.5328-4/452065346_1164961137891860_5934935460118764347_n.jpg?stp=c151.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=PZLGzoe1ciUQ7kNvgFOLzWY&_nc_ht=scontent.fagc3-2.fna&oh=00_AYBi0d9bnDq2F3MNz2u3O0wKHsV8UMUKkbcHtGexF-GrNw&oe=66D73F0E",
+        "formatted_amount": "CA$225",
+        "city": "North Vancouver District",
+        "state": "BC",
+        "marketplace_category_id": "757715671026531",
+        "marketplace_title": "Fox Transfer Dropper Post (Kashima)",
+        "link": "https://www.facebook.com/marketplace/item/869756148341513",
+        "seller_id": "pfbid0n6zvPaocUr2GnuHNyTQpkfPanpuv1KFqCmDc7GzfDnmssz2CATpUnQp5MPEZHXysl",
+        "seller_name": "Chris Mullen",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:13.778Z"
+      }
+    ]
   },
   {
     "id": 5,
@@ -721,171 +1154,435 @@
     "items": [
       {
         "id": "904412938180724",
+        "url": "https://www.facebook.com/marketplace/item/904412938180724",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/455347652_1052858673033688_1729470103911161151_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=NQcKmQlfkdsQ7kNvgFrAbj4&_nc_ht=scontent-mia3-2.xx&oh=00_AYAvuVyEjfrQ7ERXHVAP7byuCiFsHWFvxzjQmodwk39dLw&oe=66D743B1",
+        "formatted_amount": "CA$1,500",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "Boat and trailer",
         "link": "https://www.facebook.com/marketplace/item/904412938180724",
-        "title": "Boat and trailer",
-        "price": "CA$1,500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/455347652_1052858673033688_1729470103911161151_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=NQcKmQlfkdsQ7kNvgFVMzwX&_nc_ht=scontent-dfw5-1.xx&oh=00_AYB6NCtT-PY8dKcCGk7BIQ5NIA_CRaF_yGifptLtCq1oAQ&oe=66D70B71"
-      },
-      {
-        "id": "1737561677014682",
-        "link": "https://www.facebook.com/marketplace/item/1737561677014682",
-        "title": "1977 General Marine co-ranger (17 foot)",
-        "price": "CA$1,450",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/457520953_1485464715477201_3556554682502321013_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=RP7SuzYOAnIQ7kNvgE_a8or&_nc_ht=scontent-dfw5-2.xx&oh=00_AYDU7XUfXSq3tOhKiqNoo_viSC2WFHdOkbEG8MluNp6EHA&oe=66D729AF"
+        "seller_id": "pfbid02BYfYJoFigdDBDh3wR5NYpVdE7HaAb4aerS2jBeDDnyY12sKgQp1SpZfUeUum8bp5l",
+        "seller_name": "Gerry Chiasson",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "2143878312673568",
+        "url": "https://www.facebook.com/marketplace/item/2143878312673568",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457331834_885208083516688_1100201106467610530_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=Q7zVqkwy0poQ7kNvgFDQKC_&_nc_ht=scontent-mia3-2.xx&oh=00_AYDb1ZcUltJcon9hJ6r_C_jMwUl03N7xEl0AEvlH0JhqeQ&oe=66D74CBA",
+        "formatted_amount": "CA$1,500",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "Boat, trailer and motor for sale",
         "link": "https://www.facebook.com/marketplace/item/2143878312673568",
-        "title": "Boat, trailer and motor for sale",
-        "price": "CA$1,500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/457331834_885208083516688_1100201106467610530_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=Q7zVqkwy0poQ7kNvgG1F3cF&_nc_ht=scontent-dfw5-1.xx&oh=00_AYCsUgerfU26zc2NEu9ALwFKeYC4pjhSwa-sxmdI75OqBA&oe=66D7147A"
+        "seller_id": "pfbid0EfjhuH9KC6kHDkvufGRbDxHH2tKhcsdv6syFbs8DHf8kGmgN1APdj5UEe5mXndGnl",
+        "seller_name": "Andrew Thomas",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "1737561677014682",
+        "url": "https://www.facebook.com/marketplace/item/1737561677014682",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457520953_1485464715477201_3556554682502321013_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=RP7SuzYOAnIQ7kNvgGoebW-&_nc_ht=scontent-mia3-1.xx&oh=00_AYBlXXLn3mNTXPCOuxptq-qazEd708ZtD8O9B0y62LJx9w&oe=66D729AF",
+        "formatted_amount": "CA$1,450",
+        "city": "Gatineau",
+        "state": "QC",
+        "marketplace_category_id": "807311116002614",
+        "marketplace_title": "1977 General Marine co-ranger (17 foot)",
+        "link": "https://www.facebook.com/marketplace/item/1737561677014682",
+        "seller_id": "pfbid02aiw4gfvhpk23QZ9Tynm1cxkRopEnRvP57HNRFisdeAyq2anPMiRxAokPWWTUWC3Jl",
+        "seller_name": "Bill Callery",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "1777027186162215",
+        "url": "https://www.facebook.com/marketplace/item/1777027186162215",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/455344902_2047608702320273_1911007360274739285_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=aYIzAcRC4G8Q7kNvgGpX-bb&_nc_ht=scontent-mia3-2.xx&oh=00_AYB7mGAvnZwza-wjE0gposFDpEwIhULjDsk59yJ8Mp-vNQ&oe=66D7416E",
+        "formatted_amount": "CA$800",
+        "city": "Clarence-Rockland",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "$ Boat and Trailer Motor if pick up today",
         "link": "https://www.facebook.com/marketplace/item/1777027186162215",
-        "title": "$ Boat and Trailer Motor if pick up today",
-        "price": "CA$800",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/455344902_2047608702320273_1911007360274739285_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=aYIzAcRC4G8Q7kNvgHUM2Eb&_nc_ht=scontent-dfw5-1.xx&oh=00_AYCuxjmOS0f-22UgXBzD76zwRO8pTXzBqvQjh8juZBl5pA&oe=66D7092E"
-      },
-      {
-        "id": "3682045682047017",
-        "link": "https://www.facebook.com/marketplace/item/3682045682047017",
-        "title": "Boat",
-        "price": "CA$1,200",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/456247404_1039136377818528_3206152188770566100_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=gE3vdNVUc50Q7kNvgE9HCaj&_nc_ht=scontent-dfw5-2.xx&oh=00_AYAQI9w2XflRYbGq8leWm4agGJwRrwDHJixlZQ_INMCzLw&oe=66D725B3"
-      },
-      {
-        "id": "1983630508752962",
-        "link": "https://www.facebook.com/marketplace/item/1983630508752962",
-        "title": "BOAT FOR SALE",
-        "price": "CA$1,200",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/456821542_7490308974402689_6180505737671217530_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=4uDqrAyVp5MQ7kNvgHzcrK_&_nc_ht=scontent-dfw5-1.xx&oh=00_AYA3OHizsTDGY5MBIuUnxhurxqA43SaFrpSggehYpFk2Iw&oe=66D70C35"
-      },
-      {
-        "id": "767084705442585",
-        "link": "https://www.facebook.com/marketplace/item/767084705442585",
-        "title": "Tuggy sandbox boat",
-        "price": "CA$800",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/457616785_858683372895520_6083368705501981464_n.jpg?stp=c0.152.261.261a_dst-jpg_p261x260&_nc_cat=1&ccb=1-7&_nc_sid=247b10&_nc_ohc=1SZrzUIFplQQ7kNvgHVNIJ3&_nc_ht=scontent-dfw5-2.xx&oh=00_AYCHlWXrmT44nXdMuB5WAczZjzsidkOwsoKqjAgMOUcG3A&oe=66D72F74"
-      },
-      {
-        "id": "1764206831054469",
-        "link": "https://www.facebook.com/marketplace/item/1764206831054469",
-        "title": "1991 LARSON 1991 larson all american 150",
-        "price": "CA$1,200",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/455929679_3234436143356120_5720441972027222795_n.jpg?stp=c113.0.602.602a_dst-jpg_s261x260&_nc_cat=110&ccb=1-7&_nc_sid=454cf4&_nc_ohc=EquHyz-rtk0Q7kNvgFzFdYg&_nc_ht=scontent-dfw5-1.xx&oh=00_AYAnd0SM4jo6Ct6GHb0SMUWRM0Pukk6Hml2OyaWHoq4efw&oe=66D73FB5"
+        "seller_id": "pfbid02WBJKACMeu9v9XaNfUR5fV2nb7no38EWWWgY8oVFkqMiJEZ5hkTDmtjRrBHnpe852l",
+        "seller_name": "Crystal Warner",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "841453764754300",
+        "url": "https://www.facebook.com/marketplace/item/841453764754300",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/456979003_498244156132892_4869933261872048342_n.jpg?stp=c134.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=2DU-qUSuE_sQ7kNvgFs5j8N&_nc_ht=scontent-mia3-1.xx&oh=00_AYD8xPwKOP_jLepUgOrkTs0HloztdahXncXmtfxp62uZxg&oe=66D735F6",
+        "formatted_amount": "CA$1,250",
+        "city": "Rideau Lakes",
+        "state": "ON",
+        "marketplace_category_id": "757715671026531",
+        "marketplace_title": "14’ aluminum boat and trailer",
         "link": "https://www.facebook.com/marketplace/item/841453764754300",
-        "title": "14’ aluminum boat and trailer",
-        "price": "CA$1,250",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/456979003_498244156132892_4869933261872048342_n.jpg?stp=c134.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=2DU-qUSuE_sQ7kNvgFjOyFk&_nc_ht=scontent-dfw5-2.xx&oh=00_AYBOYa6jgC9zKc78fHfqNLzl-yXpB2CQ9nZp1x2mMPH_vw&oe=66D735F6"
+        "seller_id": "pfbid02Yfg8fMkp3b3y8zQ9kwekPdog2W3Fz99GatBTWFHhGCh2mb7NwXD7b3xS2jVGbseyl",
+        "seller_name": "Deacon Scott",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "8433346240010685",
-        "link": "https://www.facebook.com/marketplace/item/8433346240010685",
-        "title": "1980 Boat  Boat",
-        "price": "$500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/456806817_853790063484602_8635341263031393121_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=We_R52Lv3QQQ7kNvgGkxSJ3&_nc_ht=scontent-dfw5-1.xx&oh=00_AYCnzPVcbmHb6Qlh5L6sjJx5Z1tN3chQ0WtRFfh3udBy8w&oe=66D73FEB"
+        "id": "3682045682047017",
+        "url": "https://www.facebook.com/marketplace/item/3682045682047017",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456247404_1039136377818528_3206152188770566100_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=gE3vdNVUc50Q7kNvgGoyaFL&_nc_ht=scontent-mia3-2.xx&oh=00_AYCzr4et-SI-B18lkTO_rAOkhFJBbrE2px3fI6ndkJTSsg&oe=66D75DF3",
+        "formatted_amount": "CA$1,200",
+        "city": "Renfrew",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "Boat",
+        "link": "https://www.facebook.com/marketplace/item/3682045682047017",
+        "seller_id": "pfbid02Kr4diA8GwE4cfm4HMcBYPK2FkrhohSBkkB4KGsHTZY2pX5tpGtthz4JRxY12e43Al",
+        "seller_name": "Billy Strangs",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "556074576751310",
-        "link": "https://www.facebook.com/marketplace/item/556074576751310",
-        "title": "16ft Bayliner fiberglass boat",
-        "price": "CA$1,500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/454048247_811822300735856_5005062539337493005_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=DrHgMAcp8xQQ7kNvgE37tF5&_nc_ht=scontent-dfw5-1.xx&oh=00_AYBEC8El7IQXFIo8H6BJAEt0hSRTh-tI5GqemsCKo-i5bg&oe=66D71697"
-      },
-      {
-        "id": "674358697857432",
-        "link": "https://www.facebook.com/marketplace/item/674358697857432",
-        "title": "Boat Rentals Ottawa and Gatineau",
-        "price": "CA$1,234",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/455011366_459265930416053_4228971329825915359_n.jpg?stp=c16.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=tTJFge5mgJkQ7kNvgEjPrJi&_nc_ht=scontent-dfw5-2.xx&oh=00_AYDEWSTzcO5jpnViPrBVB88edqDeJv8dTiPMtArharwA9g&oe=66D722AB"
-      },
-      {
-        "id": "1193327375151596",
-        "link": "https://www.facebook.com/marketplace/item/1193327375151596",
-        "title": "Boat for Sale or Rent",
-        "price": "CA$60",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/455048715_1482039872502849_906574918356988655_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=qZFH6YbbeFMQ7kNvgG9-SRT&_nc_ht=scontent-dfw5-1.xx&oh=00_AYDHOrV3SJ7kttmClhaDrZH8Urj-PGfcnQ37ZB46FSbrbw&oe=66D715CF"
-      },
-      {
-        "id": "8230252276993204",
-        "link": "https://www.facebook.com/marketplace/item/8230252276993204",
-        "title": "1987 Thundercraft Regency, Selling boat for parts and want to keep trailer.",
-        "price": "CA$1,500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/450229436_1613294109517142_7211769638315930968_n.jpg?stp=c47.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=ijczgJrDYfcQ7kNvgGEkWIO&_nc_ht=scontent-dfw5-1.xx&oh=00_AYBtpAd_fXSVkxbmPD85SE9Rj_lk3qnPzoCpE9uOLcsGaw&oe=66D70AF6"
-      },
-      {
-        "id": "1470018900305518",
-        "link": "https://www.facebook.com/marketplace/item/1470018900305518",
-        "title": "Sedoo",
-        "price": "CA$250",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/450013109_1411184296231602_5240638588856530045_n.jpg?stp=c0.48.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=C865qrMpWx8Q7kNvgE6fRqI&_nc_ht=scontent-dfw5-2.xx&oh=00_AYDLoFi0a01K2vLmxSa2IlKQ4zyy_O3vB2YwVJDeUCgDDA&oe=66D73EED"
-      },
-      {
-        "id": "1043965283788113",
-        "link": "https://www.facebook.com/marketplace/item/1043965283788113",
-        "title": "1980”s 17 ft Forester boat with 65 hp",
-        "price": "CA$1,500",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/438120716_327375793465369_8891339797744643308_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=ucv1Mqp5OygQ7kNvgGdBLGH&_nc_ht=scontent-dfw5-1.xx&oh=00_AYB6j9ij5yDxwQDuIeeC3v4f_liVA3-nRnLe3rZjPX07ig&oe=66D7255E"
+        "id": "767084705442585",
+        "url": "https://www.facebook.com/marketplace/item/767084705442585",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457616785_858683372895520_6083368705501981464_n.jpg?stp=c0.152.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=1SZrzUIFplQQ7kNvgFtpUbL&_nc_ht=scontent-mia3-1.xx&oh=00_AYAXy_iuTAau1lzbTsK0-8OqC5ZfOdR6AYcKlRXQ-u_LOw&oe=66D72F74",
+        "formatted_amount": "CA$800",
+        "city": "Hudson",
+        "state": "QC",
+        "marketplace_category_id": "606456512821491",
+        "marketplace_title": "Tuggy sandbox boat",
+        "link": "https://www.facebook.com/marketplace/item/767084705442585",
+        "seller_id": "pfbid02a9qohGEzXdiuVGFEvPGn6v8TnofjmPbGiLoXQ2LCseG76LkKDXrDPjs47w3gbv4zl",
+        "seller_name": "Marc Marti",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "1423575492398177",
+        "url": "https://www.facebook.com/marketplace/item/1423575492398177",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/456717885_419352337830580_1237621202496246281_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=zHGwGs5ds0EQ7kNvgFxOnKa&_nc_ht=scontent-mia3-1.xx&oh=00_AYAVkNTRTEhIDmzm7gRgDWK3iPmaw2c07D-3Q2bDHgkXeg&oe=66D75458",
+        "formatted_amount": "CA$1,100",
+        "city": "Gatineau",
+        "state": "QC",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "16 foot Fishing boat/ 40 hp",
         "link": "https://www.facebook.com/marketplace/item/1423575492398177",
-        "title": "16 foot Fishing boat/ 40 hp",
-        "price": "CA$1,100",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/456717885_419352337830580_1237621202496246281_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=zHGwGs5ds0EQ7kNvgGzWqcN&_nc_ht=scontent-dfw5-2.xx&oh=00_AYDrNWCHIPVMiqb4HfRq3pqu2A3--BCNdMo_reTtny5G-g&oe=66D71C18"
+        "seller_id": "pfbid0qbhAsjbKY9crF8Lj6MFtk5B9kNCxie6TSuaWCuyp6AyWNw9gPidPNzdg2n2vPT5Xl",
+        "seller_name": "Eric St-Louis",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "1260743498244243",
-        "link": "https://www.facebook.com/marketplace/item/1260743498244243",
-        "title": "1975 Starcraft American 15",
-        "price": "CA$1,000",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/451699526_1016596436477026_7113073516561352890_n.jpg?stp=c100.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=JZ0bq5BCrOkQ7kNvgHZ3svl&_nc_ht=scontent-dfw5-1.xx&oh=00_AYBtRCd5ctjAAqA8JKyKg51uX9JUuCm1XK64RrEJW1V_rg&oe=66D72034"
+        "id": "1983630508752962",
+        "url": "https://www.facebook.com/marketplace/item/1983630508752962",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456821542_7490308974402689_6180505737671217530_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=4uDqrAyVp5MQ7kNvgGJAPYB&_nc_ht=scontent-mia3-2.xx&oh=00_AYAPIp-QtKkKErEQbxO38fAHYmj2CQuqSoltrA7PzpjajQ&oe=66D74475",
+        "formatted_amount": "CA$1,200",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "BOAT FOR SALE",
+        "link": "https://www.facebook.com/marketplace/item/1983630508752962",
+        "seller_id": "pfbid0bPV4rCcD8aKNnGCXVewEXed1jNocc6SeKtQbP3yqgaGSoQtSXsNkpVoMjMrSU4x6l",
+        "seller_name": "Eliane Guckert",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "523695226761057",
-        "link": "https://www.facebook.com/marketplace/item/523695226761057",
-        "title": "Peterborough Bow Rider",
-        "price": "CA$123",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/454620024_2493444890860244_5292645584933405783_n.jpg?stp=c49.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=kBzgrxtyZf4Q7kNvgHf9vAN&_nc_ht=scontent-dfw5-2.xx&oh=00_AYAs2SNz07MwNfMFO6MPsZgQVStH8OOOlPiqjrzIyHQGXA&oe=66D70C52"
+        "id": "8433346240010685",
+        "url": "https://www.facebook.com/marketplace/item/8433346240010685",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456806817_853790063484602_8635341263031393121_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=We_R52Lv3QQQ7kNvgHzoZUc&_nc_ht=scontent-mia3-2.xx&oh=00_AYDFEvdAk4LB8AFFi3bgvi9DAaPGlzKH7WgTZtRHPMXPcA&oe=66D73FEB",
+        "formatted_amount": "$500",
+        "city": "Mississippi Mills",
+        "state": "ON",
+        "marketplace_category_id": "807311116002614",
+        "marketplace_title": "1980 Boat  Boat",
+        "link": "https://www.facebook.com/marketplace/item/8433346240010685",
+        "seller_id": "pfbid0H31n62r29rVFJpYAt87QDiXuVXSwKt9kpUXL1WBG4nNdD9V7VpHy5CpBC6dosQU4l",
+        "seller_name": "Shawn Ladouceur",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "674358697857432",
+        "url": "https://www.facebook.com/marketplace/item/674358697857432",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/455011366_459265930416053_4228971329825915359_n.jpg?stp=c16.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=tTJFge5mgJkQ7kNvgFtkdGg&_nc_ht=scontent-mia3-2.xx&oh=00_AYBKmAEzmJG_OdJwQHixl12bmhX3uh-CIWc2MclbXYWtgA&oe=66D75AEB",
+        "formatted_amount": "CA$1,234",
+        "city": "Gatineau",
+        "state": "QC",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Boat Rentals Ottawa and Gatineau",
+        "link": "https://www.facebook.com/marketplace/item/674358697857432",
+        "seller_id": "pfbid06rJAVoV4bvFGGVrzv1mZudAG8WX6647MVxPPVvtZ9Dc7Mystjo2qxmFMoMTKeHrcl",
+        "seller_name": "Abdul Rafay",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "849372543956603",
+        "url": "https://www.facebook.com/marketplace/item/849372543956603",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/456256484_1159042448662534_6616920976502638693_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=Fz3Jcx9nrH0Q7kNvgGvdYDX&_nc_ht=scontent-mia3-1.xx&oh=00_AYAiJQ0Jz-KTQVYWWoV6rA7Dq4cqa_1ab3A4qZVuu7zZFg&oe=66D74076",
+        "formatted_amount": "CA$60",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "1569171756675761",
+        "marketplace_title": "Boat for Sale or Rent",
         "link": "https://www.facebook.com/marketplace/item/849372543956603",
-        "title": "Boat for Sale or Rent",
-        "price": "CA$60",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/456256484_1159042448662534_6616920976502638693_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=Fz3Jcx9nrH0Q7kNvgFsMaQS&_nc_ht=scontent-dfw5-2.xx&oh=00_AYCUZXo-Ve5GAB6cLMmeOsfd4I61TQkRCYEigujNg6oT-g&oe=66D70836"
+        "seller_id": "pfbid0vdinVfkfzp7wBMW3Lb3bt8LTrMbLSp7T3etkVicHYMM1Y9FYKpvAyMvYGVb8vAhhl",
+        "seller_name": "Alex Kharitonov",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "1649332318942272",
-        "link": "https://www.facebook.com/marketplace/item/1649332318942272",
-        "title": "Tobin inflatable boat.",
-        "price": "CA$900",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/456469416_971464258083770_9106940834418402559_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=y8PmRvlkd3oQ7kNvgGD0cZb&_nc_ht=scontent-dfw5-1.xx&oh=00_AYDNTVQAbCm4ORKhgJe_2rOcgh6BSy3UaxumLDHFy3X96w&oe=66D731E6"
+        "id": "1764206831054469",
+        "url": "https://www.facebook.com/marketplace/item/1764206831054469",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/455929679_3234436143356120_5720441972027222795_n.jpg?stp=c113.0.602.602a_dst-jpg_s261x260&_nc_cat=110&ccb=1-7&_nc_sid=454cf4&_nc_ohc=EquHyz-rtk0Q7kNvgFsDFw3&_nc_ht=scontent-mia3-2.xx&oh=00_AYBFDy0_BRwoKoCZXK6N8YxVJHdYYeVxEfD3pVlxSa77zg&oe=66D73FB5",
+        "formatted_amount": "CA$1,200",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "807311116002614",
+        "marketplace_title": "1991 LARSON 1991 larson all american 150",
+        "link": "https://www.facebook.com/marketplace/item/1764206831054469",
+        "seller_id": "pfbid02dmxkmxiGsRqNFQLSWYnL37xj2MG4kEhWQUAK3xefdAgeaycMPK9DMNkiGTLUHJwUl",
+        "seller_name": "Felicity Jack",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "423598714044943",
-        "link": "https://www.facebook.com/marketplace/item/423598714044943",
-        "title": "12ft aluminum boat, trailer, 10hp Johnson, 30lb trolling motor",
-        "price": "CA$1,175",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/457150287_1552314862327319_7773895540313375496_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=CnoCF3NEcqEQ7kNvgEvTxvR&_nc_ht=scontent-dfw5-1.xx&oh=00_AYC1woW5hLDtGZPeV4pMVBg1ZWuuDlKWi_9JcWfnbEqp1g&oe=66D718BE"
+        "id": "556074576751310",
+        "url": "https://www.facebook.com/marketplace/item/556074576751310",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/454048247_811822300735856_5005062539337493005_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=DrHgMAcp8xQQ7kNvgEjN-G1&_nc_ht=scontent-mia3-2.xx&oh=00_AYCO_TeSYI29hVOrrP2MU3CqNws0hOaFK0SRD3GDUHE94A&oe=66D74ED7",
+        "formatted_amount": "CA$1,500",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "16ft Bayliner fiberglass boat",
+        "link": "https://www.facebook.com/marketplace/item/556074576751310",
+        "seller_id": "pfbid0TrKKUvQNsEaPxVBGQmPghe53kyNcXfRKZWefgRxs4Wj56xh2acXq4P9kgZA84fnKl",
+        "seller_name": "Rita Haddad",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
-        "id": "1250413842944322",
-        "link": "https://www.facebook.com/marketplace/item/1250413842944322",
-        "title": "9.5 ft Inflatable Boat Raft Fishing Dinghy Pontoon Boat with Aluminum Floor",
-        "price": "CA$550",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/456624972_1152851436012297_6270084691468967253_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=NoAFT2IcyPwQ7kNvgEYAbpq&_nc_ht=scontent-dfw5-1.xx&oh=00_AYDmhjPAftASgDPpyHLcNan-X4___vEDWzwQH7OuvA9mqQ&oe=66D724A1"
+        "id": "1043965283788113",
+        "url": "https://www.facebook.com/marketplace/item/1043965283788113",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/438120716_327375793465369_8891339797744643308_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=ucv1Mqp5OygQ7kNvgEUpqoF&_nc_ht=scontent-mia3-2.xx&oh=00_AYBCbjfgg5Dxrr2bZWOT_ytJTGlYE3LY_m8VUnbkeWVolw&oe=66D75D9E",
+        "formatted_amount": "CA$1,500",
+        "city": "Russell",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "1980”s 17 ft Forester boat with 65 hp",
+        "link": "https://www.facebook.com/marketplace/item/1043965283788113",
+        "seller_id": "pfbid02kWVogheLipeY1pxwysFqEkLjCd4ZxNnGRKydYspwRdGwPsFJNzkRmzadfy2BhCwrl",
+        "seller_name": "Steve Larocque",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "1180049655919134",
+        "url": "https://www.facebook.com/marketplace/item/1180049655919134",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/315285400_905433023756334_1605237981119697558_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=110&ccb=1-7&_nc_sid=454cf4&_nc_ohc=apdCEOebq-4Q7kNvgHelaVK&_nc_ht=scontent-mia3-2.xx&oh=00_AYAj0RT_fLXfCGo59Espu4FsnEueZuFXUoBLHMPjumRSjw&oe=66D72DFC",
+        "formatted_amount": "CA$1,000",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "807311116002614",
+        "marketplace_title": "1970 Chrysler  Boat",
+        "link": "https://www.facebook.com/marketplace/item/1180049655919134",
+        "seller_id": "pfbid0xormdkUNG8FnsLKuwhNPFXTEHo7JEYxthJELY8DGU4uzfRDtGs6p5V9xoiUnujUDl",
+        "seller_name": "Morgan Paul Morris",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "1019988536397317",
+        "url": "https://www.facebook.com/marketplace/item/1019988536397317",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/434475414_1376417543035514_1146793856938017083_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=I7Wg_g6DQt4Q7kNvgE99a2S&_nc_ht=scontent-mia3-1.xx&oh=00_AYBdFeF9lQkn_Du5WxTSFwCbgJciEo1sB5VoqhLeOIK49A&oe=66D7428A",
+        "formatted_amount": "CA$1,500",
+        "city": "Stone Mills",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Boat,motor,trailer make a reasonable offer I want it gone",
+        "link": "https://www.facebook.com/marketplace/item/1019988536397317",
+        "seller_id": "pfbid02sZ3zkt7DkWTZkxyU8Jgb7vJXmsDGEELwXfnmMYMd7Je6obbWhjs2iNWEX6TMTr2Al",
+        "seller_name": "Dustin Corbin",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "1470018900305518",
+        "url": "https://www.facebook.com/marketplace/item/1470018900305518",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/450013109_1411184296231602_5240638588856530045_n.jpg?stp=c0.48.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=C865qrMpWx8Q7kNvgGDn0H6&_nc_ht=scontent-mia3-1.xx&oh=00_AYAgKmYzx-IjgFOkSXgJj6RyxQaVUxYlYEFjTPeD5Nwo4w&oe=66D73EED",
+        "formatted_amount": "CA$250",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "Sedoo",
+        "link": "https://www.facebook.com/marketplace/item/1470018900305518",
+        "seller_id": "pfbid02gW6f5RZw9duGZmhzPDpSDAqVf4UtszvYT2sUcz59xLJpUzCrU1d1zemMfMvr6vUol",
+        "seller_name": "Samar Salman",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "498486489307716",
+        "url": "https://www.facebook.com/marketplace/item/498486489307716",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/452254940_1146426319902623_4938584567543595904_n.jpg?stp=c148.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=06gzNuzz7FsQ7kNvgE2bULl&_nc_ht=scontent-mia3-1.xx&oh=00_AYC8haMH3OiobK6mZloFFTseX6uudPQpJiuyajvNjxIE2Q&oe=66D73683",
+        "formatted_amount": "CA$100",
+        "city": "Gatineau",
+        "state": "QC",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "Inflant boat for rent",
+        "link": "https://www.facebook.com/marketplace/item/498486489307716",
+        "seller_id": "pfbid02JgMSNWC1MC7DVXdfBGiTTxjaDA4Nah3RpHkTypRQ78a7cpy1UvQhVXBiBS4c71Evl",
+        "seller_name": "Ali Nas",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       },
       {
         "id": "3751958085119983",
+        "url": "https://www.facebook.com/marketplace/item/3751958085119983",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456720219_1665989547305004_7377071493226017021_n.jpg?stp=c158.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=OBELQFEAZnMQ7kNvgGkPah0&_nc_ht=scontent-mia3-2.xx&oh=00_AYAWHYntzDm9nw1RlJRPlPVMZBBpSbxf5qM7BrZn5MxX2A&oe=66D73C0B",
+        "formatted_amount": "CA$540",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Tobin Sports 3.3 m (10.8 ft.) Inflatable Boat",
         "link": "https://www.facebook.com/marketplace/item/3751958085119983",
-        "title": "Tobin Sports 3.3 m (10.8 ft.) Inflatable Boat",
-        "price": "CA$540",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/456720219_1665989547305004_7377071493226017021_n.jpg?stp=c158.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=OBELQFEAZnMQ7kNvgFMUCP2&_nc_ht=scontent-dfw5-2.xx&oh=00_AYDOR1FHxvcQI4EezWqI-4z6x0qooVeHn-ba64xtU4WmCQ&oe=66D73C0B"
+        "seller_id": "pfbid0eHziWvATc4wi3wLVwvdfrayGo1JDrM872RWWqNiNwuGg5HKmaUrJX4tjjUfxq5Pnl",
+        "seller_name": "Daniyal Zain",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "8230252276993204",
+        "url": "https://www.facebook.com/marketplace/item/8230252276993204",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/450229436_1613294109517142_7211769638315930968_n.jpg?stp=c47.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=ijczgJrDYfcQ7kNvgGNNZN0&_nc_ht=scontent-mia3-2.xx&oh=00_AYBMfCliz-7XBI6PbIx-iBysNq4wYHKVLYhkHNXPfxvsrA&oe=66D74336",
+        "formatted_amount": "CA$1,500",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "1987 Thundercraft Regency, Selling boat for parts and want to keep trailer.",
+        "link": "https://www.facebook.com/marketplace/item/8230252276993204",
+        "seller_id": "pfbid0v9KvQDANTcR5wFqybJK1UB3zgp1XVdbYBtuYK64TEkwtZmvFtc5rt19Wr6PdDefel",
+        "seller_name": "Tim Hewson",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "1649332318942272",
+        "url": "https://www.facebook.com/marketplace/item/1649332318942272",
+        "primary_listing_photo": "https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456469416_971464258083770_9106940834418402559_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=y8PmRvlkd3oQ7kNvgEkNUv9&_nc_ht=scontent-mia3-2.xx&oh=00_AYBA3W-Ur_ZXchoTq8ejOcu1cH0IWct9LPJQD0QNio-FZw&oe=66D731E6",
+        "formatted_amount": "CA$900",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Tobin inflatable boat.",
+        "link": "https://www.facebook.com/marketplace/item/1649332318942272",
+        "seller_id": "pfbid0bP7hxGJbQN3orP3iZRa5h9uNGkZH29VfHLh2Hkvj8EF8pcD7LtozsTXKSvAGvKQl",
+        "seller_name": "Scott Dupont",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "423598714044943",
+        "url": "https://www.facebook.com/marketplace/item/423598714044943",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457150287_1552314862327319_7773895540313375496_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=CnoCF3NEcqEQ7kNvgGKCDxh&_nc_ht=scontent-mia3-1.xx&oh=00_AYCTZns3vKA3N8iE5nK0S-R6kEI4qFFSLXLHDlgDOKDwvw&oe=66D750FE",
+        "formatted_amount": "CA$1,175",
+        "city": "South Frontenac",
+        "state": "ON",
+        "marketplace_category_id": "895487550471874",
+        "marketplace_title": "12ft aluminum boat, trailer, 10hp Johnson, 30lb trolling motor",
+        "link": "https://www.facebook.com/marketplace/item/423598714044943",
+        "seller_id": "pfbid0Fd78z2o3snknFELevq41wLJADDrAJQLf5JXF96M5Jj9xisgB8xGUWAboRGKfQoYPl",
+        "seller_name": "Jordan Hackett",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
+      },
+      {
+        "id": "405464835417660",
+        "url": "https://www.facebook.com/marketplace/item/405464835417660",
+        "primary_listing_photo": "https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/454807149_1235447350806806_621603885943757542_n.jpg?stp=c0.16.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=zPxOZR7uj0IQ7kNvgGyW4DN&_nc_ht=scontent-mia3-1.xx&oh=00_AYBtfCzAG_q83Z1LiyeVS6M0pevqhyDFMWPm2hzyzn7r0A&oe=66D72797",
+        "formatted_amount": "CA$65",
+        "city": "Ottawa",
+        "state": "ON",
+        "marketplace_category_id": "1383948661922113",
+        "marketplace_title": "Intex Seahawk 400 Inflatable-boat  for sale.   In excellent condition. $75/ea. \nCash only!",
+        "link": "https://www.facebook.com/marketplace/item/405464835417660",
+        "seller_id": "pfbid0ck1M5vGAdUcLPz5CJmPN34cQ7aVw7CF7S7iDqnzu3K7iPny78mjfe88JGP7oaasXl",
+        "seller_name": "Bia Brito",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:07:49.244Z"
       }
     ]
   },
@@ -902,14 +1599,2981 @@
     "query": "ipad",
     "maxPrice": "1400",
     "items": []
+  },
+  {
+    "id": 9,
+    "city": "ottawa",
+    "query": "ipad",
+    "maxPrice": "1400",
+    "items": [
+      {
+        "id": "1068784221511400",
+        "link": "https://www.facebook.com/marketplace/item/1068784221511400",
+        "title": "Clean Ipad 2 in very good condition. No updates no download. Browse only.",
+        "price": "CA$55",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/409292161_7155852261132677_5154552195380241339_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=gZi6JN-chSoQ7kNvgG9SCa1&_nc_ht=scontent-hou1-1.xx&oh=00_AYAwKv-79jc_TONBiFA16sG3kbbBf7QRZtMIH20cwD8uWw&oe=66D753E2",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Damien Mutuga",
+        "description": null
+      },
+      {
+        "id": "1027377842363840",
+        "link": "https://www.facebook.com/marketplace/item/1027377842363840",
+        "title": "64GB iPad 9th generation A2602",
+        "price": "CA$100",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/454865595_868345358504079_3080147761552204034_n.jpg?stp=c0.25.261.261a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=_Ol3PSlP0oQQ7kNvgEYNBO3&_nc_ht=scontent-hou1-1.xx&oh=00_AYCzi3HkLdCDANarCaENNQPuFRaVUimonF2U4qrzewFAHg&oe=66D720C7",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Alex Aw",
+        "description": null
+      },
+      {
+        "id": "813943820944858",
+        "link": "https://www.facebook.com/marketplace/item/813943820944858",
+        "title": "iPad Air (first gen)",
+        "price": "CA$80",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457140672_1207639223992530_4797691179610129169_n.jpg?stp=c0.48.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=9uetgK3mFVgQ7kNvgHBF7WR&_nc_ht=scontent-hou1-1.xx&oh=00_AYDkY4sGJLn9k8mZTLHz0iIFkS1WleISERqTaPOmWTbb8w&oe=66D72E16",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Alexandria Lavigne",
+        "description": null
+      },
+      {
+        "id": "510968744671674",
+        "link": "https://www.facebook.com/marketplace/item/510968744671674",
+        "title": "Like New iPad 6th Generation Wifi and Cellular LTE iOS 17.6",
+        "price": "CA$180",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/455876689_553759750309328_5591135634147859486_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=BNiEbh0ZDEoQ7kNvgEY-l6K&_nc_ht=scontent-hou1-1.xx&oh=00_AYA7bpBLwah6Fhinrx1d5ZTK_F6SNhfc_uHS1XDfkI7-CA&oe=66D74D27",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Foster Byamungu",
+        "description": null
+      },
+      {
+        "id": "876026134415395",
+        "link": "https://www.facebook.com/marketplace/item/876026134415395",
+        "title": "ipad pro 9.7",
+        "price": "CA$180",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457558883_1443276632975105_7232550477750440079_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=oMomr2mCvrMQ7kNvgElxjsx&_nc_ht=scontent-hou1-1.xx&oh=00_AYC7Tv6rUdbxrl3Ty-8lIb5BMy9hn6vCYHBxIfIcJjhW5A&oe=66D727BF",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Drew McKenna",
+        "description": null
+      },
+      {
+        "id": "859184509029375",
+        "link": "https://www.facebook.com/marketplace/item/859184509029375",
+        "title": "Ipad 5th generation-9.7” screen size-Excellent Condition",
+        "price": "CA$150",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/454785021_862980188595478_7204096677923405869_n.jpg?stp=c24.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=eYxrVwRIDX4Q7kNvgH_ROu0&_nc_ht=scontent-hou1-1.xx&oh=00_AYBz4AeHoIQ8m1VuiihR2rc93PxM85A3wBDM1P-ZfGn-tQ&oe=66D72C9A",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Ashraf Uddin",
+        "description": null
+      },
+      {
+        "id": "3227388554058125",
+        "link": "https://www.facebook.com/marketplace/item/3227388554058125",
+        "title": "Apple IPad Air",
+        "price": "CA$100",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457457572_1217784486238866_8976143814835541872_n.jpg?stp=c27.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=9BYcz73W_ZMQ7kNvgGV6CUx&_nc_ht=scontent-hou1-1.xx&oh=00_AYC0b7usGwiDuk2Oi5xtDHUYmTH-LWBcbzuTaXqrrVtoqw&oe=66D74990",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Colin Orx",
+        "description": null
+      },
+      {
+        "id": "1357755028513726",
+        "link": "https://www.facebook.com/marketplace/item/1357755028513726",
+        "title": "iPad Air Gen 2",
+        "price": "CA$225",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457212676_1831358170690176_8231655289166462837_n.jpg?stp=c0.152.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=VirhoeaZ4t0Q7kNvgG7x98-&_nc_ht=scontent-hou1-1.xx&oh=00_AYBmlz_LZD4cgCcLbxvRu-x2HptEYSuXBk5gc8RupETnBA&oe=66D72B18",
+        "location": "Cornwall",
+        "creation_time": null,
+        "seller_name": "Brock Turcotte",
+        "description": null
+      },
+      {
+        "id": "1170197197385351",
+        "link": "https://www.facebook.com/marketplace/item/1170197197385351",
+        "title": "Apple iPad 7th Generation 10.2-inch 32GB",
+        "price": "CA$200",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457255837_866398095034056_5359362097460634961_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=pVUOnnySqUkQ7kNvgFQforN&_nc_ht=scontent-hou1-1.xx&oh=00_AYBt1fM_kTrBnjN0woOeSjldZpcUTxnrgXGg-gnBhZe_oQ&oe=66D7268E",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Sam Barker",
+        "description": null
+      },
+      {
+        "id": "1239156877395056",
+        "link": "https://www.facebook.com/marketplace/item/1239156877395056",
+        "title": "Ipad Air 2 - 128 GB",
+        "price": "CA$125",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/455874853_412108554727213_2662575130106182350_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=tGGWQDyKWjEQ7kNvgFwhRL-&_nc_ht=scontent-hou1-1.xx&oh=00_AYA1HemwxUIe4laV7bXuS8JTbGt2hDbUP72ycB2jBOqf5A&oe=66D7360E",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Tuvana Şahintürk",
+        "description": null
+      },
+      {
+        "id": "1063914735275676",
+        "link": "https://www.facebook.com/marketplace/item/1063914735275676",
+        "title": "I pad 10th generation- 64 gb",
+        "price": "CA$400",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457640260_376626345311460_1759830161401891970_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=Siw165ZKS5kQ7kNvgE-n3uh&_nc_ht=scontent-hou1-1.xx&oh=00_AYBU7tirOeVMQFsenZk35hfoG0dbEvEOuozdUPLx5JywKQ&oe=66D755B5",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Kamal Patel",
+        "description": null
+      },
+      {
+        "id": "1032106668111341",
+        "link": "https://www.facebook.com/marketplace/item/1032106668111341",
+        "title": "Ipad 9th generation with keyboard",
+        "price": "CA$300",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/456851503_817126770535530_421101015170727517_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=MTqtG5l0q0AQ7kNvgHCrAAj&_nc_ht=scontent-hou1-1.xx&oh=00_AYCUc0v2lxd10zq7RBs0ZhyitrqVRKt6ebG-W-7s_XkGvw&oe=66D74BC8",
+        "location": "Gatineau",
+        "creation_time": null,
+        "seller_name": "Mecanique Jmb",
+        "description": null
+      },
+      {
+        "id": "710334667940329",
+        "link": "https://www.facebook.com/marketplace/item/710334667940329",
+        "title": "iPad mini2 32GB unlocked",
+        "price": "CA$70",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/424954716_24978246395156176_4656828050455171584_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=NJ4tptoT4DIQ7kNvgEgs9K_&_nc_ht=scontent-hou1-1.xx&oh=00_AYB3Ji5SABkqjco_dPUDJ6AHnYugVaXiy9eFzMl23Su2pQ&oe=66D73E6E",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Foster Byamungu",
+        "description": null
+      },
+      {
+        "id": "293646693811776",
+        "link": "https://www.facebook.com/marketplace/item/293646693811776",
+        "title": "IPad Mini 1. Very good condition and battery. Pristine condition. + cable.",
+        "price": "CA$70",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/427683027_267240539793314_2449114281833092246_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=GMDpMF8fV4EQ7kNvgHWCR6K&_nc_ht=scontent-hou1-1.xx&oh=00_AYCW9x-k3P0eFlwSBG2jimAt2SwxLAYAcXnHkOY1shG0EA&oe=66D72150",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Sebastian Lights",
+        "description": null
+      },
+      {
+        "id": "1702443863893477",
+        "link": "https://www.facebook.com/marketplace/item/1702443863893477",
+        "title": "iPad 6th Generation 32GB iOS 17.6",
+        "price": "CA$180",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/456444292_429627976773457_3826977458373614179_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=UVSMaQ5_kmUQ7kNvgHEdiUo&_nc_ht=scontent-hou1-1.xx&oh=00_AYCCO5nb6Q30ZvqTkpo9_6IatpCfu4mCjqYMad7hGvPfiw&oe=66D73990",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Foster Bata",
+        "description": null
+      },
+      {
+        "id": "8316507031796668",
+        "link": "https://www.facebook.com/marketplace/item/8316507031796668",
+        "title": "Beautiful 128GB Wifi+Cellular Ipad Air 2 in very good condition and fully functional.",
+        "price": "CA$210",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457009624_1041616774311373_282832441055293750_n.jpg?stp=c0.148.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=-1bqZVqsVSoQ7kNvgE84k-8&_nc_ht=scontent-hou1-1.xx&oh=00_AYAnIUKnEdLv9M_g2uwuv6VcnVMwW63IeHTcc3FFp8VVEg&oe=66D72417",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Damien Mutuga",
+        "description": null
+      },
+      {
+        "id": "7942741249156881",
+        "link": "https://www.facebook.com/marketplace/item/7942741249156881",
+        "title": "iPad Pro 11\" Apple M2 4th Generation - 128GB",
+        "price": "CA$750",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457361713_1140829107621825_6230756152104697848_n.jpg?stp=c42.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=s3OKwZsC264Q7kNvgHH0qnm&_nc_ht=scontent-hou1-1.xx&oh=00_AYAlWEx_vLJe_AjnEziQ9mG7694FeMMDt-WyA98z1TyPnA&oe=66D746FC",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Fatima Qureshi",
+        "description": null
+      },
+      {
+        "id": "1190467335579876",
+        "link": "https://www.facebook.com/marketplace/item/1190467335579876",
+        "title": "iPad Air 5th Generation 64 GB",
+        "price": "CA$750",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457265710_2301296883550144_9059364380193559619_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=WI_gZcVawpEQ7kNvgGdn1nk&_nc_ht=scontent-hou1-1.xx&oh=00_AYAU3rCDgmJz9AU6e61JaI5Lyg9Lc-6jJcN_Fq4BNEWSIg&oe=66D721A9",
+        "location": "Gatineau",
+        "creation_time": null,
+        "seller_name": "Shawn Cairns",
+        "description": null
+      },
+      {
+        "id": "535461155676306",
+        "link": "https://www.facebook.com/marketplace/item/535461155676306",
+        "title": "Apple iPad 7th Generation 10.2’’32GB Wi-Fi + Cellular iOS 17.6",
+        "price": "CA$200",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/455714880_513924947703973_4183191946175692009_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=oDSepjWTX_cQ7kNvgHWk0wS&_nc_ht=scontent-hou1-1.xx&oh=00_AYAZOyZta4j4TQ1bK4uQYWl6P5kpO9TB31qZ-7brvwmDHQ&oe=66D7552D",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Serge Bin",
+        "description": null
+      },
+      {
+        "id": "8248120771898267",
+        "link": "https://www.facebook.com/marketplace/item/8248120771898267",
+        "title": "iPad 7",
+        "price": "CA$175",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/455000979_1040799044114618_5465591953032144239_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=YE2K7irEyggQ7kNvgE1KsZu&_nc_ht=scontent-hou1-1.xx&oh=00_AYCgF6_xNdhEc9hX8AxGk42Of9p6PXNNI_q73yVH9GDm1A&oe=66D72802",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Spencer Lyndon",
+        "description": null
+      },
+      {
+        "id": "1209755336691793",
+        "link": "https://www.facebook.com/marketplace/item/1209755336691793",
+        "title": "Ipad 4th gen in very good condition.",
+        "price": "CA$85",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/451745900_8336981266346563_5034430189481041840_n.jpg?stp=c0.144.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=8gqmEwLUaGQQ7kNvgG6UsQQ&_nc_ht=scontent-hou1-1.xx&oh=00_AYCA2V8pM2g-hOZ9ruJj_1W4mspLVl0QGvY_XnZhNvJZGA&oe=66D7510B",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Damien Mutuga",
+        "description": null
+      },
+      {
+        "id": "814961277498320",
+        "link": "https://www.facebook.com/marketplace/item/814961277498320",
+        "title": "iPad 5th generation and Air 2nd generation-Excellent condition",
+        "price": "CA$150",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/423905248_1755541521516916_6426294595654460592_n.jpg?stp=c0.13.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=FgqXTHtR_XwQ7kNvgEBH_Ts&_nc_ht=scontent-hou1-1.xx&oh=00_AYDdtw3AZIlhXvLIZ18p10oehL_Q7-MJCjqq0DOmQQwPvw&oe=66D73E7E",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Ashraf Uddin",
+        "description": null
+      },
+      {
+        "id": "518148614128105",
+        "link": "https://www.facebook.com/marketplace/item/518148614128105",
+        "title": "Ipad 9 th",
+        "price": "CA$375",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/456984720_824849236435936_1706456781666752711_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=8saF4OO7mjMQ7kNvgHPBBhC&_nc_ht=scontent-hou1-1.xx&oh=00_AYCBKTSjqxmvgI7B2-aeAoFTFWaS8fGIiXVipA4LK1sQug&oe=66D7256A",
+        "location": "Gatineau",
+        "creation_time": null,
+        "seller_name": "Meunier H DyAnn",
+        "description": null
+      },
+      {
+        "id": "490759970268649",
+        "link": "https://www.facebook.com/marketplace/item/490759970268649",
+        "title": "32 GB iPad Air 2 with Otterbox Defender",
+        "price": "CA$180",
+        "image": "https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/454533993_1687699315396031_8057583399367680_n.jpg?stp=c0.53.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=heGaulmtggAQ7kNvgG6NIOd&_nc_ht=scontent-hou1-1.xx&oh=00_AYDo6n91PhlS_tbNIwNvcENiHAbaHDnxXSTTQXnY-ys7Ig&oe=66D73CD1",
+        "location": "Ottawa",
+        "creation_time": null,
+        "seller_name": "Michael Angelo",
+        "description": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "city": "toronto",
+    "query": "ipad",
+    "maxPrice": "1200",
+    "items": [
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "295749833533148",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/448502024_1504251033546778_3589444234401150188_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=qJLeODzD-q4Q7kNvgHDVyr3&_nc_ht=scontent-lga3-2.xx&oh=00_AYDPSY4Jkr9aU4saOqyr1Do0mpjH0OkNoTQCuAvUKmhG1w&oe=66D73899"
+          },
+          "id": "1504251030213445"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$400",
+          "amount_with_offset_in_currency": "29563",
+          "amount": "400.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad 10th generation Wi-Fi + Cellular",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": {
+          "id": "1005733104478510"
+        },
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Last Days",
+          "id": "pfbid0psKWM6kmKzVAb13G3QinQhNvhnAB7So9An599QeyUwLReV9HXKfjcUWFMrsVq7Dyl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/295749833533148"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "8937968569550500",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457564336_1054791433022910_8543473572905898169_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=jKXVmtWVNC8Q7kNvgGeLJ35&_nc_ht=scontent-lga3-2.xx&oh=00_AYBII5zBNNXL7kb3O7on95K9YQdZIwsHzjtyvEZJC4IT0g&oe=66D75258"
+          },
+          "id": "1054791429689577"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$1",
+          "amount_with_offset_in_currency": "74",
+          "amount": "1.00"
+        },
+        "strikethrough_price": {
+          "formatted_amount": "CA$499",
+          "amount": "499.00"
+        },
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Sealed Box iPad 10th Gen WiFi (64GB) Silver",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Nish",
+          "id": "pfbid02keUCdVjtVTHi5CzWZqjobRp7s2AVGckL7sFqqJrzkh8uFhViPXaEuCGHfDJZSDpnl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/8937968569550500"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1335916770720364",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457268278_1055523986154074_6605123434155558633_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=vwwu445kfSgQ7kNvgE2Ritv&_nc_ht=scontent-lga3-2.xx&oh=00_AYCnX9Ny2t3AvjBXqgPg_GyBNXJia5RCK5RRELyqpGyFTA&oe=66D72697"
+          },
+          "id": "1055523982820741"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$100",
+          "amount_with_offset_in_currency": "7391",
+          "amount": "100.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "ipad 2018 32 GB wifi only",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Robin Dufour",
+          "id": "pfbid02gF2YFTR32wkubSEkTw3sck3zi4H3DqRLNGD3qkPRPQVGKfFKpDMPYaqBRiJD35UJl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1335916770720364"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1054928526231405",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/451451315_1021842279381804_8601327017470325998_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=jK0C0weVnVYQ7kNvgGciTkz&_nc_ht=scontent-lga3-1.xx&oh=00_AYCR4OA4-cEIJ-wldaYqggMa19xzS4yRR2Lc4gssw2AI5A&oe=66D7356E"
+          },
+          "id": "1021842276048471"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$249",
+          "amount_with_offset_in_currency": "18403",
+          "amount": "249.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Almost New iPad Air 3 - 256GB Wifi+Cellular",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "CC Liu",
+          "id": "pfbid026C57cQngQ66oYMiiLMfke2PhAnubHtNYj83XBUVoKJYpSVkiHR1sewg37gRtHFeCl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON",
+          "DOOR_PICKUP"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1054928526231405"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "371310179121841",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/428091557_6818781421560898_2045371751302240791_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=LmHtfAPaSVMQ7kNvgFwTHil&_nc_ht=scontent-lga3-2.xx&oh=00_AYBRsq6h1NcLleIHuXbrcJP5pePQxlZsVs1acN8NrjLHvQ&oe=66D72FB5"
+          },
+          "id": "6818781414894232"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$100",
+          "amount_with_offset_in_currency": "7391",
+          "amount": "100.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "I have Apple iPad Air in Mint Condition - Like-New Condition - Working Perfectly",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": {
+          "id": "939266750953528"
+        },
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Lindsay Hanna",
+          "id": "pfbid02DLdgjjmAVTTqZgopbRrbsgFST3uvSQf2Au1vRDGkXVfnh5Jh9NNbKKwVLdbwPjnbl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/371310179121841"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "534163942310549",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/457337130_1024714289193899_1494909960703647861_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=64TqOzXOliUQ7kNvgE2ME0h&_nc_ht=scontent-lga3-1.xx&oh=00_AYB4iyUQgX24fLaHsVqcEfI6THyu-qtQ_2zHDMVdkMwyDQ&oe=66D72CA6"
+          },
+          "id": "1024714285860566"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$100",
+          "amount_with_offset_in_currency": "7391",
+          "amount": "100.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Apple ipad 5th generation 32 GB",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Robin Dufour",
+          "id": "pfbid02gF2YFTR32wkubSEkTw3sck3zi4H3DqRLNGD3qkPRPQVGKfFKpDMPYaqBRiJD35UJl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/534163942310549"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1586861772249975",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457133278_463836479820190_345725999334971300_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=ZBDC-cOWNiwQ7kNvgF_TiBT&_nc_ht=scontent-lga3-2.xx&oh=00_AYDVISzUeeTXsXjZkVojh8Osq4NoGc0aW_rsShDg0vfMIA&oe=66D73397"
+          },
+          "id": "463836473153524"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$450",
+          "amount_with_offset_in_currency": "33258",
+          "amount": "450.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "IPad 10th Gen with Case",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Githika Govindas",
+          "id": "pfbid02GmWGG2mrtfZW9oxAsBoaFkVYtzybUvEeWrPkY6as6jzdTYPft5JWc8MKsEXDdxqul"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1586861772249975"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1623268938233983",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/457564586_1704404997045014_784077678382993715_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=UZYmpuO7vZ4Q7kNvgEgRPCJ&_nc_ht=scontent-lga3-1.xx&oh=00_AYDHhk7tWEIPOOoe5rkryJh7daRd4CarbfbLOiP8yu1h3Q&oe=66D72CF0"
+          },
+          "id": "1704404993711681"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$490",
+          "amount_with_offset_in_currency": "36215",
+          "amount": "490.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Cambridge",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Cambridge, Ontario",
+              "id": "108451139178673"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Ipad 10th generation - Brand new - Never used",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Summiya Razzaq",
+          "id": "pfbid02ZjpG3SZUSocQb1nSpU4UxcGANPMDbesXBhiB4nY4VAfMc6e4CQC6vLCo7Fxhay4zl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1623268938233983"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1662514834555240",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/438306068_863484085629310_4513074398716955897_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=Eyf5exmVWm8Q7kNvgFv9CS2&_nc_ht=scontent-lga3-2.xx&oh=00_AYCP1mFqfnciDGeF44c1oMnMwN0Eq6Hl3TINqfKXY70UDA&oe=66D72796"
+          },
+          "id": "863484082295977"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$60",
+          "amount_with_offset_in_currency": "4434",
+          "amount": "60.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Two Apple iPad Mini like-New condition for Sale",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": {
+          "id": "1633649067390920"
+        },
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Katie Lee",
+          "id": "pfbid0LwqtAyRvNq1MjJK4qBC85yxW9reNHwh8hNSM3C3XtWxeTJL2iHHhr5kus6HfXTPel"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1662514834555240"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1443692512996328",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/456599457_525557983167158_6173639031627928482_n.jpg?stp=c0.28.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=Re4hwB6pEvgQ7kNvgFUp-Rr&_nc_ht=scontent-lga3-2.xx&oh=00_AYAH4DBSNfC58sao3JbshmeBffzsI2R3AB3Z7NhKYioVjw&oe=66D73CAA"
+          },
+          "id": "525557979833825"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$160",
+          "amount_with_offset_in_currency": "11825",
+          "amount": "160.00"
+        },
+        "strikethrough_price": {
+          "formatted_amount": "CA$190",
+          "amount": "190.00"
+        },
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad (6th Generation) 128GB",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Isaiah Jason",
+          "id": "pfbid0wpjzRkkEj3BA15CenXhZpgmz3WBegwDYU4YdsfesQrS89F8ggqrtniH523MBx5Nvl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1443692512996328"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "3783468531907980",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/457461340_1710556016380516_1823693490470016208_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=Ck4zuh5aLxEQ7kNvgHM4mLB&_nc_ht=scontent-lga3-1.xx&oh=00_AYAPevW4krSjHQsxqvvJttsFMcWWzk96S3POLnADrTJmjg&oe=66D75108"
+          },
+          "id": "1710556013047183"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$550",
+          "amount_with_offset_in_currency": "40649",
+          "amount": "550.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Selling NEW iPad 10th Generation, 64G, Silver",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Han Banh",
+          "id": "pfbid0shTp8wm8WKHbzJHJs5vWd7HHcVwe575RoZfb66ieYpWuJf6TL88Q3Ae3bBeGSN7hl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON",
+          "PUBLIC_MEETUP"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/3783468531907980"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1036194461078206",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457461340_508026248487009_6883683592944111178_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=wkRdo8hYdAoQ7kNvgHqeEJa&_nc_ht=scontent-lga3-2.xx&oh=00_AYCyCx6Ahq9nKZNqEuUUo6RHZt8tyF9aUaOVoQ-MLsSB7g&oe=66D72055"
+          },
+          "id": "508026245153676"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$275",
+          "amount_with_offset_in_currency": "20325",
+          "amount": "275.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Apple iPad 8th Gen Space Grey",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Michael Bui",
+          "id": "pfbid0V8MvTZkg9EP4RQC7NJEGiPMZZPK9KLFtRxf46HwWHCYHhBsEwHLwZRGEaArp3yZZl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON",
+          "PUBLIC_MEETUP",
+          "DOOR_PICKUP"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1036194461078206"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "881159260585230",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/457133039_514159597688531_1209170290020776533_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=kba_Ozy_EAMQ7kNvgG0UZWB&_nc_ht=scontent-lga3-1.xx&oh=00_AYCwcXaEYaQ3XnhYp0t5o776CzQHkEKwPGlXR7B_dKoiWQ&oe=66D735C8"
+          },
+          "id": "514159594355198"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$150",
+          "amount_with_offset_in_currency": "11086",
+          "amount": "150.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Apple iPad 10.5 (5th Generation)",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": {
+          "id": "499451192703854"
+        },
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Arpan Arora",
+          "id": "pfbid02E4F1axKJCTsibEYaZ4XK79nUtvoLJP5UhGsAPWqeiKJmCsc2ahj4eCAgJ24bZ16ql"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/881159260585230"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1188480255721672",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/455776408_1064706735068566_2450889324122298926_n.jpg?stp=c159.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=fN62ulpMm3EQ7kNvgFzMMx3&_nc_ht=scontent-lga3-2.xx&oh=00_AYCHxCtL6s26xZnxEe3ZaybnFJ2rY1exPanPzqIIx9yDbA&oe=66D74A01"
+          },
+          "id": "1064706731735233"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$115",
+          "amount_with_offset_in_currency": "8499",
+          "amount": "115.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPads",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Matthew Kulish",
+          "id": "pfbid0SDCGVdfn6XQyyY9cJa6LeVLimp6N6CHjDzRhwmyCn7kEYDv1xD8vfoeW7136Z572l"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1188480255721672"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "978395313689924",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/438081130_1005129850671897_4436288901200145124_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=Gp5kHCdo8AYQ7kNvgGCGPug&_nc_ht=scontent-lga3-1.xx&oh=00_AYD2peK317oBS8VXuoHMpqYwFjofhwCYhK6ObT3erreZog&oe=66D724F8"
+          },
+          "id": "1005129847338564"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$60",
+          "amount_with_offset_in_currency": "4434",
+          "amount": "60.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "I have these iPad Full Size 9.7 Inches for Sale",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": {
+          "id": "454613324171978"
+        },
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Katie Hanna",
+          "id": "pfbid0rEpo2eChBRDdwQ6Dth1sqeC31eoPqWt24XY5n86jixrWagELjoss8bNQgSmAJzVxl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/978395313689924"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1424254021591688",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457518314_1463358957874803_706768758414348680_n.jpg?stp=c100.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=pCWfx7pjvNkQ7kNvgEieXYu&_nc_ht=scontent-lga3-2.xx&oh=00_AYBOBqWW_msAHhkl_ZCwifhPTOjh6_lz4562sBksID2DhQ&oe=66D75224"
+          },
+          "id": "1463358954541470"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$350",
+          "amount_with_offset_in_currency": "25868",
+          "amount": "350.00"
+        },
+        "strikethrough_price": {
+          "formatted_amount": "CA$400",
+          "amount": "400.00"
+        },
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "ipad pro 12.9 2 Generation LTE 256GB with keyboard  charger Good Battery life Back to school Is here",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Thomas Lui",
+          "id": "pfbid02UifKV8SKR4jsYHGHqf1Jbc5AXTJem4nxYCdP26LTmqV5b1gATV5d65bNWgvk67Bvl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON",
+          "DOOR_PICKUP"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1424254021591688"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "534894469053223",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/346275862_23899196329695994_9204589935629001615_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=i9R1voleqhwQ7kNvgE4LEnV&_nc_ht=scontent-lga3-1.xx&oh=00_AYBrsQ4iCUgbdEDO7Acut9s5NwLaoDH2olsqL3UnCHd4Dw&oe=66D747B1"
+          },
+          "id": "23899196309695996"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$100",
+          "amount_with_offset_in_currency": "7391",
+          "amount": "100.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad Air 32gb",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Sakeena Myers-Halbig",
+          "id": "pfbid02e84FDFaoh4JERvytu3yYBtZz7L3kWZXrdEM58DMYHHXMVfFL2hzdThmpZ3vgDG3ol"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/534894469053223"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1035592077751838",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/456966807_1749563545854654_266462385289700150_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=-_ybzdKtXvAQ7kNvgHbAlmh&_nc_ht=scontent-lga3-2.xx&oh=00_AYDDGjQNNagTyupzEQlG1UWo8RDaWMz4jwavlkfrQ6UDLw&oe=66D75383"
+          },
+          "id": "1749563542521321"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$75",
+          "amount_with_offset_in_currency": "5543",
+          "amount": "75.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Apple iPad 2nd Generation",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Kevin Malott",
+          "id": "pfbid033iMGNUf7EdCt2Yyf8s7MCYQbp5Cj9Uo2uBxm7DyLCauNxbHq4uq48cVoB3sTwDhcl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1035592077751838"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "448582197994031",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/452048889_1217213256128922_4713837813738250537_n.jpg?stp=c0.159.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=qZW4iRb--JwQ7kNvgGURI4l&_nc_ht=scontent-lga3-2.xx&oh=00_AYDmD_KkYPMr0LUyQ_Te5TyDfq0-WGIbMpvvQ4STaD3N6Q&oe=66D74C53"
+          },
+          "id": "1217213252795589"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$50",
+          "amount_with_offset_in_currency": "3695",
+          "amount": "50.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Ipad",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Justice Ehis",
+          "id": "pfbid0qmCFBNFiJchbeWPRduHa4HSzVtMjQ9kDQQQPDV6hwLp8UBsYL93UGYkWE1Yypm5Nl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON",
+          "PUBLIC_MEETUP",
+          "DOOR_PICKUP"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/448582197994031"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1212945576512822",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/456346939_1711857392895974_8306199318928630218_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=ISq4ttErJJcQ7kNvgGGML4r&_nc_ht=scontent-lga3-1.xx&oh=00_AYBeZulc6S5PROLSkLY8lx1o6RMgqG2yCz1yK0DG-FAVBg&oe=66D74F08"
+          },
+          "id": "1711857389562641"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$90",
+          "amount_with_offset_in_currency": "6652",
+          "amount": "90.00"
+        },
+        "strikethrough_price": {
+          "formatted_amount": "CA$100",
+          "amount": "100.00"
+        },
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad mini 3 128GB",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Heather Jamieson",
+          "id": "pfbid021Tje1JtpLPasC5x6XvrFzRuuc6fNg1FoMFaxh2ES2Xy7Z2sTKwcDABVrAfKY1g4ql"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1212945576512822"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "885741970086401",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457329228_3919496341604992_1756233475349742253_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=Sx8msJ2b1McQ7kNvgE9Qh93&_nc_ht=scontent-lga3-2.xx&oh=00_AYDZfcNSHxBNeN1ldPvhzRfhReUsWwrgvDHdvjD3f1M4Tw&oe=66D74162"
+          },
+          "id": "3919496338271659"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$175",
+          "amount_with_offset_in_currency": "12934",
+          "amount": "175.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "8th Generation iPad 32GB",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Shenal John",
+          "id": "pfbid0pSkKDVwUSkpF5JKDQyd54PeaewQPun9DPpeUqfhoKknntXSGELa9AnWQkp8y1hfvl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/885741970086401"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "1181635316431263",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-1.xx.fbcdn.net/v/t45.5328-4/456256353_1049693443189731_1734552784980053691_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=KucOYTK3KscQ7kNvgE_PWe-&_nc_ht=scontent-lga3-1.xx&oh=00_AYDHcsn_7VFixgN8ItnLkT4HdMWnZsRj5ABRzc7j0jpk-Q&oe=66D755A9"
+          },
+          "id": "1049693433189732"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$50",
+          "amount_with_offset_in_currency": "3695",
+          "amount": "50.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad mini 2 generation",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Ronnel Small",
+          "id": "pfbid02Zh5uUNh7EhoVBPVumUCgtMcBsfWpXogeqRW8mSe4L9UZSzFDAyQuSKCCGgS9AMSol"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/1181635316431263"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "3749512848649497",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/457377898_469342022752085_2232328178886285232_n.jpg?stp=c0.152.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=EScFtlD2vEcQ7kNvgF_8OMm&_nc_ht=scontent-lga3-2.xx&oh=00_AYA2K7uxgTwXlkiQUDS7CPa4k0E2EWaEt3IvgptjwO6mQQ&oe=66D74BAA"
+          },
+          "id": "469342019418752"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$150",
+          "amount_with_offset_in_currency": "11086",
+          "amount": "150.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "Ipad 6th Generation",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Pawan Walia",
+          "id": "pfbid02ZtSfHTBfnjvQgoG4jg2c3k3F5L3rnuYxm87jDF9xMFwo2SbotiFwz5kvNHv3btUKl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/3749512848649497"
+      },
+      {
+        "__typename": "GroupCommerceProductItem",
+        "id": "2250627018617368",
+        "primary_listing_photo": {
+          "__typename": "ProductImage",
+          "image": {
+            "uri": "https://scontent-lga3-2.xx.fbcdn.net/v/t45.5328-4/452164441_507363868337764_8958865743672704105_n.jpg?stp=c62.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=41XFvGhYthIQ7kNvgHDBLIk&_nc_ht=scontent-lga3-2.xx&oh=00_AYDGAS_2JDjfxNsgi5B9DKej3n32SF5wiV0cQK0dQbBXfA&oe=66D74B37"
+          },
+          "id": "507363865004431"
+        },
+        "__isMarketplaceListingRenderable": "GroupCommerceProductItem",
+        "listing_price": {
+          "formatted_amount": "CA$125",
+          "amount_with_offset_in_currency": "9238",
+          "amount": "125.00"
+        },
+        "strikethrough_price": null,
+        "__isMarketplaceListingWithComparablePrice": "GroupCommerceProductItem",
+        "comparable_price": null,
+        "comparable_price_type": null,
+        "location": {
+          "reverse_geocode": {
+            "city": "Toronto",
+            "state": "ON",
+            "city_page": {
+              "display_name": "Toronto, Ontario",
+              "id": "110941395597405"
+            }
+          }
+        },
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "is_viewer_seller": false,
+        "min_listing_price": null,
+        "max_listing_price": null,
+        "marketplace_listing_category_id": "1792291877663080",
+        "marketplace_listing_title": "iPad Air2, 32G, wifi",
+        "custom_title": null,
+        "custom_sub_titles_with_rendering_flags": [],
+        "origin_group": null,
+        "listing_video": null,
+        "__isMarketplaceListingWithChildListings": "GroupCommerceProductItem",
+        "parent_listing": null,
+        "marketplace_listing_seller": {
+          "__typename": "User",
+          "name": "Hui Chen",
+          "id": "pfbid02DvAHFxTyVvxnRAUmvCmrrEogLrcLEG9FXP1mnYzLoJwYwTBiBGzaT5N4LxauHvWCl"
+        },
+        "__isMarketplaceListingWithDeliveryOptions": "GroupCommerceProductItem",
+        "delivery_types": [
+          "IN_PERSON"
+        ],
+        "link": "https://www.facebook.com/marketplace/item/2250627018617368"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "city": "toronto",
+    "query": "iphone",
+    "maxPrice": "1200",
+    "items": [
+      {
+        "id": "543046644739960",
+        "url": "https://www.facebook.com/marketplace/item/543046644739960",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457577143_3377387252558167_21728035588012679_n.jpg?stp=c0.46.258.258a_dst-jpg_p235x350&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=1qQwVYmaJNgQ7kNvgFu-pOn&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBgpZrgZcwBWrAhI9Ztr6s6W5zH0pNqIwNrMOBmNCdf9Q&oe=66D72993",
+        "formatted_amount": "CA$150",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Iphone 11",
+        "link": "https://www.facebook.com/marketplace/item/543046644739960",
+        "seller_id": "pfbid02hv1JBRcuRjtZu4d3QRvR1Yd9sw42zocajpiFZV7eY16LzKCGMJRMjKcnfCZkipwHl",
+        "seller_name": "Rochelle Moncrieffe",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.677Z"
+      },
+      {
+        "id": "1173875754409395",
+        "url": "https://www.facebook.com/marketplace/item/1173875754409395",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457000808_518014793933164_1211930271255927358_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=3oHEhmv2NEoQ7kNvgEAyHyn&_nc_ht=scontent-sjc3-1.xx&oh=00_AYDpPgnPtSs1BeuSYEd_s1eBA70g5rK1BTSQZHh_OtoBww&oe=66D7504E",
+        "formatted_amount": "CA$500",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro is 100%🔋- New battery",
+        "link": "https://www.facebook.com/marketplace/item/1173875754409395",
+        "seller_id": "pfbid02M2DAad5eEipE1GSQvCNMwrZnTMNvHJ8SpVA3GKNVH5Wik9pNgVrieZYLsTM5Vf3xl",
+        "seller_name": "Mertha Leonandrés",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "2015473045521897",
+        "url": "https://www.facebook.com/marketplace/item/2015473045521897",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454421112_1615590405683016_4961197139496347138_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=9XjTOWbgNBkQ7kNvgGKwfUu&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBtkwlzYG9SNwlYYbhXcHatncYAj9JTKIpclgLxGn0GNg&oe=66D74D29",
+        "formatted_amount": "CA$329",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 11 Pro, 11 Pro Max, 12 Pro, 12 Pro Max, 13 Pro, 13 Pro Max 128GB Storage - Super Sale",
+        "link": "https://www.facebook.com/marketplace/item/2015473045521897",
+        "seller_id": "pfbid06bE2Ebh4eTi9okEZ4S6MtNFXPRNdu3bJS5T8xHGjkBJZnjWYuqqwyHzNquib95Ddl",
+        "seller_name": "Jeffrey Wright",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "758656569640546",
+        "url": "https://www.facebook.com/marketplace/item/758656569640546",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457210948_1175603257062164_6781513764939552813_n.jpg?stp=c0.18.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=jf2Q8w3s_e0Q7kNvgFqKWPp&_nc_ht=scontent-sjc3-1.xx&oh=00_AYC1brAyHlzDIw4WNn4jQxqBPoxgtB_lZ-hsDZ9PEU2c3w&oe=66D74A37",
+        "formatted_amount": "CA$135",
+        "city": "Oakville",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Apple iPhone XR Unlocked",
+        "link": "https://www.facebook.com/marketplace/item/758656569640546",
+        "seller_id": "pfbid02svgAZ1Yba1Aw3WtXvnQFUWok6gsKDWyw9PzZj4QrStsWLiDgca1n9f6Y1VquQG65l",
+        "seller_name": "Vito Maiurro",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "848024800760239",
+        "url": "https://www.facebook.com/marketplace/item/848024800760239",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/455024899_1034590778236183_6835106953105601254_n.jpg?stp=c65.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=BjJ0w1EHZB8Q7kNvgFSqllF&_nc_ht=scontent-sjc3-1.xx&oh=00_AYCVEbI4GgVUYLV4sixOdRtU3ACEmt0W0zL8MAoa7atDCQ&oe=66D73E53",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 15 Pro Max, 14 Pro Max, 13 Pro Max, 13 Pro, 13, 12, 11, Xr, SE 64GB/128GB - Special Discount",
+        "link": "https://www.facebook.com/marketplace/item/848024800760239",
+        "seller_id": "pfbid02U5kN6dLVd6n6QEuA1EwS7j5JdTorxKtxyEUVsnETichpnaF62KkWSHaSK5NPeJQRl",
+        "seller_name": "Steven King",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1209041126904148",
+        "url": "https://www.facebook.com/marketplace/item/1209041126904148",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454368391_496874976266817_899617592616704761_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=DR152OTkGeUQ7kNvgGp_Rk5&_nc_ht=scontent-sjc3-1.xx&oh=00_AYDEStlK05ZX3zpvM7HAfU2VNDyofq2C0olOp8m1FIEmpQ&oe=66D72830",
+        "formatted_amount": "CA$329",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 11 Pro, 11 Pro Max, 12 Pro, 12 Pro Max, 13 Pro, 13 Pro Max 512GB/128GB - Store Warranty",
+        "link": "https://www.facebook.com/marketplace/item/1209041126904148",
+        "seller_id": "pfbid09HcaQpUL59dGcNt5iqeyZJhhJnDKzAsysAtUPzSu1xAqYgYq8auRFo7ECu3c9nPml",
+        "seller_name": "Emily Kim",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "477496265169030",
+        "url": "https://www.facebook.com/marketplace/item/477496265169030",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/455604835_859361386078530_146373651663189407_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=40Wy85JN-MgQ7kNvgGblYPz&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBSkjZTcK2LIKLggNkVYa0BXsTyli9PGnL7CMXReFwnUQ&oe=66D73FB5",
+        "formatted_amount": "CA$750",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 15 pro max",
+        "link": "https://www.facebook.com/marketplace/item/477496265169030",
+        "seller_id": "pfbid06Nzco8oQWUmiVUJ4Sg8FKV9iSJynfYmT6sdJxGRo5pmFZwTNobvk34sgoLLqioKdl",
+        "seller_name": "Curtis Jones",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1423974514938487",
+        "url": "https://www.facebook.com/marketplace/item/1423974514938487",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/456967239_1590449905151012_919174563113402114_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=rOUb2A9YrK4Q7kNvgGxD7Ou&_nc_ht=scontent-sjc3-1.xx&oh=00_AYAO-JSGMJWnkj669nX2gXkx-JYsOxn_LujG9k6c4vhEeQ&oe=66D73DE3",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 13 Pro, 13, 12 Pro Max, 12 Pro, 12, 11, SE - @ Store Waraanty",
+        "link": "https://www.facebook.com/marketplace/item/1423974514938487",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "2016945012097867",
+        "url": "https://www.facebook.com/marketplace/item/2016945012097867",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457496763_830686692162227_6708405141908130445_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=ZC2lEy-cDiUQ7kNvgFXjfvc&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBk-eCmRxmiuNYvpUHCuhElZ5bBHkyZfeihkc08WeBJ6w&oe=66D73F3D",
+        "formatted_amount": "CA$210",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "White Iphone 11 || 64 gb. Small scratch as shown on last picture.",
+        "link": "https://www.facebook.com/marketplace/item/2016945012097867",
+        "seller_id": "pfbid02UT3Xk9WYezzgToeHPHx9ykCkytoiMjJ6rxnbaDkUgSUigNdh9iiyCJodBp7zPHuwl",
+        "seller_name": "Anna Dunaevsky",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "541723261620104",
+        "url": "https://www.facebook.com/marketplace/item/541723261620104",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454711280_1886281385152410_2354228113879235742_n.jpg?stp=c17.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=RF8deEBtMgIQ7kNvgGZ3JO6&_nc_ht=scontent-sjc3-1.xx&oh=00_AYD-sMw8Bqt9Z4Vl6I_Pmeoxn2znXmA4yWm5bs-eO5RVaA&oe=66D7365C",
+        "formatted_amount": "CA$99",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhones for sale \nIPhone 8,11,12",
+        "link": "https://www.facebook.com/marketplace/item/541723261620104",
+        "seller_id": "pfbid02EReY3utDzx47Rw8iuHxYtBMC28ysZxg2oTPxSYQTUz1niNwms6hLHCzKDXcSDpp2l",
+        "seller_name": "Vaishany Rajratnam",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "7845736148856657",
+        "url": "https://www.facebook.com/marketplace/item/7845736148856657",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454648325_815067127453754_6423785132071719000_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=b6VQ7Y4fh2AQ7kNvgFsFJwL&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBxctwdaG44hMOMWpLJfo9lyTSsldGu_IgSMXYRgVpkbA&oe=66D72BB9",
+        "formatted_amount": "CA$100",
+        "city": "Barrie",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Iphone 11 pro max ( parts )",
+        "link": "https://www.facebook.com/marketplace/item/7845736148856657",
+        "seller_id": "pfbid02YFybA9LckSCgDgrdmyc2KBM3ukVbDgLZqZnJbt3DodxyYKq9zexVVksq2D6kJzHYl",
+        "seller_name": "Mike Thomas",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "8052446811457634",
+        "url": "https://www.facebook.com/marketplace/item/8052446811457634",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457370335_1047686259605412_4945572477265071859_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=OJSYQG4FfSMQ7kNvgHjPQxR&_nc_ht=scontent-sjc3-1.xx&oh=00_AYCygnVgUEu57aPye-vKWhwpj-nEvpgxVQ_4Wf5YUhK5HQ&oe=66D7232F",
+        "formatted_amount": "CA$300",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 12 Pro Max 128G",
+        "link": "https://www.facebook.com/marketplace/item/8052446811457634",
+        "seller_id": "pfbid0Pii93W9ws6RuBTBe7miXTMpHbYhrHcHRYni2xi67JBfs8iYit8LujZVivPQDB9oel",
+        "seller_name": "Stefanie Sgrignuoli",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "2776402702534048",
+        "url": "https://www.facebook.com/marketplace/item/2776402702534048",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457251901_524424476833543_7146471532947141531_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=zVDv6GDr6TUQ7kNvgHF1_k2&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBzZGUYjeEDlpSnur5Z6pF_62yMwkqn0zBtXcFBidRIBw&oe=66D72A37",
+        "formatted_amount": "CA$360",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 13 (128GB)",
+        "link": "https://www.facebook.com/marketplace/item/2776402702534048",
+        "seller_id": "pfbid02HbfceAyNTuq8gtbjiYn12et6TA4ueKS2S8xdcpMhLVAdusQi6mPx7bD8ex4EENzEl",
+        "seller_name": "Richard Nguyen",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "424099360638295",
+        "url": "https://www.facebook.com/marketplace/item/424099360638295",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454622887_496534953313597_890577764626759712_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=nayqkKDNzb0Q7kNvgGaZ5T-&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBOkjWSp-EGYkHoq6a5nyyqyMSoRXUrWHYr-WD3LDnIqw&oe=66D73B98",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 13 Pro, 13, 12 Pro Max, 12 Pro, 12, 11, SE Unlocked, On Sale",
+        "link": "https://www.facebook.com/marketplace/item/424099360638295",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "520521003786537",
+        "url": "https://www.facebook.com/marketplace/item/520521003786537",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457380013_1189745748921229_8599721001569961743_n.jpg?stp=c0.11.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=YQkwfpkLizUQ7kNvgFHoTCw&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBIXBHqWKjJ0hYAo56i8wn-jdXhRB68satQHfkY6ookmA&oe=66D725A0",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max/13/12 Pro/12/11 Pro Max/11 Pro/11/Xr/SE - 64GB/128GB / Super Sale",
+        "link": "https://www.facebook.com/marketplace/item/520521003786537",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "3742037876070315",
+        "url": "https://www.facebook.com/marketplace/item/3742037876070315",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457445035_936426835166118_1768596229593497639_n.jpg?stp=c0.148.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=494zxP7l5uEQ7kNvgHuMztg&_nc_ht=scontent-sjc3-1.xx&oh=00_AYD0H6B8cPMLMOlQR5SisxAJFqtQfNTe58jfGq2ZyNrKbw&oe=66D75077",
+        "formatted_amount": "CA$250",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iphone 11 light green w/charger and ear buds",
+        "link": "https://www.facebook.com/marketplace/item/3742037876070315",
+        "seller_id": "pfbid02nJ8wy2tTkCGHuJRDEMLADsMBjb8fuc3G6Ri8oYX3pvNDhXGxe7LhCFYMTg77hu4jl",
+        "seller_name": "Christy Eaglesham",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "989125942990330",
+        "url": "https://www.facebook.com/marketplace/item/989125942990330",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457500934_976508914275945_7208530085183133003_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=_sRZLeB8VNwQ7kNvgGog8iQ&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBjkMFRgvS5bETKHnQi9MZIlMe9bFyE88KcaC_ZbMHiRQ&oe=66D75443",
+        "formatted_amount": "CA$200",
+        "city": "Kitchener",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 11",
+        "link": "https://www.facebook.com/marketplace/item/989125942990330",
+        "seller_id": "pfbid02fZbu4HxPtqtqe6Cq5SA8HiHLAQeLFHW9YcXAefmN7SuecLEZtSrJ4ufWsVZQbonPl",
+        "seller_name": "Alih Deydan",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "457007757307844",
+        "url": "https://www.facebook.com/marketplace/item/457007757307844",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/455830353_422757907445989_6325485226914045626_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=LuPPbdMmNZgQ7kNvgErhj6u&_nc_ht=scontent-sjc3-1.xx&oh=00_AYAEjRN9KZv4KvK1HV2tgpYzCnfv4GsVHXIv7l1i1rzDWw&oe=66D733CE",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 12 Pro Max, 13 Pro, 13, 12, 11, 11 Pro, SE - Sumemr Break Sale",
+        "link": "https://www.facebook.com/marketplace/item/457007757307844",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1247177539810436",
+        "url": "https://www.facebook.com/marketplace/item/1247177539810436",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457093599_525573699868918_408878192520028029_n.jpg?stp=c0.18.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=BJ8u3fukFlgQ7kNvgEQBRDD&_nc_ht=scontent-sjc3-1.xx&oh=00_AYCvPSrJQLEhEviVT1a8XbI_rEm6ddrBy6lAAZbZkq7mvw&oe=66D73639",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 14 / 13 / 12 / 11 / XR / SE - Best SALE !!!",
+        "link": "https://www.facebook.com/marketplace/item/1247177539810436",
+        "seller_id": "pfbid02NtSLwU2JFg5DRf3iEMBwkfy9m84fiLLmQARuyhMuRASKiDmhGZBZLp7qoSKDx5oTl",
+        "seller_name": "Jim Parson",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1924022251449482",
+        "url": "https://www.facebook.com/marketplace/item/1924022251449482",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457453040_1059637299148070_8108773472417807456_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=o_zhU72P1WwQ7kNvgG6CPyo&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBm2xhPrDFMhDeNQ8JvpqSjHXDl_udMTSR-qOL7AwbOHg&oe=66D74BAC",
+        "formatted_amount": "CA$1,200",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iphone 15 promax",
+        "link": "https://www.facebook.com/marketplace/item/1924022251449482",
+        "seller_id": "pfbid0hFZiuJrQ59r88auz5HDutDjSRnHgsMPMf38FQU91MNxkH4sjc5ks4gduYM1SsFiSl",
+        "seller_name": "Rashda Razaq",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1890321898116985",
+        "url": "https://www.facebook.com/marketplace/item/1890321898116985",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/456614463_477192678557076_5615868352096172793_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=sFlxF2NN3SgQ7kNvgGkSggK&_nc_ht=scontent-sjc3-1.xx&oh=00_AYCEGdY3q_3wg0ntpG9s9xwJ0Vy8QxxmhcluMbKeIcoLNQ&oe=66D747B2",
+        "formatted_amount": "CA$320",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 12 64gb",
+        "link": "https://www.facebook.com/marketplace/item/1890321898116985",
+        "seller_id": "pfbid02dac2Q7rpALAppNWmUbxUJ3YVYT9XLJrNKyyRjKUs6WxEPVZBBTU5TvKrTgWF2Q7sl",
+        "seller_name": "Harry Po",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1151245442840804",
+        "url": "https://www.facebook.com/marketplace/item/1151245442840804",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/454723526_889641683006859_7263065471971131241_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=r35S6HvqxIUQ7kNvgFWmShx&_nc_ht=scontent-sjc3-1.xx&oh=00_AYBCdAbpejq4-0WLZyoc8nHUjl_4j9FF9qmT7ljAjVWFoA&oe=66D7295F",
+        "formatted_amount": "CA$350",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 14 Pro Max, 13 Pro Max, 13 Pro, 13, 12 Pro, 12, 11, SE | Unlocked | Store Warranty | On Sale",
+        "link": "https://www.facebook.com/marketplace/item/1151245442840804",
+        "seller_id": "pfbid02U5kN6dLVd6n6QEuA1EwS7j5JdTorxKtxyEUVsnETichpnaF62KkWSHaSK5NPeJQRl",
+        "seller_name": "Steven King",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "2982078071939497",
+        "url": "https://www.facebook.com/marketplace/item/2982078071939497",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457611200_497191106391538_5919272589395758375_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=BpYuocdLPOYQ7kNvgGMoJfm&_nc_ht=scontent-sjc3-1.xx&oh=00_AYASBTQLfGM8jwD2WlkLBhlmqgqR9BB3kTRFMfNcO7pquA&oe=66D74583",
+        "formatted_amount": "CA$550",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPHONE 13",
+        "link": "https://www.facebook.com/marketplace/item/2982078071939497",
+        "seller_id": "pfbid0pJZGwXyUfBfpWfvtPkPWC1tS2pmyc6MaBtQz2AmTLRYuCzfYR3kEzBPYppGZ3Zo4l",
+        "seller_name": "Arjun Kakkar",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      },
+      {
+        "id": "1046881196835070",
+        "url": "https://www.facebook.com/marketplace/item/1046881196835070",
+        "primary_listing_photo": "https://scontent-sjc3-1.xx.fbcdn.net/v/t45.5328-4/457216629_2171081773292672_1871574444111545160_n.jpg?stp=c0.6.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=WvGRm8UYpg0Q7kNvgEC9adj&_nc_ht=scontent-sjc3-1.xx&oh=00_AYDUD4Vyt3X9fzn0xJhC7U4XnkVvWSrvI_AchunqPl-Sgw&oe=66D7337B",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 14 / 13 / 12 / 11 / XR / SE - Labour Day Sale",
+        "link": "https://www.facebook.com/marketplace/item/1046881196835070",
+        "seller_id": "pfbid02NtSLwU2JFg5DRf3iEMBwkfy9m84fiLLmQARuyhMuRASKiDmhGZBZLp7qoSKDx5oTl",
+        "seller_name": "Jim Parson",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:45:08.678Z"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "city": "toronto",
+    "query": "iphone",
+    "maxPrice": "1200",
+    "items": [
+      {
+        "id": "1173875754409395",
+        "url": "https://www.facebook.com/marketplace/item/1173875754409395",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457000808_518014793933164_1211930271255927358_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=3oHEhmv2NEoQ7kNvgHisND1&_nc_ht=scontent.fphl1-1.fna&oh=00_AYALeQMMzHh7GgqS4MBHmpqadGkz98tpM9PYmNvsrdBj_Q&oe=66D7504E",
+        "formatted_amount": "CA$500",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro is 100%🔋- New battery",
+        "link": "https://www.facebook.com/marketplace/item/1173875754409395",
+        "seller_id": "pfbid02M2DAad5eEipE1GSQvCNMwrZnTMNvHJ8SpVA3GKNVH5Wik9pNgVrieZYLsTM5Vf3xl",
+        "seller_name": "Mertha Leonandrés",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "543046644739960",
+        "url": "https://www.facebook.com/marketplace/item/543046644739960",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457577143_3377387252558167_21728035588012679_n.jpg?stp=c0.46.258.258a_dst-jpg_p235x350&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=1qQwVYmaJNgQ7kNvgHOKkwC&_nc_ht=scontent.fphl1-1.fna&oh=00_AYABKTK4erl4Id_vLL00wodjRxIkgQT15Jw4qQvqo1jMaA&oe=66D72993",
+        "formatted_amount": "CA$150",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Iphone 11",
+        "link": "https://www.facebook.com/marketplace/item/543046644739960",
+        "seller_id": "pfbid02hv1JBRcuRjtZu4d3QRvR1Yd9sw42zocajpiFZV7eY16LzKCGMJRMjKcnfCZkipwHl",
+        "seller_name": "Rochelle Moncrieffe",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "477496265169030",
+        "url": "https://www.facebook.com/marketplace/item/477496265169030",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/455604835_859361386078530_146373651663189407_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=40Wy85JN-MgQ7kNvgEqchll&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAAaDf64sue4ji5Z1TsjqxOaCsplkfZLN7KdK59ijmgpw&oe=66D73FB5",
+        "formatted_amount": "CA$750",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 15 pro max",
+        "link": "https://www.facebook.com/marketplace/item/477496265169030",
+        "seller_id": "pfbid06Nzco8oQWUmiVUJ4Sg8FKV9iSJynfYmT6sdJxGRo5pmFZwTNobvk34sgoLLqioKdl",
+        "seller_name": "Curtis Jones",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "2015473045521897",
+        "url": "https://www.facebook.com/marketplace/item/2015473045521897",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454421112_1615590405683016_4961197139496347138_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=9XjTOWbgNBkQ7kNvgEdN4kn&_nc_ht=scontent.fphl1-1.fna&oh=00_AYCVp82hCCWFzAzLEnGOygmGU7kK1-LOUqR3s1luCR3iQw&oe=66D74D29",
+        "formatted_amount": "CA$329",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 11 Pro, 11 Pro Max, 12 Pro, 12 Pro Max, 13 Pro, 13 Pro Max 128GB Storage - Super Sale",
+        "link": "https://www.facebook.com/marketplace/item/2015473045521897",
+        "seller_id": "pfbid06bE2Ebh4eTi9okEZ4S6MtNFXPRNdu3bJS5T8xHGjkBJZnjWYuqqwyHzNquib95Ddl",
+        "seller_name": "Jeffrey Wright",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1209041126904148",
+        "url": "https://www.facebook.com/marketplace/item/1209041126904148",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454368391_496874976266817_899617592616704761_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=DR152OTkGeUQ7kNvgGTBjba&_nc_ht=scontent.fphl1-1.fna&oh=00_AYA2AgBIN4x17k0Fl7eHLwQGFVlFqRyszVekWdthlYWBjQ&oe=66D72830",
+        "formatted_amount": "CA$329",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 11 Pro, 11 Pro Max, 12 Pro, 12 Pro Max, 13 Pro, 13 Pro Max 512GB/128GB - Store Warranty",
+        "link": "https://www.facebook.com/marketplace/item/1209041126904148",
+        "seller_id": "pfbid09HcaQpUL59dGcNt5iqeyZJhhJnDKzAsysAtUPzSu1xAqYgYq8auRFo7ECu3c9nPml",
+        "seller_name": "Emily Kim",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1423974514938487",
+        "url": "https://www.facebook.com/marketplace/item/1423974514938487",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/456967239_1590449905151012_919174563113402114_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=rOUb2A9YrK4Q7kNvgHY77Dl&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAT2Jz999IJhiqiCodzHQfsOLKNlhw71y-4fHeTScJD-g&oe=66D73DE3",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 13 Pro, 13, 12 Pro Max, 12 Pro, 12, 11, SE - @ Store Waraanty",
+        "link": "https://www.facebook.com/marketplace/item/1423974514938487",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "848024800760239",
+        "url": "https://www.facebook.com/marketplace/item/848024800760239",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/455024899_1034590778236183_6835106953105601254_n.jpg?stp=c65.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=BjJ0w1EHZB8Q7kNvgHr7DJE&_nc_ht=scontent.fphl1-1.fna&oh=00_AYBgwZAsSiQdywffsGR6CDoUXgIq4IJFBU-KVQfpKdt-rQ&oe=66D73E53",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 15 Pro Max, 14 Pro Max, 13 Pro Max, 13 Pro, 13, 12, 11, Xr, SE 64GB/128GB - Special Discount",
+        "link": "https://www.facebook.com/marketplace/item/848024800760239",
+        "seller_id": "pfbid02U5kN6dLVd6n6QEuA1EwS7j5JdTorxKtxyEUVsnETichpnaF62KkWSHaSK5NPeJQRl",
+        "seller_name": "Steven King",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "2776402702534048",
+        "url": "https://www.facebook.com/marketplace/item/2776402702534048",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457251901_524424476833543_7146471532947141531_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=zVDv6GDr6TUQ7kNvgHdid8-&_nc_ht=scontent.fphl1-1.fna&oh=00_AYD0khk8ohhEXExP2fzc96aDYZm_A1eRUwL193oINt_WGA&oe=66D72A37",
+        "formatted_amount": "CA$360",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 13 (128GB)",
+        "link": "https://www.facebook.com/marketplace/item/2776402702534048",
+        "seller_id": "pfbid02HbfceAyNTuq8gtbjiYn12et6TA4ueKS2S8xdcpMhLVAdusQi6mPx7bD8ex4EENzEl",
+        "seller_name": "Richard Nguyen",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "758656569640546",
+        "url": "https://www.facebook.com/marketplace/item/758656569640546",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457210948_1175603257062164_6781513764939552813_n.jpg?stp=c0.18.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=jf2Q8w3s_e0Q7kNvgHgGB5f&_nc_ht=scontent.fphl1-1.fna&oh=00_AYCJIFf_a5vubwzFBHmtlExOi044ve1iFFvaxcmdKZd0-w&oe=66D74A37",
+        "formatted_amount": "CA$135",
+        "city": "Oakville",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Apple iPhone XR Unlocked",
+        "link": "https://www.facebook.com/marketplace/item/758656569640546",
+        "seller_id": "pfbid02svgAZ1Yba1Aw3WtXvnQFUWok6gsKDWyw9PzZj4QrStsWLiDgca1n9f6Y1VquQG65l",
+        "seller_name": "Vito Maiurro",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "2016945012097867",
+        "url": "https://www.facebook.com/marketplace/item/2016945012097867",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457496763_830686692162227_6708405141908130445_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=ZC2lEy-cDiUQ7kNvgHHmG1m&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAS5cNIBXn0g8wZz1Cx27FqHDg4MK8FzeJg33YfrceitA&oe=66D73F3D",
+        "formatted_amount": "CA$210",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "White Iphone 11 || 64 gb. Small scratch as shown on last picture.",
+        "link": "https://www.facebook.com/marketplace/item/2016945012097867",
+        "seller_id": "pfbid02UT3Xk9WYezzgToeHPHx9ykCkytoiMjJ6rxnbaDkUgSUigNdh9iiyCJodBp7zPHuwl",
+        "seller_name": "Anna Dunaevsky",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "8052446811457634",
+        "url": "https://www.facebook.com/marketplace/item/8052446811457634",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457370335_1047686259605412_4945572477265071859_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=OJSYQG4FfSMQ7kNvgGk03aH&_nc_ht=scontent.fphl1-1.fna&oh=00_AYCybU1gj29dMdxFL33u3IXTnXkuopLJHBU9ahedqzIEaQ&oe=66D7232F",
+        "formatted_amount": "CA$300",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 12 Pro Max 128G",
+        "link": "https://www.facebook.com/marketplace/item/8052446811457634",
+        "seller_id": "pfbid0Pii93W9ws6RuBTBe7miXTMpHbYhrHcHRYni2xi67JBfs8iYit8LujZVivPQDB9oel",
+        "seller_name": "Stefanie Sgrignuoli",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "2982078071939497",
+        "url": "https://www.facebook.com/marketplace/item/2982078071939497",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457611200_497191106391538_5919272589395758375_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=BpYuocdLPOYQ7kNvgHBwa4j&_nc_ht=scontent.fphl1-1.fna&oh=00_AYD1ulE8w9G_Viui0XteX8Pjn0tkTXakzibHkzv1dlqMRA&oe=66D74583",
+        "formatted_amount": "CA$550",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPHONE 13",
+        "link": "https://www.facebook.com/marketplace/item/2982078071939497",
+        "seller_id": "pfbid0pJZGwXyUfBfpWfvtPkPWC1tS2pmyc6MaBtQz2AmTLRYuCzfYR3kEzBPYppGZ3Zo4l",
+        "seller_name": "Arjun Kakkar",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "541723261620104",
+        "url": "https://www.facebook.com/marketplace/item/541723261620104",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454711280_1886281385152410_2354228113879235742_n.jpg?stp=c17.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=RF8deEBtMgIQ7kNvgHty-Kc&_nc_ht=scontent.fphl1-1.fna&oh=00_AYDddh1uMzN7pZFhFmVPu98vsf5kbGxDem-O81JCDCIT5w&oe=66D7365C",
+        "formatted_amount": "CA$99",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhones for sale \nIPhone 8,11,12",
+        "link": "https://www.facebook.com/marketplace/item/541723261620104",
+        "seller_id": "pfbid02EReY3utDzx47Rw8iuHxYtBMC28ysZxg2oTPxSYQTUz1niNwms6hLHCzKDXcSDpp2l",
+        "seller_name": "Vaishany Rajratnam",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "989125942990330",
+        "url": "https://www.facebook.com/marketplace/item/989125942990330",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457500934_976508914275945_7208530085183133003_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=_sRZLeB8VNwQ7kNvgGMUVL6&_nc_ht=scontent.fphl1-1.fna&oh=00_AYBK7sAFrq3dyQnA8hGLl86_kke_7zHS_oTFpFo7j_-lGA&oe=66D75443",
+        "formatted_amount": "CA$200",
+        "city": "Kitchener",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "IPhone 11",
+        "link": "https://www.facebook.com/marketplace/item/989125942990330",
+        "seller_id": "pfbid02fZbu4HxPtqtqe6Cq5SA8HiHLAQeLFHW9YcXAefmN7SuecLEZtSrJ4ufWsVZQbonPl",
+        "seller_name": "Alih Deydan",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "424099360638295",
+        "url": "https://www.facebook.com/marketplace/item/424099360638295",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454622887_496534953313597_890577764626759712_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=nayqkKDNzb0Q7kNvgHK9TrI&_nc_ht=scontent.fphl1-1.fna&oh=00_AYDlSEY73KqQWYkR8dkVR8KWkJCL_vUzisUWKmespMlUSw&oe=66D73B98",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 13 Pro, 13, 12 Pro Max, 12 Pro, 12, 11, SE Unlocked, On Sale",
+        "link": "https://www.facebook.com/marketplace/item/424099360638295",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "457007757307844",
+        "url": "https://www.facebook.com/marketplace/item/457007757307844",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/455830353_422757907445989_6325485226914045626_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=U_2K09Y-lnsQ7kNvgEsGB8u&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAfpp7zOjDxkYOiJQKlWqpN176cvh_SufUfErTCPmA5Ug&oe=66D733CE",
+        "formatted_amount": "CA$149",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max, 12 Pro Max, 13 Pro, 13, 12, 11, 11 Pro, SE - Sumemr Break Sale",
+        "link": "https://www.facebook.com/marketplace/item/457007757307844",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1879947889169971",
+        "url": "https://www.facebook.com/marketplace/item/1879947889169971",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/455876686_345592345314580_5708318497532355127_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=X-TtQS7j9zoQ7kNvgHYh7yl&_nc_ht=scontent.fphl1-1.fna&oh=00_AYDCR-423IU1ZYYB4HYT2xlnYVllPf1IprCEYPIOE96iVA&oe=66D748F7",
+        "formatted_amount": "CA$450",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13",
+        "link": "https://www.facebook.com/marketplace/item/1879947889169971",
+        "seller_id": "pfbid02eoNZ2DHfuWJKrxo51VCssicZiY4ZhfopD42Vkqd7rxtzchexfGd53MbCFJgwbJTcl",
+        "seller_name": "Gabriela Cerna",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "7845736148856657",
+        "url": "https://www.facebook.com/marketplace/item/7845736148856657",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454648325_815067127453754_6423785132071719000_n.jpg?stp=c0.151.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=b6VQ7Y4fh2AQ7kNvgGSGBtA&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAAvVbpDBTXKe7n_YAPKKK3d4yHrLrOWmQ__LhMl4Mukw&oe=66D72BB9",
+        "formatted_amount": "CA$100",
+        "city": "Barrie",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "Iphone 11 pro max ( parts )",
+        "link": "https://www.facebook.com/marketplace/item/7845736148856657",
+        "seller_id": "pfbid02YFybA9LckSCgDgrdmyc2KBM3ukVbDgLZqZnJbt3DodxyYKq9zexVVksq2D6kJzHYl",
+        "seller_name": "Mike Thomas",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "520521003786537",
+        "url": "https://www.facebook.com/marketplace/item/520521003786537",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457380013_1189745748921229_8599721001569961743_n.jpg?stp=c0.11.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=YQkwfpkLizUQ7kNvgGMVuq7&_nc_ht=scontent.fphl1-1.fna&oh=00_AYC8FbyfmtZJ-aSLnYhhZUF_d0NS58uTLUa9XwPpicsZuw&oe=66D725A0",
+        "formatted_amount": "CA$139",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 Pro Max/13/12 Pro/12/11 Pro Max/11 Pro/11/Xr/SE - 64GB/128GB / Super Sale",
+        "link": "https://www.facebook.com/marketplace/item/520521003786537",
+        "seller_id": "pfbid0rhufxuNoRDjpwsSLhzTxuHavTtEb9Fzj33TRtEVnyhwM1sFgzqtXtLXLpgX6G6QXl",
+        "seller_name": "Ryan Locksmitch",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1890321898116985",
+        "url": "https://www.facebook.com/marketplace/item/1890321898116985",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/456614463_477192678557076_5615868352096172793_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=sFlxF2NN3SgQ7kNvgGVWnHS&_nc_ht=scontent.fphl1-1.fna&oh=00_AYBGUf6_c-Y6JBsJLY-DA0zLGh5owshqcMo6BkBjDlNLow&oe=66D747B2",
+        "formatted_amount": "CA$320",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 12 64gb",
+        "link": "https://www.facebook.com/marketplace/item/1890321898116985",
+        "seller_id": "pfbid02dac2Q7rpALAppNWmUbxUJ3YVYT9XLJrNKyyRjKUs6WxEPVZBBTU5TvKrTgWF2Q7sl",
+        "seller_name": "Harry Po",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "3742037876070315",
+        "url": "https://www.facebook.com/marketplace/item/3742037876070315",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457445035_936426835166118_1768596229593497639_n.jpg?stp=c0.148.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=494zxP7l5uEQ7kNvgFYRUhe&_nc_ht=scontent.fphl1-1.fna&oh=00_AYAEYwWVycybaoxrEwLodhknkG0uIeWMw271lbwHmVHJug&oe=66D75077",
+        "formatted_amount": "CA$250",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iphone 11 light green w/charger and ear buds",
+        "link": "https://www.facebook.com/marketplace/item/3742037876070315",
+        "seller_id": "pfbid02nJ8wy2tTkCGHuJRDEMLADsMBjb8fuc3G6Ri8oYX3pvNDhXGxe7LhCFYMTg77hu4jl",
+        "seller_name": "Christy Eaglesham",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1924022251449482",
+        "url": "https://www.facebook.com/marketplace/item/1924022251449482",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/457453040_1059637299148070_8108773472417807456_n.jpg?stp=c0.101.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=o_zhU72P1WwQ7kNvgE4x_wu&_nc_ht=scontent.fphl1-1.fna&oh=00_AYCHZ6LrHqHwye3mJCeUeHTNWbU8YVBTvqNjqx2PtLgKbQ&oe=66D74BAC",
+        "formatted_amount": "CA$1,200",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iphone 15 promax",
+        "link": "https://www.facebook.com/marketplace/item/1924022251449482",
+        "seller_id": "pfbid0hFZiuJrQ59r88auz5HDutDjSRnHgsMPMf38FQU91MNxkH4sjc5ks4gduYM1SsFiSl",
+        "seller_name": "Rashda Razaq",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "1151245442840804",
+        "url": "https://www.facebook.com/marketplace/item/1151245442840804",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/454723526_889641683006859_7263065471971131241_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=r35S6HvqxIUQ7kNvgF0Hiew&_nc_ht=scontent.fphl1-1.fna&oh=00_AYCIJT-S3hU-lF0wiCi87YrUM_tuQUtLoVWZSV_VsU13TA&oe=66D7295F",
+        "formatted_amount": "CA$350",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 14 Pro Max, 13 Pro Max, 13 Pro, 13, 12 Pro, 12, 11, SE | Unlocked | Store Warranty | On Sale",
+        "link": "https://www.facebook.com/marketplace/item/1151245442840804",
+        "seller_id": "pfbid02U5kN6dLVd6n6QEuA1EwS7j5JdTorxKtxyEUVsnETichpnaF62KkWSHaSK5NPeJQRl",
+        "seller_name": "Steven King",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      },
+      {
+        "id": "368317222812737",
+        "url": "https://www.facebook.com/marketplace/item/368317222812737",
+        "primary_listing_photo": "https://scontent.fphl1-1.fna.fbcdn.net/v/t45.5328-4/455325613_816816617298390_2021121897474408738_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=HF_aoEQdYKkQ7kNvgGz1auv&_nc_ht=scontent.fphl1-1.fna&oh=00_AYBjzvgWs0GsUH-9fDmWoD6dY-tSkxrEmFH-N94A_qTXMw&oe=66D733D6",
+        "formatted_amount": "CA$435",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPhone 13 - 13 Pro Max - HUGE SALE!!!",
+        "link": "https://www.facebook.com/marketplace/item/368317222812737",
+        "seller_id": "pfbid029iQQGqY7DicZRYpfXxP77N5JJeYf8znMqcEz4yHb5FtePvTgbyc6f81XpDcg8FXZl",
+        "seller_name": "Mike Sor",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T06:50:04.483Z"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "city": "toronto",
+    "query": "ipad",
+    "maxPrice": "300",
+    "items": [
+      {
+        "id": "1054928526231405",
+        "url": "https://www.facebook.com/marketplace/item/1054928526231405",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/451451315_1021842279381804_8601327017470325998_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=jK0C0weVnVYQ7kNvgHl_WN2&_nc_ht=scontent-ord5-2.xx&oh=00_AYB6dwqz7QnTCugH331HluDNty-8v4kQabFztE_MxY54Ew&oe=66D7356E",
+        "formatted_amount": "CA$249",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Almost New iPad Air 3 - 256GB Wifi+Cellular",
+        "link": "https://www.facebook.com/marketplace/item/1054928526231405",
+        "seller_id": "pfbid02eRvhFAKZ4pG8o9h2mNAqycqAyBMS6QFtSMuu8oaRaDHZAraEFBjveqp39xxirWyl",
+        "seller_name": "CC Liu",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.620Z"
+      },
+      {
+        "id": "534163942310549",
+        "url": "https://www.facebook.com/marketplace/item/534163942310549",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457337130_1024714289193899_1494909960703647861_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=64TqOzXOliUQ7kNvgFzPhZx&_nc_ht=scontent-ord5-2.xx&oh=00_AYAIEftw2G4XP7KmNcRxCVXymKy9TFG0P6BFNoH-Lla2Qw&oe=66D72CA6",
+        "formatted_amount": "CA$100",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Apple ipad 5th generation 32 GB",
+        "link": "https://www.facebook.com/marketplace/item/534163942310549",
+        "seller_id": "pfbid02gF2YFTR32wkubSEkTw3sck3zi4H3DqRLNGD3qkPRPQVGKfFKpDMPYaqBRiJD35UJl",
+        "seller_name": "Robin Dufour",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "8937968569550500",
+        "url": "https://www.facebook.com/marketplace/item/8937968569550500",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457564336_1054791433022910_8543473572905898169_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=jKXVmtWVNC8Q7kNvgHHE0p_&_nc_ht=scontent-ord5-2.xx&oh=00_AYCHdMGSd5lv100Cs55yJWIEMfFPdVqZetQMZB7VdxtE8Q&oe=66D75258",
+        "formatted_amount": "CA$1",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Sealed Box iPad 10th Gen WiFi (64GB) Silver",
+        "link": "https://www.facebook.com/marketplace/item/8937968569550500",
+        "seller_id": "pfbid02keUCdVjtVTHi5CzWZqjobRp7s2AVGckL7sFqqJrzkh8uFhViPXaEuCGHfDJZSDpnl",
+        "seller_name": "Nish",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "885741970086401",
+        "url": "https://www.facebook.com/marketplace/item/885741970086401",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457329228_3919496341604992_1756233475349742253_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=Sx8msJ2b1McQ7kNvgFONsLq&_nc_ht=scontent-ord5-1.xx&oh=00_AYBQsaPLXzTV40z5Wfl8d5OFEPUsgynKNcFVCX62d0SbFg&oe=66D74162",
+        "formatted_amount": "CA$175",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "8th Generation iPad 32GB",
+        "link": "https://www.facebook.com/marketplace/item/885741970086401",
+        "seller_id": "pfbid0pSkKDVwUSkpF5JKDQyd54PeaewQPun9DPpeUqfhoKknntXSGELa9AnWQkp8y1hfvl",
+        "seller_name": "Shenal John",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1181635316431263",
+        "url": "https://www.facebook.com/marketplace/item/1181635316431263",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/456256353_1049693443189731_1734552784980053691_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=KucOYTK3KscQ7kNvgFQWokB&_nc_ht=scontent-ord5-1.xx&oh=00_AYBj3JKqo0ee8nZD9NzoC9n-HZD_43LdzIu2MCksayPfzQ&oe=66D755A9",
+        "formatted_amount": "CA$50",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad mini 2 generation",
+        "link": "https://www.facebook.com/marketplace/item/1181635316431263",
+        "seller_id": "pfbid02Zh5uUNh7EhoVBPVumUCgtMcBsfWpXogeqRW8mSe4L9UZSzFDAyQuSKCCGgS9AMSol",
+        "seller_name": "Ronnel Small",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1443692512996328",
+        "url": "https://www.facebook.com/marketplace/item/1443692512996328",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/456599457_525557983167158_6173639031627928482_n.jpg?stp=c0.28.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=Re4hwB6pEvgQ7kNvgFlfxm3&_nc_ht=scontent-ord5-2.xx&oh=00_AYD0rcI86kTVMlwzyCEpuG3778BucHZmNVIvcseh7nrybg&oe=66D73CAA",
+        "formatted_amount": "CA$160",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad (6th Generation) 128GB",
+        "link": "https://www.facebook.com/marketplace/item/1443692512996328",
+        "seller_id": "pfbid0wpjzRkkEj3BA15CenXhZpgmz3WBegwDYU4YdsfesQrS89F8ggqrtniH523MBx5Nvl",
+        "seller_name": "Isaiah Jason",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1662514834555240",
+        "url": "https://www.facebook.com/marketplace/item/1662514834555240",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/438306068_863484085629310_4513074398716955897_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=Eyf5exmVWm8Q7kNvgFb7oKW&_nc_ht=scontent-ord5-1.xx&oh=00_AYAMpMKpeCT0VbaWuaRKq4NJ3phgyET4RS9DYP14J0sjDg&oe=66D72796",
+        "formatted_amount": "CA$60",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Two Apple iPad Mini like-New condition for Sale",
+        "link": "https://www.facebook.com/marketplace/item/1662514834555240",
+        "seller_id": "pfbid0LwqtAyRvNq1MjJK4qBC85yxW9reNHwh8hNSM3C3XtWxeTJL2iHHhr5kus6HfXTPel",
+        "seller_name": "Katie Lee",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1231492954945179",
+        "url": "https://www.facebook.com/marketplace/item/1231492954945179",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457211036_1834414393719814_8980582927291367548_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=-7XgkNn24CMQ7kNvgGhQIYh&_nc_ht=scontent-ord5-1.xx&oh=00_AYARMzTUxTwJMTz80on3SVaMt-ZvY7lmbTsCJFsI-HcT1w&oe=66D7540A",
+        "formatted_amount": "CA$120",
+        "city": "Ajax",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad Air2 ,16 GB WiFi Work great Battery Great 95 ,IOS 15.8.2",
+        "link": "https://www.facebook.com/marketplace/item/1231492954945179",
+        "seller_id": "pfbid0HPYacu6Yr1xAVdx8ytRsA6Wk9DDyyUVA3JY3XUv13Lv8vYNGLD3wDdz3JG7WzVDel",
+        "seller_name": "Ahmed Raza",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "321538340951346",
+        "url": "https://www.facebook.com/marketplace/item/321538340951346",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/452099492_3711268762522143_8713333277725430506_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=VDFn-EebbwoQ7kNvgGG94lh&_nc_ht=scontent-ord5-1.xx&oh=00_AYBruvGdiWMqLQboZlGLmXSsQdgKNa9qlGaR5Mi1rV0WNA&oe=66D74EBA",
+        "formatted_amount": "CA$299",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad Air 3/LTE/256GB",
+        "link": "https://www.facebook.com/marketplace/item/321538340951346",
+        "seller_id": "pfbid02pesNg1TPuFSbuJQxbS3BaVut1TH28qi26Wr8twz8993TPtSfbXj5bA8JLyew8uaLl",
+        "seller_name": "Mary Sakes",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "481192274848149",
+        "url": "https://www.facebook.com/marketplace/item/481192274848149",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/454717990_1554646681790196_6379069288629051477_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=MLWPqRUW1BcQ7kNvgFYaL9d&_nc_ht=scontent-ord5-1.xx&oh=00_AYDBrwe2OhtOI40r9TtAd7-jeWksYUgIhLxYL3B3YAV5FQ&oe=66D72717",
+        "formatted_amount": "CA$100",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "I have Apple iPad Air Like-New Condition for Sale - Great as Gifts",
+        "link": "https://www.facebook.com/marketplace/item/481192274848149",
+        "seller_id": "pfbid0wvK2x6Ek54hFSnjb1KrDxFWMrQbCK6ri5CUPQoHwyGJXaxBU3nhpbxAVyUBRRh8pl",
+        "seller_name": "Katie Ernesta",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1521966221735750",
+        "url": "https://www.facebook.com/marketplace/item/1521966221735750",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457311209_1164541431295132_8954482331839821941_n.jpg?stp=c0.41.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=0AXczNd44QQQ7kNvgHtWcpQ&_nc_ht=scontent-ord5-2.xx&oh=00_AYDsq3bw7h5fcuCm1WVO50_rY1wiTMe9CMF2sXUGfK1d_w&oe=66D7580B",
+        "formatted_amount": "CA$290",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad mini 5 Generation",
+        "link": "https://www.facebook.com/marketplace/item/1521966221735750",
+        "seller_id": "pfbid0BKTATVq9nL6bAqsPnQTvKgR6rcWMQcya2VDrUTsx1e9FG34NwkxnLFXbRxYBiXv8l",
+        "seller_name": "Hayden Lee",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "2250627018617368",
+        "url": "https://www.facebook.com/marketplace/item/2250627018617368",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/452164441_507363868337764_8958865743672704105_n.jpg?stp=c62.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=41XFvGhYthIQ7kNvgGI3CGr&_nc_ht=scontent-ord5-2.xx&oh=00_AYCBs3ilyr-hPvQweGTLcBYKfUOUpWh_xMAC9xkEpWom9g&oe=66D74B37",
+        "formatted_amount": "CA$125",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad Air2, 32G, wifi",
+        "link": "https://www.facebook.com/marketplace/item/2250627018617368",
+        "seller_id": "pfbid02DvAHFxTyVvxnRAUmvCmrrEogLrcLEG9FXP1mnYzLoJwYwTBiBGzaT5N4LxauHvWCl",
+        "seller_name": "Hui Chen",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "477538501704234",
+        "url": "https://www.facebook.com/marketplace/item/477538501704234",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/456703696_1024259818990804_2290563265158094328_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=FUMLXu8czPwQ7kNvgGR2-Yd&_nc_ht=scontent-ord5-1.xx&oh=00_AYB5P9GzxQprPM7XD00s67CD9adZ3OK7GByLwSoUzttShA&oe=66D745F7",
+        "formatted_amount": "CA$259",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Almost New iPad Air 3 - 256GB Wifi+Cellular",
+        "link": "https://www.facebook.com/marketplace/item/477538501704234",
+        "seller_id": "pfbid029G5qam1KeHGi3CkcceB1d13WngojDg6vJ1VhK4gDboV8NhrBEKkYe9nPjb92XmBMl",
+        "seller_name": "Lily Kim",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1037869970723833",
+        "url": "https://www.facebook.com/marketplace/item/1037869970723833",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/456594933_537949025251199_6678783146118792676_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=Zq2ubQXmAOYQ7kNvgFZXOES&_nc_ht=scontent-ord5-2.xx&oh=00_AYC5rC8yL5brq_M0r9BdnXIyXcXAo0m6asrcBxR8ez5egQ&oe=66D75C2F",
+        "formatted_amount": "CA$60",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "2 Apple iPad Screen Size 9.7 Inches for Sale",
+        "link": "https://www.facebook.com/marketplace/item/1037869970723833",
+        "seller_id": "pfbid02DLdgjjmAVTTqZgopbRrbsgFST3uvSQf2Au1vRDGkXVfnh5Jh9NNbKKwVLdbwPjnbl",
+        "seller_name": "Lindsay Hanna",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1294335448618050",
+        "url": "https://www.facebook.com/marketplace/item/1294335448618050",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/455815833_2246883152324730_8414097307571587381_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=No-_0P7ido4Q7kNvgGdkFs0&_nc_ht=scontent-ord5-2.xx&oh=00_AYDrboMwnfsoTUuYQms1qYMzVrEs0swBuYdyLJp5g-DCeA&oe=66D7568F",
+        "formatted_amount": "CA$150",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad 9.7 5th Gen 32GB",
+        "link": "https://www.facebook.com/marketplace/item/1294335448618050",
+        "seller_id": "pfbid0Hh8PFXcGK8mSi5xYJP7ZpGGwySAEUcg3LLkFeNekvqWNUcGqEoMK37fGAoJRxi1bl",
+        "seller_name": "Leo Cheng",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "2673407359485434",
+        "url": "https://www.facebook.com/marketplace/item/2673407359485434",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/455245055_521967510359996_4823237528571392179_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=mMQ92___F4gQ7kNvgEvzClx&_nc_ht=scontent-ord5-1.xx&oh=00_AYDl6xAxnyc8n-tFBFELkMo2AT7dOLVzaiX7Jl0AR7NL2g&oe=66D756E1",
+        "formatted_amount": "CA$105",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad Mini 4, 128 GB",
+        "link": "https://www.facebook.com/marketplace/item/2673407359485434",
+        "seller_id": "pfbid02Ese5A9WaxGs1w9Rw9y4rTKCubVLrThEbxtLdcNA6PME91X17SrzPUemqSyvNFABWl",
+        "seller_name": "Akash Mehta",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "7889235764500019",
+        "url": "https://www.facebook.com/marketplace/item/7889235764500019",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/436256779_458904413354870_5571088517510950764_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=pcOciZGiUugQ7kNvgFX21uN&_nc_ht=scontent-ord5-2.xx&oh=00_AYAY_nDFOihhOuqoSsJlxjlVD3tO4YOCHphgIdSr38o7XA&oe=66D75BAA",
+        "formatted_amount": "CA$299",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad Air 3/256GB/LTE",
+        "link": "https://www.facebook.com/marketplace/item/7889235764500019",
+        "seller_id": "pfbid09nfUEjEP1y94owncQeWtd8eZnedypntFSCNnqWZivFXoGuSVEyaEtf8bDptPWsW9l",
+        "seller_name": "Axiom Choi",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "896924992189628",
+        "url": "https://www.facebook.com/marketplace/item/896924992189628",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/438115452_3325705541066880_6648970404882185352_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=hCBN_95z4QMQ7kNvgHOegDR&_nc_ht=scontent-ord5-2.xx&oh=00_AYDvft3_0FALfS4-R2YD-zr8YntNLEakEKItgEwJYw8W8Q&oe=66D724DB",
+        "formatted_amount": "CA$250",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "I have two iPad Pro 64Gb from Apple in Perfect Shape - Wifi and Cellular",
+        "link": "https://www.facebook.com/marketplace/item/896924992189628",
+        "seller_id": "pfbid0wvK2x6Ek54hFSnjb1KrDxFWMrQbCK6ri5CUPQoHwyGJXaxBU3nhpbxAVyUBRRh8pl",
+        "seller_name": "Katie Ernesta",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "3749512848649497",
+        "url": "https://www.facebook.com/marketplace/item/3749512848649497",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457377898_469342022752085_2232328178886285232_n.jpg?stp=c0.152.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=EScFtlD2vEcQ7kNvgFWxIpI&_nc_ht=scontent-ord5-1.xx&oh=00_AYCnNYpk96Mr6hujXE0jaozo-9pre7JG11eviL5gZJc5EA&oe=66D74BAA",
+        "formatted_amount": "CA$150",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Ipad 6th Generation",
+        "link": "https://www.facebook.com/marketplace/item/3749512848649497",
+        "seller_id": "pfbid02ZtSfHTBfnjvQgoG4jg2c3k3F5L3rnuYxm87jDF9xMFwo2SbotiFwz5kvNHv3btUKl",
+        "seller_name": "Pawan Walia",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "881159260585230",
+        "url": "https://www.facebook.com/marketplace/item/881159260585230",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457133039_514159597688531_1209170290020776533_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=kba_Ozy_EAMQ7kNvgFCLRSp&_nc_ht=scontent-ord5-1.xx&oh=00_AYB5KazBPs3MYDFRs6Ksfp-y24bjLSpEabwG065ZMtDNDA&oe=66D735C8",
+        "formatted_amount": "CA$150",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Apple iPad 10.5 (5th Generation)",
+        "link": "https://www.facebook.com/marketplace/item/881159260585230",
+        "seller_id": "pfbid02E4F1axKJCTsibEYaZ4XK79nUtvoLJP5UhGsAPWqeiKJmCsc2ahj4eCAgJ24bZ16ql",
+        "seller_name": "Arpan Arora",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "531245999356032",
+        "url": "https://www.facebook.com/marketplace/item/531245999356032",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457612967_429414596771433_1259476485234718150_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=86VRYi8SClwQ7kNvgELhces&_nc_ht=scontent-ord5-2.xx&oh=00_AYCxdeFFdhPyKgxoUfzvhdTDAC0ZVr_KhB9OiPNOSIJ5vg&oe=66D73FA1",
+        "formatted_amount": "CA$140",
+        "city": "Kitchener",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "2x Space Grey iPad Mini 64GB - 5th Gen",
+        "link": "https://www.facebook.com/marketplace/item/531245999356032",
+        "seller_id": "pfbid02D2WEdL7gDqkJE1kiLkgyrEgE8dotHRm4Xz6e1sf5iKY5H8Vrtkn5GCWRqqMHnZUAl",
+        "seller_name": "David Friederich",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1027657392000430",
+        "url": "https://www.facebook.com/marketplace/item/1027657392000430",
+        "primary_listing_photo": "https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/456924428_835738448689264_1008122792513915451_n.jpg?stp=c71.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=jSJSZQ5xnhYQ7kNvgH5lOfK&_nc_ht=scontent-ord5-2.xx&oh=00_AYDkLDxlElYRPh3d36oc68S0ynbOY4efG_Brsi0B5_R3iQ&oe=66D73494",
+        "formatted_amount": "CA$100",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1557869527812749",
+        "marketplace_title": "iPad Air 3, iPad Air 2, iPad Air,  Good Condition | Summer Sale",
+        "link": "https://www.facebook.com/marketplace/item/1027657392000430",
+        "seller_id": "pfbid02U5kN6dLVd6n6QEuA1EwS7j5JdTorxKtxyEUVsnETichpnaF62KkWSHaSK5NPeJQRl",
+        "seller_name": "Steven King",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1467544593869086",
+        "url": "https://www.facebook.com/marketplace/item/1467544593869086",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/451066062_1416370138864818_608158166986144363_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=93LGl6XvdC8Q7kNvgE6J5uX&_nc_ht=scontent-ord5-1.xx&oh=00_AYC419wdghKdpQQWDUhTA4NON1zw4wHmO-bu37i05Juuyw&oe=66D726B6",
+        "formatted_amount": "CA$300",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "iPad 6th gen with accessories",
+        "link": "https://www.facebook.com/marketplace/item/1467544593869086",
+        "seller_id": "pfbid02QvPGNM8tthfKnowx6TuGTrSYiQs9GPiX7M9WGMLvarE3dnsJja7JjDNjzM1ysGWBl",
+        "seller_name": "Charleigh Narciso",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      },
+      {
+        "id": "1036194461078206",
+        "url": "https://www.facebook.com/marketplace/item/1036194461078206",
+        "primary_listing_photo": "https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457461340_508026248487009_6883683592944111178_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=wkRdo8hYdAoQ7kNvgG7agRQ&_nc_ht=scontent-ord5-1.xx&oh=00_AYAR_w4OljqJTKxf5HfqpEOB_4xu7JtTaCzcvNng9qeu9A&oe=66D75895",
+        "formatted_amount": "CA$275",
+        "city": "Toronto",
+        "state": "ON",
+        "marketplace_category_id": "1792291877663080",
+        "marketplace_title": "Apple iPad 8th Gen Space Grey",
+        "link": "https://www.facebook.com/marketplace/item/1036194461078206",
+        "seller_id": "pfbid0V8MvTZkg9EP4RQC7NJEGiPMZZPK9KLFtRxf46HwWHCYHhBsEwHLwZRGEaArp3yZZl",
+        "seller_name": "Michael Bui",
+        "is_hidden": false,
+        "is_live": true,
+        "is_pending": false,
+        "is_sold": false,
+        "create_date": "2024-08-30T07:00:00.621Z"
+      }
+    ]
   }
 ]
-```
-
-# pastItems.json
-
-```json
-{"pastItems":[{"id":"528415796235039","link":"https://www.facebook.com/marketplace/item/528415796235039","title":"bicycle /ladies /retro","price":"A$85","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457089731_1299096261066467_3627014669760006237_n.jpg?stp=c0.0.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=tWx7q0OW3EIQ7kNvgFAnFEd&_nc_ht=scontent-mia3-1.xx&oh=00_AYDIsZwb7FMy3ox4MR1a3dV79dpZi90qFJ8jyL20oagPdQ&oe=66D70F0D"},{"id":"1544303852824977","link":"https://www.facebook.com/marketplace/item/1544303852824977","title":"Bicycle","price":"A$180","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457502838_1612865572973535_2868433982739875043_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=CXs5L41YcFkQ7kNvgGdm5dH&_nc_ht=scontent-mia3-1.xx&oh=00_AYDfzCR9Oanb66pI_Dpc3SvclcB02s_TlL_F5hOJlhDKhQ&oe=66D6FD4F"},{"id":"1235655927458893","link":"https://www.facebook.com/marketplace/item/1235655927458893","title":"Women's Vintage Bicycle - White","price":"A$75","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457569055_478124495121239_1247721564595446514_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=zbk3PtBINlkQ7kNvgGLDRN0&_nc_ht=scontent-mia3-2.xx&oh=00_AYBdsx4-OIanbn4cQq-chljXHFk9QfPwmDY86ojx3tgZPQ&oe=66D70212"},{"id":"2062131214184648","link":"https://www.facebook.com/marketplace/item/2062131214184648","title":"Bicycle trailer","price":"A$79","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457087512_1252196262614936_5322047818442949659_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=hmqRuT7ukPAQ7kNvgHqsdJ0&_nc_ht=scontent-mia3-2.xx&oh=00_AYCZCde0LxxfYTB1cfenoVBJ-kijDpDbCQeNd8vZ9WlF5g&oe=66D70F0D"},{"id":"976065870940740","link":"https://www.facebook.com/marketplace/item/976065870940740","title":"Chapelli Commuter Bicycle","price":"A$100","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457334943_787565616648709_1815438026931291365_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=tdeSjDXc6WQQ7kNvgFcLewG&_nc_ht=scontent-mia3-1.xx&oh=00_AYDSh3l3EsH7eoZh-D_Zrj6CBnvxxnCH2PKDd4YkRQijkg&oe=66D6F64A"},{"id":"1017382733354367","link":"https://www.facebook.com/marketplace/item/1017382733354367","title":"Good Bicycle","price":"A$60","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457457803_3662672030649206_5788731270677063423_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=Wo88ZIO6bS4Q7kNvgHDX2pq&_nc_ht=scontent-mia3-1.xx&oh=00_AYBnw7bgoCypW1sSrrvzl9jp9trwypGFiCWLtH6lvxwGxg&oe=66D70130"},{"id":"1659161378213021","link":"https://www.facebook.com/marketplace/item/1659161378213021","title":"Used electric bicycle","price":"A$250","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457460798_3776846095921807_5565883585096611972_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=1I6js2Kbe6wQ7kNvgHtQN6N&_nc_ht=scontent-mia3-2.xx&oh=00_AYBlyNB1sUa-F3WimPFoz6KxKVCRjzghUjiiTU51E8vRHw&oe=66D71372"},{"id":"1229542011802142","link":"https://www.facebook.com/marketplace/item/1229542011802142","title":"Bicycle","price":"A$50","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457332285_1085970439807666_6494333130549353610_n.jpg?stp=c0.159.261.261a_dst-jpg_p261x260&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_ohc=YZjzTt1VjccQ7kNvgHLAkfH&_nc_ht=scontent-mia3-1.xx&oh=00_AYCalettxMuUFUVPAEb9WYnu1-T1pvmie8FPBwz4JdLEBw&oe=66D6F89A"},{"id":"1497385101147273","link":"https://www.facebook.com/marketplace/item/1497385101147273","title":"Vintage Holland Cruiser Bike","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457019139_1034868004484918_8687252812557356822_n.jpg?stp=c42.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=pNsGAUOg6Z4Q7kNvgHKFT0V&_nc_ht=scontent-mia3-2.xx&oh=00_AYAy1Ji0vkA2v1UDxJqe0AC9tRA68ft80C7FbjXQGLLF1A&oe=66D71179"},{"id":"1887785408397022","link":"https://www.facebook.com/marketplace/item/1887785408397022","title":"Bicycle","price":"A$30","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457409316_532298589144921_6732519351999471078_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=8I0LsM42TKUQ7kNvgFn257a&_nc_ht=scontent-mia3-2.xx&oh=00_AYCg72iPSYuGGs00_JrzyrVVmbajie1BQLHmPUxiwdMg7Q&oe=66D703DA"},{"id":"1203170197629056","link":"https://www.facebook.com/marketplace/item/1203170197629056","title":"Vintage bicycle Gazelle for project or spares","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457419705_1918003268682995_3466665656538657865_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=py9sD_SiUHsQ7kNvgGM7aOf&_nc_ht=scontent-mia3-2.xx&oh=00_AYBys7oP9Ox3YSWoR_Q7Vr9eVAbBkGhB2cDT6j9Poxwr4Q&oe=66D7137D"},{"id":"527894826382926","link":"https://www.facebook.com/marketplace/item/527894826382926","title":"Bicycle","price":"A$30","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457096505_905748454943567_231387661312239319_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_ohc=9SWjS6zNT1sQ7kNvgHACzMC&_nc_ht=scontent-mia3-2.xx&oh=00_AYBSvnDtQQb_DSjsP27-nQNKSzLPpUauLfrxb2kNgVqA7g&oe=66D70BD8"},{"id":"429526050236627","link":"https://www.facebook.com/marketplace/item/429526050236627","title":"Women's bike XDS \ns/m size Pickup North Curl Curl","price":"A$130","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457460889_2826149467541918_8304892581363095179_n.jpg?stp=c100.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=iabvxoa-IvUQ7kNvgGcs-iU&_nc_ht=scontent-mia3-1.xx&oh=00_AYAi8UU6ZRYZRwa2u8H9VbosYXoPFaGJzlUQZQLS9RCiDQ&oe=66D7075B"},{"id":"528278703212910","link":"https://www.facebook.com/marketplace/item/528278703212910","title":"Selling a GIANT Bicycle.","price":"A$100","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457332227_1192528338690307_7027977086747660425_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=_PU_eQ7tI_sQ7kNvgE2k5GA&_nc_ht=scontent-mia3-1.xx&oh=00_AYCZpvbOpRZ2Hjcvuax8e2CYqoA7iDH3DbypOpjMCsEXyQ&oe=66D71165"},{"id":"831134482335023","link":"https://www.facebook.com/marketplace/item/831134482335023","title":"Bike","price":"A$70","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457370331_874037934610655_7789206141913382705_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=DarYwru0xJsQ7kNvgEoilNa&_nc_ht=scontent-mia3-2.xx&oh=00_AYDnkQVF5T2QDa42N8O8OdCKGdCzCkb6whEbok-YWBZoBg&oe=66D6EF57"},{"id":"1024817552360433","link":"https://www.facebook.com/marketplace/item/1024817552360433","title":"Repco road bike","price":"A$95","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457278448_591369663217325_504795930536183021_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=15TsoD477A0Q7kNvgFIeo4E&_nc_ht=scontent-mia3-2.xx&oh=00_AYBtyDeMcwB7xLU9fqqFYv7XJj1axCn3bR7GauH2iKq0UQ&oe=66D6F496"},{"id":"1044909997284388","link":"https://www.facebook.com/marketplace/item/1044909997284388","title":"REID cruiser bicycle with basket bike","price":"A$250","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457210947_3654144171516289_899823468156401925_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=h-YES0FMno0Q7kNvgGOJj-v&_nc_ht=scontent-mia3-2.xx&oh=00_AYCiFZYyGQI8FUsmO6G3SOxUowWrLJWANfCZLfCtzcnruQ&oe=66D70C81"},{"id":"1020079539660012","link":"https://www.facebook.com/marketplace/item/1020079539660012","title":"Bicycle for toddlers","price":"A$350","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457339642_523803653663135_435669763107581601_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=Q3_77QuCifMQ7kNvgH0gIF2&_nc_ht=scontent-mia3-2.xx&oh=00_AYCqPCB0yjfsVYavDTdvE744oeqgsBXVXA7N4nZxCViPFg&oe=66D71E63"},{"id":"2397275610458684","link":"https://www.facebook.com/marketplace/item/2397275610458684","title":"Zephyr Boardwalk Cruiser Bicycle in good condition - frame 17 in","price":"A$140","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457340601_816254367388120_5251448843052106312_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=-gOSINEXIqQQ7kNvgGil4B4&_nc_ht=scontent-mia3-2.xx&oh=00_AYB1mqGlzHQv687rHhVgVMxIaHJ-fe6ZRgLVzVkvEAP5Ug&oe=66D7124B"},{"id":"1241610660526494","link":"https://www.facebook.com/marketplace/item/1241610660526494","title":"XDS Hollywood Retro 8 sp Alloy Turquoise Blue Bicycle RRP$599","price":"A$150","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457096622_873579584832151_2117909573059009889_n.jpg?stp=c54.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=j-gRd1Dya4YQ7kNvgEL0dUG&_nc_ht=scontent-mia3-1.xx&oh=00_AYCzGT-P76R4HMmXNwdFTpSl5bVyIRYk-x0IksCYIuuedQ&oe=66D6F667"},{"id":"396768989782598","link":"https://www.facebook.com/marketplace/item/396768989782598","title":"Penny Farthing Bicycle Wall Sculpture","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/456938337_507376735213215_2298220530125376695_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=0p7V76M5vuAQ7kNvgGIkafY&_nc_ht=scontent-mia3-2.xx&oh=00_AYBVAQVltokFYfGJS681jWF-OVVGOv5hDAkcfvzb6O3dKg&oe=66D71060"},{"id":"1508160343399434","link":"https://www.facebook.com/marketplace/item/1508160343399434","title":"Specialized","price":"A$380","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/457450235_362159113494531_4908235415779333458_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=fKJOOLdwEzYQ7kNvgG2BtBG&_nc_ht=scontent-mia3-1.xx&oh=00_AYCyVP6I71HRWp5v3tAk-CyHxrkbj6ChE-YGFvmKuai6Yg&oe=66D71488"},{"id":"1162408294989242","link":"https://www.facebook.com/marketplace/item/1162408294989242","title":"Mountain bicycle","price":"A$200","image":"https://scontent-mia3-1.xx.fbcdn.net/v/t45.5328-4/456973076_8107389422682577_3993046402077088957_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=oF0xB3-twXMQ7kNvgHSX1vl&_nc_ht=scontent-mia3-1.xx&oh=00_AYDuJR0dQQ6yfCQNDaOY6id8tJE71RyH_yrZpbzl1uEr1Q&oe=66D71065"},{"id":"422027870426119","link":"https://www.facebook.com/marketplace/item/422027870426119","title":"Vintage bike","price":"A$50","image":"https://scontent-mia3-2.xx.fbcdn.net/v/t45.5328-4/457617204_427242346452916_1999345804802053291_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=i1XKfqPvm2kQ7kNvgGhNWM-&_nc_ht=scontent-mia3-2.xx&oh=00_AYCV9pknbHCQmY8ziEWcNtUZaih1ieCRQmsdR3zKUcu7SQ&oe=66D6FAEB"},{"id":"1273079280792232","link":"https://www.facebook.com/marketplace/item/1273079280792232","title":"2016 Honda Honda Accord EX-L Sedan 4D","price":"$2,900","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457357847_1705040093604240_1691140503480674246_n.jpg?stp=c45.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=YmNxxYOWKS8Q7kNvgF5oIGK&_nc_ht=scontent.fmem1-1.fna&oh=00_AYBGNET0Z-qiSg-AfO5QRzvtGLX0gbmEiiqH7jL9vkAiqg&oe=66D71F1B"},{"id":"1444687816239229","link":"https://www.facebook.com/marketplace/item/1444687816239229","title":"2018 Chevrolet Chevrolet Cruze LS Sedan 4D","price":"$0","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457703213_1082728479860474_1364390082353493031_n.jpg?stp=c0.34.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=fgCUOraXxuAQ7kNvgF4ugLx&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCieRPunV2e-NrSiAzve8KUJ8pJaW9oAPqY2wJZoZ3Esg&oe=66D70119"},{"id":"1511403426146147","link":"https://www.facebook.com/marketplace/item/1511403426146147","title":"2003 Lincoln Town Car · Cartier L Sedan 4D","price":"$1,500","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457524839_522654896972079_221084747913885438_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=g59b6nddC-cQ7kNvgFWrxLP&_nc_ht=scontent.fmem1-2.fna&oh=00_AYA66G5DNRnm36YpZ6scuikBs51xyGuzMxLWcEVCRr0wRQ&oe=66D70A85"},{"id":"485190411043414","link":"https://www.facebook.com/marketplace/item/485190411043414","title":"2006 Kia Sedona · Xle ","price":"$2,400","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457691585_531713182572929_7952832974997011882_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=100&ccb=1-7&_nc_sid=946e27&_nc_ohc=1JfMGQihvPsQ7kNvgEj0ocw&_nc_ht=scontent.fmem1-1.fna&oh=00_AYD51Yn9nKrX2tgbvWqa_zD7XNkQS10DnXI6G8bf1RqA_w&oe=66D711F5"},{"id":"1211495600131826","link":"https://www.facebook.com/marketplace/item/1211495600131826","title":"2010 Honda Civic · EX Sedan 4D","price":"$5,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457326071_122125919396352328_6389875007245858098_n.jpg?stp=c0.119.1079.1079a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=Ax8TZkKShqMQ7kNvgGIOx5_&_nc_ht=scontent.fmem1-1.fna&oh=00_AYApSZ48DCEl0OI8EzfykCYTDM2EQQTj3CXVpnt8UegRDQ&oe=66D6FFB2"},{"id":"492107760445468","link":"https://www.facebook.com/marketplace/item/492107760445468","title":"2010 Buick LaCrosse · CX Sedan 4D","price":"$2,550","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457624633_504233128970456_2913083280993691166_n.jpg?stp=c0.132.1200.1200a_dst-jpg_s261x260&_nc_cat=107&ccb=1-7&_nc_sid=454cf4&_nc_ohc=y2_zRgldl9QQ7kNvgFWAjgI&_nc_ht=scontent.fmem1-2.fna&oh=00_AYAWQDPRZmhU3lhdcXLyGcP8i5SVkwphxzi6izbIzNCXTg&oe=66D6FF46"},{"id":"484565481207658","link":"https://www.facebook.com/marketplace/item/484565481207658","title":"2009 Nissan Altima · 2.5 Sedan 4D","price":"$1,600","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457520978_8540213232690037_5172788141586842747_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=AQdrIuJ8YckQ7kNvgE99YLb&_nc_ht=scontent.fmem1-1.fna&oh=00_AYC0PVbxI_CFe9NTgGTXQoKbV1xTWCnen37-CWlfc3TIKw&oe=66D710B5"},{"id":"1929895850823665","link":"https://www.facebook.com/marketplace/item/1929895850823665","title":"2018 Toyota Mirai · Mirai","price":"$4,995","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457440105_10226334670340568_3565084797073025597_n.jpg?stp=c253.0.1542.1542a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=pZDdIdpyRfIQ7kNvgF9XoDS&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDhs9F1YwmZLvAohvRbaCnHwBE3--A4TkBqBM6xU0frKw&oe=66D6F115"},{"id":"1224455325499899","link":"https://www.facebook.com/marketplace/item/1224455325499899","title":"2000 Toyota Solara · SE Coupe 2D","price":"$1,700","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457212144_8217663488347716_2797120728793516447_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=8oEQEpnx0FoQ7kNvgHkdkJs&_nc_ht=scontent.fmem1-1.fna&oh=00_AYBdH_U0S3CFHExWX3RGNS7pNvOk5lY_RRW8tt9D2TqCww&oe=66D6FFA9"},{"id":"1098975282235099","link":"https://www.facebook.com/marketplace/item/1098975282235099","title":"2013 Hyundai Elantra · Limited Sedan 4D","price":"$1,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457212517_1227503314934955_4109739611206563685_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=pfUTr7UPddUQ7kNvgHROSAL&_nc_ht=scontent.fmem1-2.fna&oh=00_AYB5DlbFHixH5JQoDQTwv0u5gaLOLP6r3T2m644a_qZGVg&oe=66D6F01D"},{"id":"1278377103286224","link":"https://www.facebook.com/marketplace/item/1278377103286224","title":"1999 Volkswagen New Beetle · GLS Hatchback 2D","price":"$1,800","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457363832_1353167815656852_6412278024948530219_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=O8SHfoumVI8Q7kNvgFBTNud&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDzT3Bvy8XoKbzwnt2S5bKEKLJJyYi9KBJ-gL91np6cOw&oe=66D70ABA"},{"id":"885140869621107","link":"https://www.facebook.com/marketplace/item/885140869621107","title":"2006 Honda Civic · DX Sedan 4D","price":"$4,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457317607_122135378264322711_544454152203311417_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=qkn_Q530UXEQ7kNvgGzt2Eb&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCwjVzgkGa-YdxZaQDcRhvgVUefvNn9b4ODVWWtaAQiZw&oe=66D6F050"},{"id":"542857894852885","link":"https://www.facebook.com/marketplace/item/542857894852885","title":"2008 Mercedes-Benz C-Class · C 300 Luxury Sedan 4D","price":"$6,300","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/456962481_3966275850325670_5681115794480145224_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=111&ccb=1-7&_nc_sid=454cf4&_nc_ohc=LKvEWxvnAdgQ7kNvgFHENPE&_nc_ht=scontent.fmem1-2.fna&oh=00_AYC-VocYMFkFASYq3Gu6whJh0rMxtGfwuhFQku3YFI9S4w&oe=66D709D8"},{"id":"966627445269173","link":"https://www.facebook.com/marketplace/item/966627445269173","title":"2000 Honda Accord · DX Sedan 4D","price":"$1,200","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457108104_8540156526029041_45033737724771815_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=lrTDM0EiHLMQ7kNvgHrDIg_&_nc_ht=scontent.fmem1-1.fna&oh=00_AYAbQhdt_unkNP1_WFT-lcp0rMzHnE3Y2YVk0Nl1iUMKBg&oe=66D6FE42"},{"id":"484410071237246","link":"https://www.facebook.com/marketplace/item/484410071237246","title":"2006 Audi A3 2.0T Wagon 4D","price":"$0","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457152925_880340987346240_1989378938835324953_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=a4hC8E7O0iQQ7kNvgErosV-&_nc_ht=scontent.fmem1-1.fna&oh=00_AYAC5f_TLObfhDPw8jGNdSStfKsv90Azj06NldouXZKRxQ&oe=66D6FAE2"},{"id":"7669076233197705","link":"https://www.facebook.com/marketplace/item/7669076233197705","title":"2010 Toyota Prius · III Hatchback 4D","price":"$4,800","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457524480_8026800637396702_8873155904535411169_n.jpg?stp=c529.0.991.991a_dst-jpg_s261x260&_nc_cat=101&ccb=1-7&_nc_sid=454cf4&_nc_ohc=q_OKKgd0-TIQ7kNvgFSYOBm&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDk0Eg1Jzjy1LpPU5g-Idt9ZaZnGIFB87sGwLIztHQCSQ&oe=66D6F268"},{"id":"842988658034702","link":"https://www.facebook.com/marketplace/item/842988658034702","title":"2002 Toyota Camry · XLE Sedan 4D","price":"$1,999","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457564266_122095378898508318_652523977244605276_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=101&ccb=1-7&_nc_sid=454cf4&_nc_ohc=wLq0TqNzbKEQ7kNvgG3MRYL&_nc_ht=scontent.fmem1-1.fna&oh=00_AYDbbB7w7IhZiDKPQ7XBtV93LJuxthiz_hud8VNoCw6bYA&oe=66D70AD0"},{"id":"1179626589960621","link":"https://www.facebook.com/marketplace/item/1179626589960621","title":"1999 Toyota 4Runner","price":"$3,200","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457628858_1236776891013401_350303916082897941_n.jpg?stp=c0.364.945.945a_dst-jpg_s261x260&_nc_cat=111&ccb=1-7&_nc_sid=454cf4&_nc_ohc=1v3Jgfbd-hEQ7kNvgHwXDxy&_nc_ht=scontent.fmem1-2.fna&oh=00_AYCVcKqJhr9WWdT1W3iHoo2liQtfC0EtviPTOG0eNF25CQ&oe=66D6F41B"},{"id":"2439414429595827","link":"https://www.facebook.com/marketplace/item/2439414429595827","title":"2008 Toyota Prius · Standard Hatchback 4D","price":"$4,000","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t39.30808-6/457067078_3203564006446965_983507262083486058_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=109&ccb=1-7&_nc_sid=454cf4&_nc_ohc=a2MFjW1ru0QQ7kNvgEqJIMk&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCkr4A4svJUOfdoCP3AmjMr14j5lOtQOgyexLgAqPX6JQ&oe=66D719DA"},{"id":"531006946004871","link":"https://www.facebook.com/marketplace/item/531006946004871","title":"Honda accord .","price":"$2,300","image":"https://scontent.fmem1-1.fna.fbcdn.net/v/t45.5328-4/457281502_520043230577285_2387522566843170500_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=XsmCR1p9IIAQ7kNvgHJve-c&_nc_ht=scontent.fmem1-1.fna&oh=00_AYCbwat_3cRJEfbLIEke9vb-4qbCNCy_mI_hXaSc0GCVfw&oe=66D71D20"},{"id":"539356765418028","link":"https://www.facebook.com/marketplace/item/539356765418028","title":"2005 Mazda Mazda3 · i Sedan 4D","price":"$2,200","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457431938_417231458044768_1236585051089220170_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=104&ccb=1-7&_nc_sid=454cf4&_nc_ohc=AlqoQXHl844Q7kNvgFq6SNj&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDmS10rT8CleGU1bgkVxLoRz4It8vgzD3nSQ9MgaPh8SA&oe=66D72061"},{"id":"1179095913138669","link":"https://www.facebook.com/marketplace/item/1179095913138669","title":"2015 Nissan Altima · 2.5 S Sedan 4D","price":"$1,700","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457327878_1243108943349221_4591603418044724279_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=104&ccb=1-7&_nc_sid=454cf4&_nc_ohc=epUpouaU8HgQ7kNvgGscb5K&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDnY_0fWaiOcLT0BR2Sa381IcPmSljPpbdoXJt5zTp5JA&oe=66D6F8E2"},{"id":"423900327394209","link":"https://www.facebook.com/marketplace/item/423900327394209","title":"2015 Audi A3 · 1.8T Premium Plus Cabriolet 2D","price":"$6,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457268429_8238682429511637_2992078667449286470_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=107&ccb=1-7&_nc_sid=454cf4&_nc_ohc=FmxAwO7iC_UQ7kNvgFft-H1&_nc_ht=scontent.fmem1-2.fna&oh=00_AYBd47VrE6FgPeVXmoa46TlKSoWZfKzxRHqGU5q9eA27ng&oe=66D6FB95"},{"id":"1223995848948652","link":"https://www.facebook.com/marketplace/item/1223995848948652","title":"2017 Hyundai Accent · SE Sedan 4D","price":"$7,000","image":"https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/457619706_463401720030642_1379179563302746655_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=110&ccb=1-7&_nc_sid=454cf4&_nc_ohc=wLqD6arhnV0Q7kNvgGfBGW1&_nc_ht=scontent.fmem1-2.fna&oh=00_AYDXuMYvENVuUcid8svTiQKD3MjlZvFgD9emhPvuXeRNbA&oe=66D71C9F"},{"id":"8014682018650415","link":"https://www.facebook.com/marketplace/item/8014682018650415","title":"2007 BMW 3 Series · 328i Sedan 4D","price":"$2,800","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457333928_355771007600424_9132777703742197678_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s261x260&_nc_cat=106&ccb=1-7&_nc_sid=454cf4&_nc_ohc=S1OncscEkFEQ7kNvgHhH7M-&_nc_ht=scontent-ord5-1.xx&oh=00_AYCuHYjg7D6hN31KWV1gEZUUQ_lSJJuJpc6LnC9rEMBIoA&oe=66D72282"},{"id":"486627924084699","link":"https://www.facebook.com/marketplace/item/486627924084699","title":"2006 Lexus RX · RX 330 Sport Utility 4D","price":"$3,500","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457450060_8210670372381380_113268741822135538_n.jpg?stp=c256.0.1537.1537a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=Yj6egNCK5zgQ7kNvgFnSLPC&_nc_ht=scontent-ord5-1.xx&oh=00_AYA-uuDgN2KYzRlAqyEMZgke8vn7gJBlivB6QSbKrqCcYQ&oe=66D70280"},{"id":"520568093788763","link":"https://www.facebook.com/marketplace/item/520568093788763","title":"2016 Kia Soul · Wagon 4D","price":"$3,800","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/457394287_1089311419194041_78621419204352903_n.jpg?stp=c198.0.1204.1204a_dst-jpg_s261x260&_nc_cat=103&ccb=1-7&_nc_sid=454cf4&_nc_ohc=P71P0IoeXI8Q7kNvgFzRLuC&_nc_ht=scontent-ord5-2.xx&oh=00_AYDDfZME3i6lFAG12SftYVFcEHoabm78Sz9fvgFYkg6VWA&oe=66D6F6D2"},{"id":"1603487293562983","link":"https://www.facebook.com/marketplace/item/1603487293562983","title":"2004 Dodge Neon · SE Sedan 4D","price":"$1,850","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/457507103_122111244800458263_3411078574010156773_n.jpg?stp=c0.169.1536.1536a_dst-jpg_s261x260&_nc_cat=108&ccb=1-7&_nc_sid=454cf4&_nc_ohc=hQF_TiyzEYYQ7kNvgEFZyDV&_nc_ht=scontent-ord5-1.xx&oh=00_AYB1faI7jjwafmKpyLFZenozFbr-8c-JaHy_PqZI8JrJuw&oe=66D6F300"},{"id":"1934135037093731","link":"https://www.facebook.com/marketplace/item/1934135037093731","title":"Mountain bike GT 24inch","price":"A$130","image":"https://scontent.ftpa1-1.fna.fbcdn.net/v/t45.5328-4/457582061_491018173719782_7957569430561026506_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=zT2iryXlWfgQ7kNvgGyZenW&_nc_ht=scontent.ftpa1-1.fna&oh=00_AYCw4zT7T5nIU76Ira2EqReoFLCm5e33zyPit3bYbx6ppw&oe=66D6F60A"},{"id":"500104562657076","link":"https://www.facebook.com/marketplace/item/500104562657076","title":"2005 Honda Accord · EX Coupe 2D","price":"$1,900","image":"https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/457650516_1891289344717743_8319823713760950764_n.jpg?stp=c0.169.1537.1537a_dst-jpg_s261x260&_nc_cat=111&ccb=1-7&_nc_sid=454cf4&_nc_ohc=r7EWYUlYfacQ7kNvgHr6wMl&_nc_ht=scontent-hou1-1.xx&oh=00_AYB9m1SDEn82IZDxKvW-lw-Kn7AFXTdte1XSYBfLOycOaQ&oe=66D6F4E3"},{"id":"3934693946810833","link":"https://www.facebook.com/marketplace/item/3934693946810833","title":"2010 Nissan Altima · 2.5 S Sedan 4D","price":"$1,300","image":"https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/457359371_4020334068194826_1559601099481229207_n.jpg?stp=c254.0.1541.1541a_dst-jpg_s261x260&_nc_cat=107&ccb=1-7&_nc_sid=454cf4&_nc_ohc=BSbFC9BeCfMQ7kNvgEVrRJS&_nc_ht=scontent-hou1-1.xx&oh=00_AYCHI83CXEK9-zvsSPf9kt795gOstgX0CaLFVwVqQt5Ieg&oe=66D7239D"},{"id":"524284283473454","link":"https://www.facebook.com/marketplace/item/524284283473454","title":"2020 Toyota RAV4 · XLE Sport Utility 4D","price":"$18,900","image":"https://scontent-hou1-1.xx.fbcdn.net/v/t45.5328-4/457518313_8735009759852976_3212446355619484946_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=fLX8ov0PUcsQ7kNvgEHCUd8&_nc_ht=scontent-hou1-1.xx&oh=00_AYA3IjtOFEdWlMZtUyhckLJODAZJmd66Wy9UYoIZ5GZSWQ&oe=66D707D1"},{"id":"3421149488178324","link":"https://www.facebook.com/marketplace/item/3421149488178324","title":"Free couch","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457088266_2005584216610633_633222872642485817_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=eoRxvsvt7lgQ7kNvgGM7hRZ&_nc_ht=scontent-ord5-1.xx&oh=00_AYAqA-vTjG5vajRD1odua9lSJUBXbnFY5RibGgQKrInOEg&oe=66D71684"},{"id":"8106960019341733","link":"https://www.facebook.com/marketplace/item/8106960019341733","title":"Couch/sofa","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457251890_1260847211955813_3887086614753982714_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=lkFODjVdhBwQ7kNvgE98Drc&_nc_ht=scontent-ord5-1.xx&oh=00_AYCBSrlTfoJvhmjFBntwLLlRrxePKyGxipGKK4o_EFFQUg&oe=66D6F136"},{"id":"527723186283308","link":"https://www.facebook.com/marketplace/item/527723186283308","title":"White leather couch","price":"CA$200","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457343326_360663247101271_6699364463560886659_n.jpg?stp=c99.0.260.260a_dst-jpg_p261x260&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=Vz0t4xvFxnMQ7kNvgHVq5ef&_nc_ht=scontent-ord5-2.xx&oh=00_AYCQH7aUBB9THVj8XIajH2d7Fru_IN7wuIJesUwRg9pc2g&oe=66D7195C"},{"id":"829846215941261","link":"https://www.facebook.com/marketplace/item/829846215941261","title":"Couch Set - DELIVERY AVAILABLE","price":"CA$165","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457411867_894561492157374_2582664519716163373_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=YbsSff8sW2sQ7kNvgHmB8vS&_nc_ht=scontent-ord5-2.xx&oh=00_AYAc05oDklIUXtPBCrciw--Nvv5f7Zyk3gm5m5_0DmlEZw&oe=66D71AA7"},{"id":"475989968668800","link":"https://www.facebook.com/marketplace/item/475989968668800","title":"Sectional couch","price":"CA$275","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457255834_471454905861423_1268922227091826242_n.jpg?stp=c100.0.260.260a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=UEw-ZymEw_8Q7kNvgEoTpAc&_nc_ht=scontent-ord5-1.xx&oh=00_AYC2SBWqj60lwyiJZf3-u6whYJYYdxSh8rE6oMEpOdigCQ&oe=66D72087"},{"id":"1617383968822823","link":"https://www.facebook.com/marketplace/item/1617383968822823","title":"Two Couch’s for FREE","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457340496_2607664112772540_2061183473351431330_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=dlFtUEDFG7UQ7kNvgG1wBTn&_nc_ht=scontent-ord5-1.xx&oh=00_AYAnGWfXzcOoj54Cf2NovtzU8D1uck1QgCw_iU2ASc67uA&oe=66D6F174"},{"id":"1026708202055637","link":"https://www.facebook.com/marketplace/item/1026708202055637","title":"Couch","price":"CA$0","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457501152_871297464466884_4108845775845436387_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=n-LpEmRmtNYQ7kNvgGnEj3G&_nc_ht=scontent-ord5-2.xx&oh=00_AYAEjvBfe0Xu6NCRQkxChGf-ukmOSHCslLjzOtqD_p4jdQ&oe=66D70F6F"},{"id":"884530636946319","link":"https://www.facebook.com/marketplace/item/884530636946319","title":"Couch","price":"CA$280","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457577147_1641046533130504_7206681670661209791_n.jpg?stp=c44.0.260.260a_dst-jpg_p261x260&_nc_cat=107&ccb=1-7&_nc_sid=247b10&_nc_ohc=c0U77QD0dhwQ7kNvgFEKihE&_nc_ht=scontent-ord5-2.xx&oh=00_AYCkVjafbeVLhL1Q3NQo6bNfoMbb5amI1Rry6I-j5eqOOw&oe=66D71CAB"},{"id":"1946884769083065","link":"https://www.facebook.com/marketplace/item/1946884769083065","title":"Sofa","price":"CA$0","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457207392_352245944649228_5795310696854046404_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=IH9YLQprao8Q7kNvgGtlCML&_nc_ht=scontent-ord5-2.xx&oh=00_AYDO84fTZvS73dcU19dpBrzNTumSyAQxpgCLDsD_FekW0w&oe=66D6FD34"},{"id":"3662484720679880","link":"https://www.facebook.com/marketplace/item/3662484720679880","title":"Nice Blue/Grey Sectional in Good Condition","price":"CA$375","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457449866_1293910401582188_1141896004019475654_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=4xE986C66lMQ7kNvgH86Wa_&_nc_ht=scontent-ord5-1.xx&oh=00_AYDTiySvFA3b9P5fVLC_Qsga2Fbv5pDo-gRiTjci9-yWFA&oe=66D71FB3"},{"id":"1072669201032712","link":"https://www.facebook.com/marketplace/item/1072669201032712","title":"MOVING SALE","price":"CA$123","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457698041_1659229038188152_3803657554014786152_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=vVN-pg6fMa0Q7kNvgGAUwsU&_nc_ht=scontent-ord5-2.xx&oh=00_AYAh5TV6ePVe8uqky23hQvX2hny7mekgMCKzgxTIph5Klg&oe=66D719E3"},{"id":"2475480449315421","link":"https://www.facebook.com/marketplace/item/2475480449315421","title":"Light grey couch / sofa (4 seater)","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457440059_1424349798258856_3221467506711296491_n.jpg?stp=c75.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=PiOdcmrixW0Q7kNvgHv-kew&_nc_ht=scontent-ord5-1.xx&oh=00_AYCejCUfBtIvP9wKggyhFQ2O9xXtTpFxelkIHFb0Xw_G3g&oe=66D7198E"},{"id":"876764221004947","link":"https://www.facebook.com/marketplace/item/876764221004947","title":"PULL OUT COUCH BED","price":"CA$125","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457569138_500751289369489_218075437909058720_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=vWbV0IrYA6kQ7kNvgFdLhPb&_nc_ht=scontent-ord5-2.xx&oh=00_AYDynkmzh4wfYsawTfASFzGfxkOuMYP5TULfABaYWeiRTg&oe=66D71F96"},{"id":"1023815365734694","link":"https://www.facebook.com/marketplace/item/1023815365734694","title":"Sofa & Love seat","price":"CA$300","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457251889_1182418523046806_7881846085824498594_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=KbsLooAk014Q7kNvgH3PLs_&_nc_ht=scontent-ord5-1.xx&oh=00_AYC8prvxwgyumI0_enjL5Zk-7ekR403be-aaqMkWxJoLfA&oe=66D71539"},{"id":"973678477779501","link":"https://www.facebook.com/marketplace/item/973678477779501","title":"LUXURY SOFA SET FOR SALE | SOFA SET | CASH ON DELIVERY","price":"CA$30","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457445033_531319446125890_6188089963414695319_n.jpg?stp=c94.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=dEbXtaMqG0EQ7kNvgHtKMVo&_nc_ht=scontent-ord5-2.xx&oh=00_AYATML1XIww4beQgByKQhu9TDFF5J56WpX34Kd5WnCNKeg&oe=66D6F469"},{"id":"1067861028241678","link":"https://www.facebook.com/marketplace/item/1067861028241678","title":"Couch excellent condition - grey","price":"CA$300","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457500934_494358963387175_3131663403188202154_n.jpg?stp=c101.0.260.260a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=5l3toL3Wk6AQ7kNvgF91N-R&_nc_ht=scontent-ord5-1.xx&oh=00_AYCq_wBPKteQuvnlGu_-_7vO391WQ8UUyZuMcSaPaNa8vA&oe=66D6F724"},{"id":"3951620745161481","link":"https://www.facebook.com/marketplace/item/3951620745161481","title":"Dark Grey Sectional Couch","price":"CA$215","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457576295_1217147169480517_9045584770964683933_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=100&ccb=1-7&_nc_sid=247b10&_nc_ohc=mThTCvRmBMUQ7kNvgFGr71R&_nc_ht=scontent-ord5-2.xx&oh=00_AYA_SDqEP1piPMNZEL38_C0b7yUM4TEXr7zOWFDtH1BySA&oe=66D71F56"},{"id":"480877678169718","link":"https://www.facebook.com/marketplace/item/480877678169718","title":"Couch","price":"CA$200","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457368367_1207387157237148_8402930211409913063_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=_lLpL9UqsxQQ7kNvgFG9Iz7&_nc_ht=scontent-ord5-1.xx&oh=00_AYAY1nBgSLbdiPCKlxnHnB0TGxjc0N7SVo0Kp5hC-z3hdQ&oe=66D70EC5"},{"id":"1565628314053395","link":"https://www.facebook.com/marketplace/item/1565628314053395","title":"Sofabed, double sized bed","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457207312_1878795599270818_8328248654499474933_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=K8aPwCUwUL8Q7kNvgFgrZaU&_nc_ht=scontent-ord5-1.xx&oh=00_AYAuhf7Q03eif2R6EcVe4Ds9wtzHq-pMrdT8Gq7-cGPsiA&oe=66D70534"},{"id":"2275391166136064","link":"https://www.facebook.com/marketplace/item/2275391166136064","title":"Incredible savings for 3 seator sectional Sofa!!\nWAREHOUSE DEAL>>","price":"CA$599","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/452157175_7964265460316305_6682269393423010494_n.jpg?stp=c42.0.260.260a_dst-jpg_p261x260&_nc_cat=103&ccb=1-7&_nc_sid=247b10&_nc_ohc=jmR8zFmAUjAQ7kNvgEy3mgJ&_nc_ht=scontent-ord5-2.xx&oh=00_AYCrCbiPlI75fsIqxMluzrsITP-sQ1hPNRRjVrDw2ltqDw&oe=66D71545"},{"id":"1961059687692663","link":"https://www.facebook.com/marketplace/item/1961059687692663","title":"Sectional couch","price":"CA$650","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457577135_1182468689684903_7714755078876309617_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=110&ccb=1-7&_nc_sid=247b10&_nc_ohc=-DYPc89vrpEQ7kNvgEryuM3&_nc_ht=scontent-ord5-2.xx&oh=00_AYDNSaV6gAj2vJHRXUwiZ5UvGP71Mu25pY3ufE5jNbofiA&oe=66D6F929"},{"id":"1238998250455165","link":"https://www.facebook.com/marketplace/item/1238998250455165","title":"Grey L-Sectional Couch (Article Furniture)","price":"CA$500","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457450233_418231807448269_2870657442360047426_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=101&ccb=1-7&_nc_sid=247b10&_nc_ohc=1VGzF_FuzPUQ7kNvgGC3hyu&_nc_ht=scontent-ord5-1.xx&oh=00_AYDgs7CLU3zzlqkJcDzGhL76YPTwHVVklQxjUAX1RYY3eQ&oe=66D6F714"},{"id":"1039467577657892","link":"https://www.facebook.com/marketplace/item/1039467577657892","title":"Ikea Vinliden Couch (Like new - no tears)","price":"CA$0","image":"https://scontent-ord5-1.xx.fbcdn.net/v/t45.5328-4/457119470_494440813522890_8158261166068634730_n.jpg?stp=c0.43.261.261a_dst-jpg_p261x260&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=5THUlzOmF10Q7kNvgGo82wC&_nc_ht=scontent-ord5-1.xx&oh=00_AYDRiuSG0QACE_sXWsE2xn5m7mEKjQcLpJEtgQyOOWdl1Q&oe=66D71BAF"},{"id":"1935434093992859","link":"https://www.facebook.com/marketplace/item/1935434093992859","title":"2+1 couch FREE","price":"CA$0","image":"https://scontent-ord5-2.xx.fbcdn.net/v/t45.5328-4/457261776_1477727792874951_6809611798116179339_n.jpg?stp=c43.0.260.260a_dst-jpg_p261x260&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=JyN8QMXzzI4Q7kNvgHGHEwz&_nc_ht=scontent-ord5-2.xx&oh=00_AYAijltlHfElSfINz-Ot8mxgOCvgwoFfNcT4fnDjIAgHJA&oe=66D6F752"}]}
 ```
 
 # package.json
@@ -937,6 +4601,7 @@
   "homepage": "https://github.com/ovdixon/marketplace-scraper-bot#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
+    "@supabase/supabase-js": "^2.21.0",
     "axios": "^1.1.3",
     "cheerio": "^1.0.0",
     "config": "^3.3.8",
@@ -959,108 +4624,162 @@ const fs = require('fs').promises;
 const path = require('path');
 const scrape = require("./controllers/scrape.js");
 const parse = require("./controllers/parse.js");
+const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Initialize Supabase client
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_ANON_KEY
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-let savedFilters = [];
+// Middleware to check authentication
+const authenticateUser = async (req, res, next) => {
+  const token = req.headers.authorization?.split(' ')[1];
+  if (!token) {
+    return res.status(401).json({ error: 'No token provided' });
+  }
 
-async function saveFilters() {
-    await fs.writeFile('savedFilters.json', JSON.stringify(savedFilters, null, 2));
+  try {
+    const { data: { user }, error } = await supabase.auth.getUser(token);
+    if (error) throw error;
+    req.user = user;
+    next();
+  } catch (error) {
+    console.error('Authentication error:', error.message);
+    return res.status(401).json({ error: 'Invalid token' });
+  }
+};
+
+// Apply authentication middleware to all routes except the root
+app.use((req, res, next) => {
+  if (req.path !== '/' && req.path !== '/favicon.ico') {
+    return authenticateUser(req, res, next);
+  }
+  next();
+});
+
+async function getFilters(userId) {
+  const { data, error } = await supabase
+    .from('filters')
+    .select('*')
+    .eq('user_id', userId);
+
+  if (error) throw error;
+  return data;
 }
 
-async function loadFilters() {
-    try {
-        const data = await fs.readFile('savedFilters.json', 'utf8');
-        savedFilters = JSON.parse(data);
-    } catch (error) {
-        console.log('No saved filters found. Starting with an empty array.');
-        savedFilters = [];
-    }
+async function saveFilter(userId, filter) {
+  const { data, error } = await supabase
+    .from('filters')
+    .insert([{ ...filter, user_id: userId }]);
+
+  if (error) throw error;
+  return data;
 }
 
 async function getItems(filter) {
-    console.log('getItems called with filter:', JSON.stringify(filter, null, 2));
-    try {
-        if (!filter || !filter.city || !filter.query) {
-            throw new Error('Invalid filter object');
-        }
-        const source = await scrape.getSource(filter);
-        console.log('Source fetched successfully');
-        let items = await parse.getSearchResults(source.data);
-        console.log(`Parsed ${items.length} items`);
-        return items;
-    } catch (err) {
-        console.error(`Error processing search:`, err);
-        return [];
+  console.log('getItems called with filter:', JSON.stringify(filter, null, 2));
+  try {
+    if (!filter || !filter.city || !filter.query) {
+      throw new Error('Invalid filter object');
     }
+    const source = await scrape.getSource(filter);
+    console.log('Source fetched successfully');
+    let items = await parse.getSearchResults(source.data);
+    console.log(`Parsed ${items.length} items`);
+    return items;
+  } catch (err) {
+    console.error(`Error processing search:`, err);
+    return [];
+  }
 }
 
-app.get('/api/filters', (req, res) => {
-    res.json(savedFilters);
+app.get('/api/filters', async (req, res) => {
+  try {
+    const filters = await getFilters(req.user.id);
+    res.json(filters);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
-app.get('/api/items/:filterId', (req, res) => {
-    const filterId = parseInt(req.params.filterId);
-    const filter = savedFilters.find(f => f.id === filterId);
+app.get('/api/items/:filterId', async (req, res) => {
+  try {
+    const { data: filter, error } = await supabase
+      .from('filters')
+      .select('*')
+      .eq('id', req.params.filterId)
+      .eq('user_id', req.user.id)
+      .single();
+
+    if (error) throw error;
     if (filter) {
-        res.json(filter.items);
+      const items = await getItems(filter);
+      res.json(items);
     } else {
-        res.status(404).json({ error: 'Filter not found' });
+      res.status(404).json({ error: 'Filter not found' });
     }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 app.post('/api/filters', async (req, res) => {
-    console.log('Received request to add filter:', req.body);
+  console.log('Received request to add filter:', req.body);
+  try {
     const { city, query, maxPrice } = req.body;
-    const newFilter = {
-        id: savedFilters.length + 1,
-        city,
-        query,
-        maxPrice,
-        items: []
-    };
-
-    savedFilters.push(newFilter);
-    await saveFilters();
+    const newFilter = await saveFilter(req.user.id, { city, query, maxPrice });
     console.log('New filter added:', newFilter);
     res.json(newFilter);
+  } catch (error) {
+    console.error('Error adding filter:', error);
+    res.status(500).json({ error: error.message });
+  }
 });
 
 app.post('/api/scrape/:filterId', async (req, res) => {
-    console.log('Received request to scrape for filterId:', req.params.filterId);
-    const filterId = parseInt(req.params.filterId);
-    const filter = savedFilters.find(f => f.id === filterId);
+  console.log('Received request to scrape for filterId:', req.params.filterId);
+  try {
+    const { data: filter, error } = await supabase
+      .from('filters')
+      .select('*')
+      .eq('id', req.params.filterId)
+      .eq('user_id', req.user.id)
+      .single();
 
+    if (error) throw error;
     if (filter) {
-        console.log('Found filter:', JSON.stringify(filter, null, 2));
-        try {
-            const newItems = await getItems(filter);
-            filter.items = newItems;
-            await saveFilters();
-            res.json(filter);
-        } catch (error) {
-            console.error('Error during scraping:', error);
-            res.status(500).json({ error: 'Internal server error during scraping' });
-        }
+      console.log('Found filter:', JSON.stringify(filter, null, 2));
+      const newItems = await getItems(filter);
+      // Here you might want to save these items to Supabase as well
+      res.json({ ...filter, items: newItems });
     } else {
-        console.log('Filter not found for id:', filterId);
-        res.status(404).json({ error: 'Filter not found' });
+      console.log('Filter not found for id:', req.params.filterId);
+      res.status(404).json({ error: 'Filter not found' });
     }
+  } catch (error) {
+    console.error('Error during scraping:', error);
+    res.status(500).json({ error: 'Internal server error during scraping' });
+  }
+});
+
+app.get('/', async (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-loadFilters().then(() => {
-    app.listen(port, () => {
-        console.log(`Server listening at http://localhost:${port}`);
-    });
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
 });
 ```
 
@@ -1204,315 +4923,504 @@ dist
 # public/index.html
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace Scraper</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-        const { useState, useEffect } = React;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marketplace Scraper</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            const { useState, useEffect, useContext, createContext } = React;
 
-        const SearchForm = ({ onSubmit }) => {
-            const [city, setCity] = useState('');
-            const [query, setQuery] = useState('');
-            const [maxPrice, setMaxPrice] = useState('');
+            const AuthContext = createContext(null);
 
-            const handleSubmit = (e) => {
-                e.preventDefault();
-                onSubmit({ city, query, maxPrice });
-                setCity('');
-                setQuery('');
-                setMaxPrice('');
-            };
+            const AuthProvider = ({ children }) => {
+                const [supabase, setSupabase] = useState(null);
+                const [user, setUser] = useState(null);
+                const [loading, setLoading] = useState(true);
 
-            return (
-                <form onSubmit={handleSubmit} className="mb-6 grid grid-cols-1 sm:grid-cols-4 gap-4">
-                    <input
-                        type="text"
-                        placeholder="City"
-                        value={city}
-                        onChange={(e) => setCity(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Query"
-                        value={query}
-                        onChange={(e) => setQuery(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <input
-                        type="number"
-                        placeholder="Max Price"
-                        value={maxPrice}
-                        onChange={(e) => setMaxPrice(e.target.value)}
-                        className="p-2 border rounded w-full"
-                    />
-                    <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors">
-                        Add Filter
-                    </button>
-                </form>
-            );
-        };
+                useEffect(() => {
+                    const initializeSupabase = async () => {
+                        const { createClient } = supabase;
+                        const supabaseUrl =
+                            "https://knqeawrxxrssddkzfgzy.supabase.co";
+                        const supabaseAnonKey =
+                            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtucWVhd3J4eHJzc2Rka3pmZ3p5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE2OTQwMzYsImV4cCI6MTk5NzI3MDAzNn0.hIi9nJBBJ-1FP_jxjjLLZ0u8nfJfPfvXrXXhSqpQ2As";
+                        const supabaseInstance = createClient(
+                            supabaseUrl,
+                            supabaseAnonKey,
+                        );
+                        setSupabase(supabaseInstance);
 
-        const FilterDropdown = ({ filters, onSelect }) => {
-            const [isOpen, setIsOpen] = useState(false);
+                        const {
+                            data: { session },
+                        } = await supabaseInstance.auth.getSession();
+                        setUser(session?.user ?? null);
+                        setLoading(false);
 
-            return (
-                <div className="relative">
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        const { data: authListener } =
+                            supabaseInstance.auth.onAuthStateChange(
+                                async (event, session) => {
+                                    const currentUser = session?.user;
+                                    setUser(currentUser ?? null);
+                                    setLoading(false);
+                                },
+                            );
+
+                        return () => {
+                            if (authListener && authListener.subscription) {
+                                authListener.subscription.unsubscribe();
+                            }
+                        };
+                    };
+
+                    initializeSupabase();
+                }, []);
+
+                const login = async (email, password) => {
+                    if (!supabase)
+                        return {
+                            error: { message: "Supabase not initialized" },
+                        };
+                    return supabase.auth.signInWithPassword({
+                        email,
+                        password,
+                    });
+                };
+
+                const logout = async () => {
+                    if (!supabase)
+                        return {
+                            error: { message: "Supabase not initialized" },
+                        };
+                    return supabase.auth.signOut();
+                };
+
+                return (
+                    <AuthContext.Provider
+                        value={{ user, login, logout, loading, supabase }}
                     >
-                        Filters ({filters.length})
-                    </button>
-                    {isOpen && (
-                        <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
-                            {filters.map((filter) => (
-                                <div 
-                                    key={filter.id} 
-                                    className="p-2 border-b hover:bg-gray-100 cursor-pointer"
-                                    onClick={() => {
-                                        onSelect(filter.id);
-                                        setIsOpen(false);
-                                    }}
-                                >
-                                    <div className="font-semibold mb-1">{filter.city} - {filter.query}</div>
-                                    <div className="text-sm text-gray-600">Max: ${filter.maxPrice}</div>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            );
-        };
-
-        const ItemList = ({ items, newItems }) => {
-    const sortedItems = [...items].sort((a, b) => {
-        const dateA = a.postedDate ? new Date(a.postedDate) : new Date(0);
-        const dateB = b.postedDate ? new Date(b.postedDate) : new Date(0);
-        return dateB - dateA;
-    });
-
-    const formatDate = (dateString) => {
-        if (!dateString) return 'Unknown';
-        const date = new Date(dateString);
-        return isNaN(date.getTime()) ? 'Invalid Date' : date.toLocaleString();
-    };
-
-    const formatRelativeTime = (dateString) => {
-        if (!dateString) return 'Unknown';
-        const date = new Date(dateString);
-        if (isNaN(date.getTime())) return 'Invalid Date';
-
-        const now = new Date();
-        const diffInSeconds = Math.floor((now - date) / 1000);
-
-        if (diffInSeconds < 60) return 'Just now';
-        if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} minutes ago`;
-        if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
-        if (diffInSeconds < 2592000) return `${Math.floor(diffInSeconds / 86400)} days ago`;
-        return formatDate(dateString);
-    };
-
-    return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {sortedItems.map((item) => (
-                <div key={item.id} className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 relative">
-                    {newItems.includes(item.id) && (
-                        <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                            New
-                        </span>
-                    )}
-                    <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                        <h2 className="font-bold text-xl mb-2 truncate">{item.title}</h2>
-                        <p className="text-gray-700 text-base mb-2">{item.price}</p>
-                        <p className="text-gray-500 text-sm mb-1">Location: {item.location || 'Unknown'}</p>
-                        <p className="text-gray-500 text-sm mb-1">Posted: {formatRelativeTime(item.postedDate)}</p>
-                        <p className="text-gray-500 text-sm mb-4">Date: {formatDate(item.postedDate)}</p>
-                        <a 
-                            href={item.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block transition-colors"
-                        >
-                            View Item
-                        </a>
-                    </div>
-                </div>
-            ))}
-        </div>
-    );
-};
-
-        const MarketplaceFeed = () => {
-            const [filters, setFilters] = useState([]);
-            const [selectedFilterId, setSelectedFilterId] = useState(null);
-            const [items, setItems] = useState([]);
-            const [newItems, setNewItems] = useState([]);
-            const [loading, setLoading] = useState(false);
-            const [error, setError] = useState(null);
-
-            const fetchFilters = async () => {
-                try {
-                    const response = await fetch('/api/filters');
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch filters');
-                    }
-                    const data = await response.json();
-                    setFilters(data);
-                } catch (err) {
-                    setError(err.message);
-                }
+                        {children}
+                    </AuthContext.Provider>
+                );
             };
 
-            const fetchItems = async (filterId) => {
-                setLoading(true);
-                try {
-                    const response = await fetch(`/api/items/${filterId}`);
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch items');
+            const Login = () => {
+                const [email, setEmail] = useState("");
+                const [password, setPassword] = useState("");
+                const { login } = useContext(AuthContext);
+
+                const handleLogin = async (e) => {
+                    e.preventDefault();
+                    try {
+                        const { error } = await login(email, password);
+                        if (error) throw error;
+                    } catch (error) {
+                        alert(error.message);
                     }
-                    const data = await response.json();
-                    setItems(data);
-                    setNewItems([]);
-                    setError(null);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
-            };
+                };
 
-            const handleAddFilter = async (filterParams) => {
-                setLoading(true);
-                try {
-                    const response = await fetch('/api/filters', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(filterParams),
-                    });
-                    if (!response.ok) {
-                        throw new Error('Failed to add filter');
-                    }
-                    const newFilter = await response.json();
-                    await fetchFilters();
-                    setSelectedFilterId(newFilter.id);
-                    await handleUpdate(newFilter.id);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
-            };
-
-            const handleUpdate = async (filterId) => {
-                setLoading(true);
-                try {
-                    const response = await fetch(`/api/scrape/${filterId}`, {
-                        method: 'POST',
-                    });
-                    if (!response.ok) {
-                        throw new Error('Failed to update filter');
-                    }
-                    await fetchFilters();
-                    const updatedItemsResponse = await fetch(`/api/items/${filterId}`);
-                    if (!updatedItemsResponse.ok) {
-                        throw new Error('Failed to fetch updated items');
-                    }
-                    const updatedItems = await updatedItemsResponse.json();
-                    const newItemIds = updatedItems.filter(updatedItem => !items.some(item => item.id === updatedItem.id)).map(item => item.id);
-                    setItems(updatedItems);
-                    setNewItems(newItemIds);
-                    setError(null);
-                } catch (err) {
-                    setError(err.message);
-                } finally {
-                    setLoading(false);
-                }
-            };
-
-            const handleSelectFilter = (filterId) => {
-                setSelectedFilterId(filterId);
-                fetchItems(filterId);
-            };
-
-            useEffect(() => {
-                fetchFilters();
-            }, []);
-
-            const selectedFilter = filters.find(filter => filter.id === selectedFilterId);
-
-            if (loading) {
-                return <div className="flex justify-center items-center h-screen">
-                    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
-                </div>;
-            }
-
-            if (error) {
-                return <div className="text-red-500 text-center p-4 bg-red-100 rounded">{error}</div>;
-            }
-
-            return (
-                <div className="container mx-auto px-4 py-8">
-                    <div className="mb-8 flex justify-between items-center">
-                        <h1 className="text-3xl font-bold text-gray-800">Marketplace Scraper</h1>
-                        <FilterDropdown
-                            filters={filters}
-                            onSelect={handleSelectFilter}
+                return (
+                    <form onSubmit={handleLogin} className="space-y-4">
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="w-full p-2 border rounded"
                         />
-                    </div>
-                    <SearchForm onSubmit={handleAddFilter} />
-                    {selectedFilter && (
-                        <div className="mb-6">
-                            <div className="flex justify-between items-center mb-4">
-                                <h2 className="text-2xl font-semibold">
-                                    {selectedFilter.city} - {selectedFilter.query} (Max: ${selectedFilter.maxPrice})
-                                </h2>
-                                <button
-                                    onClick={() => handleUpdate(selectedFilterId)}
-                                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
-                                >
-                                    Update
-                                </button>
-                            </div>
-                            <ItemList items={items} newItems={newItems} />
-                        </div>
-                    )}
-                </div>
-            );
-        };
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="w-full p-2 border rounded"
+                        />
+                        <button
+                            type="submit"
+                            className="w-full p-2 bg-blue-500 text-white rounded"
+                        >
+                            Log In
+                        </button>
+                    </form>
+                );
+            };
 
-        const App = () => {
-            return (
-                <div className="bg-gray-100 min-h-screen">
+            const Header = () => {
+                const { user, logout } = useContext(AuthContext);
+
+                return (
                     <header className="bg-blue-600 text-white p-4 shadow-md">
-                        <div className="container mx-auto">
-                            <h1 className="text-2xl font-bold">Facebook Marketplace Scraper</h1>
+                        <div className="container mx-auto flex justify-between items-center">
+                            <h1 className="text-2xl font-bold">
+                                Facebook Marketplace Scraper
+                            </h1>
+                            {user && (
+                                <button
+                                    onClick={logout}
+                                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                                >
+                                    Logout
+                                </button>
+                            )}
                         </div>
                     </header>
-                    <main className="mt-6">
-                        <MarketplaceFeed />
-                    </main>
-                </div>
-            );
-        };
+                );
+            };
 
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
-</body>
+            const SearchForm = ({ onSubmit }) => {
+                const [city, setCity] = useState("");
+                const [query, setQuery] = useState("");
+                const [maxPrice, setMaxPrice] = useState("");
+
+                const handleSubmit = (e) => {
+                    e.preventDefault();
+                    onSubmit({ city, query, maxPrice });
+                    setCity("");
+                    setQuery("");
+                    setMaxPrice("");
+                };
+
+                return (
+                    <form
+                        onSubmit={handleSubmit}
+                        className="mb-6 grid grid-cols-1 sm:grid-cols-4 gap-4"
+                    >
+                        <input
+                            type="text"
+                            placeholder="City"
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Query"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <input
+                            type="number"
+                            placeholder="Max Price"
+                            value={maxPrice}
+                            onChange={(e) => setMaxPrice(e.target.value)}
+                            className="p-2 border rounded w-full"
+                        />
+                        <button
+                            type="submit"
+                            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        >
+                            Add Filter
+                        </button>
+                    </form>
+                );
+            };
+
+            const FilterDropdown = ({ filters, onSelect }) => {
+                const [isOpen, setIsOpen] = useState(false);
+
+                return (
+                    <div className="relative">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors"
+                        >
+                            Filters ({filters.length})
+                        </button>
+                        {isOpen && (
+                            <div className="absolute left-0 mt-2 w-64 bg-white border rounded shadow-lg z-10">
+                                {filters.map((filter) => (
+                                    <div
+                                        key={filter.id}
+                                        className="p-2 border-b hover:bg-gray-100 cursor-pointer"
+                                        onClick={() => {
+                                            onSelect(filter.id);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        <div className="font-semibold mb-1">
+                                            {filter.city} - {filter.query}
+                                        </div>
+                                        <div className="text-sm text-gray-600">
+                                            Max: ${filter.maxPrice}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                );
+            };
+
+            const ItemList = ({ items, newItems }) => {
+                const formatRelativeTime = (dateString) => {
+                    if (!dateString) return "Unknown";
+                    const date = new Date(dateString);
+                    if (isNaN(date.getTime())) return "Invalid Date";
+
+                    const now = new Date();
+                    const diffInSeconds = Math.floor((now - date) / 1000);
+
+                    if (diffInSeconds < 60) return "Just now";
+                    if (diffInSeconds < 3600)
+                        return `${Math.floor(diffInSeconds / 60)} minutes ago`;
+                    if (diffInSeconds < 86400)
+                        return `${Math.floor(diffInSeconds / 3600)} hours ago`;
+                    if (diffInSeconds < 2592000)
+                        return `${Math.floor(diffInSeconds / 86400)} days ago`;
+                    return date.toLocaleString();
+                };
+
+                return (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {items.map((item) => (
+                            <div
+                                key={item.id}
+                                className="border rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 relative"
+                            >
+                                {newItems.includes(item.id) && (
+                                    <span className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                                        New
+                                    </span>
+                                )}
+                                <img
+                                    src={item.primary_listing_photo}
+                                    alt={item.marketplace_title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-4">
+                                    <h2 className="font-bold text-xl mb-2 truncate">
+                                        {item.marketplace_title}
+                                    </h2>
+                                    <p className="text-gray-700 text-base mb-2">
+                                        {item.formatted_amount}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Location: {item.city}, {item.state}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Status:{" "}
+                                        {item.is_sold
+                                            ? "Sold"
+                                            : item.is_pending
+                                              ? "Pending"
+                                              : "Available"}
+                                    </p>
+                                    <p className="text-gray-500 text-sm mb-1">
+                                        Seen:{" "}
+                                        {formatRelativeTime(item.create_date)}
+                                    </p>
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block transition-colors"
+                                    >
+                                        View Listing
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                );
+            };
+
+            const MarketplaceFeed = () => {
+                const [filters, setFilters] = useState([]);
+                const [selectedFilterId, setSelectedFilterId] = useState(null);
+                const [items, setItems] = useState([]);
+                const [newItems, setNewItems] = useState([]);
+                const [loading, setLoading] = useState(false);
+                const [error, setError] = useState(null);
+                const { supabase } = useContext(AuthContext);
+
+                const fetchFilters = async () => {
+                    try {
+                        const { data, error } = await supabase
+                            .from("filters")
+                            .select("*");
+                        if (error) throw error;
+                        setFilters(data);
+                    } catch (err) {
+                        setError(err.message);
+                    }
+                };
+
+                const fetchItems = async (filterId) => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch(`/api/items/${filterId}`);
+                        if (!response.ok) {
+                            throw new Error("Failed to fetch items");
+                        }
+                        const data = await response.json();
+                        setItems(data);
+                        setNewItems([]);
+                        setError(null);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleAddFilter = async (filterParams) => {
+                    setLoading(true);
+                    try {
+                        const { data, error } = await supabase
+                            .from("filters")
+                            .insert([filterParams])
+                            .select();
+                        if (error) throw error;
+                        await fetchFilters();
+                        setSelectedFilterId(data[0].id);
+                        await handleUpdate(data[0].id);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleUpdate = async (filterId) => {
+                    setLoading(true);
+                    try {
+                        const response = await fetch(
+                            `/api/scrape/${filterId}`,
+                            {
+                                method: "POST",
+                            },
+                        );
+                        if (!response.ok) {
+                            throw new Error("Failed to update filter");
+                        }
+                        await fetchFilters();
+                        const updatedItemsResponse = await fetch(
+                            `/api/items/${filterId}`,
+                        );
+                        if (!updatedItemsResponse.ok) {
+                            throw new Error("Failed to fetch updated items");
+                        }
+                        const updatedItems = await updatedItemsResponse.json();
+                        const newItemIds = updatedItems
+                            .filter(
+                                (updatedItem) =>
+                                    !items.some(
+                                        (item) => item.id === updatedItem.id,
+                                    ),
+                            )
+                            .map((item) => item.id);
+                        setItems(updatedItems);
+                        setNewItems(newItemIds);
+                        setError(null);
+                    } catch (err) {
+                        setError(err.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                const handleSelectFilter = (filterId) => {
+                    setSelectedFilterId(filterId);
+                    fetchItems(filterId);
+                };
+
+                useEffect(() => {
+                    fetchFilters();
+                }, []);
+
+                const selectedFilter = filters.find(
+                    (filter) => filter.id === selectedFilterId,
+                );
+
+                if (loading) {
+                    return (
+                        <div className="flex justify-center items-center h-screen">
+                            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                        </div>
+                    );
+                }
+
+                if (error) {
+                    return (
+                        <div className="text-red-500 text-center p-4 bg-red-100 rounded">
+                            {error}
+                        </div>
+                    );
+                }
+
+                return (
+                    <div className="container mx-auto px-4 py-8">
+                        <div className="mb-8 flex justify-between items-center">
+                            <h1 className="text-3xl font-bold text-gray-800">
+                                Marketplace Scraper
+                            </h1>
+                            <FilterDropdown
+                                filters={filters}
+                                onSelect={handleSelectFilter}
+                            />
+                        </div>
+                        <SearchForm onSubmit={handleAddFilter} />
+                        {selectedFilter && (
+                            <div className="mb-6">
+                                <div className="flex justify-between items-center mb-4">
+                                    <h2 className="text-2xl font-semibold">
+                                        {selectedFilter.city} -{" "}
+                                        {selectedFilter.query} (Max: $
+                                        {selectedFilter.maxPrice})
+                                    </h2>
+                                    <button
+                                        onClick={() =>
+                                            handleUpdate(selectedFilterId)
+                                        }
+                                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                                    >
+                                        Update
+                                    </button>
+                                </div>
+                                <ItemList items={items} newItems={newItems} />
+                            </div>
+                        )}
+                    </div>
+                );
+            };
+
+            const App = () => {
+                const { user, loading } = useContext(AuthContext);
+
+                if (loading) {
+                    return <div>Loading...</div>;
+                }
+
+                return (
+                    <div className="bg-gray-100 min-h-screen">
+                        <Header />
+                        <main className="mt-6">
+                            {user ? <MarketplaceFeed /> : <Login />}
+                        </main>
+                    </div>
+                );
+            };
+
+            ReactDOM.render(
+                <AuthProvider>
+                    <App />
+                </AuthProvider>,
+                document.getElementById("root"),
+            );
+        </script>
+    </body>
 </html>
+
 ```
 
 # config/template.html
@@ -1660,50 +5568,46 @@ const storage = require('node-persist');
 function getSearchResults(source) {
     console.log('Starting to parse search results');
     let items = [];
-    let searchResult = source.match(new RegExp('marketplace_search_feed_cards_state":(.*?),"marketplace_search_feed_'));
+    let searchResult = source.match(new RegExp('feed_units":(.*)},"marketplace_seo_page'));
 
     if (!searchResult || !searchResult[1]) {
         console.log('No match found in the HTML content');
-        return items;
+        return items; // Return empty if no valid data
     }
 
     try {
         searchResult = JSON.parse(searchResult[1]);
 
-        if (!searchResult.feed_units || searchResult.feed_units.length === 0) {
+        if (searchResult['edges'][0]['node']['__typename'] === 'MarketplaceSearchFeedNoResults') {
             console.log('No results found in the marketplace search feed');
             return items;
-        }
+        } else {
+            searchResult['edges'].forEach(element => {
+                let listingData = element['node']['listing'];
 
-        searchResult.feed_units.forEach(unit => {
-            if (unit.listing) {
-                let id = unit.listing.id;
-                let link = `https://www.facebook.com/marketplace/item/${id}`;
-                let title = unit.listing.marketplace_listing_title;
-                let price = unit.listing.listing_price.formatted_amount;
-                let img = unit.listing.primary_listing_photo.image.uri;
-
-                // New fields
-                let location = extractLocation(unit.listing);
-                let sellerInfo = extractSellerInfo(unit);
-                let description = unit.listing.marketplace_listing_description || '';
-                let postedDate = extractPostedDate(unit.listing);
-
-                const item = {
-                    "id": id,
-                    "link": link,
-                    "title": title,
-                    "price": price,
-                    "image": img,
-                    "location": location,
-                    "sellerInfo": sellerInfo,
-                    "description": description,
-                    "postedDate": postedDate
+                // Capture the selected fields
+                let item = {
+                    id: listingData.id || null,
+                    url: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
+                    primary_listing_photo: listingData.primary_listing_photo ? listingData.primary_listing_photo.image.uri : null,
+                    formatted_amount: listingData.listing_price ? listingData.listing_price.formatted_amount : null,
+                    city: listingData.location ? listingData.location.reverse_geocode.city : null,
+                    state: listingData.location ? listingData.location.reverse_geocode.state : null,
+                    marketplace_category_id: listingData.marketplace_listing_category_id || null,
+                    marketplace_title: listingData.marketplace_listing_title || null,
+                    link: `https://www.facebook.com/marketplace/item/${listingData.id}` || null,
+                    seller_id: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.id : null,
+                    seller_name: listingData.marketplace_listing_seller ? listingData.marketplace_listing_seller.name : null,
+                    is_hidden: listingData.is_hidden || false,
+                    is_live: listingData.is_live || false,
+                    is_pending: listingData.is_pending || false,
+                    is_sold: listingData.is_sold || false,
+                    create_date: new Date().toISOString() // Capture the current date and time
                 };
 
                 items.push(item);
-            }
-        });
+            });
+        }
     } catch (err) {
         console.error('Error parsing JSON from source:', err);
         console.error('Error details:', err.message);
@@ -1712,32 +5616,6 @@ function getSearchResults(source) {
 
     console.log(`Parsed ${items.length} items from the search results`);
     return items;
-}
-
-function extractLocation(listing) {
-    let location = {};
-    if (listing.location) {
-        location.city = listing.location.reverse_geocode?.city || '';
-        location.region = listing.location.reverse_geocode?.state || '';
-        location.zipcode = listing.location.reverse_geocode?.zipcode || '';
-        location.latitude = listing.location.latitude || null;
-        location.longitude = listing.location.longitude || null;
-    }
-    return location;
-}
-
-function extractSellerInfo(unit) {
-    let sellerInfo = {};
-    if (unit.listing && unit.listing.marketplace_listing_seller) {
-        sellerInfo.name = unit.listing.marketplace_listing_seller.name || '';
-        sellerInfo.id = unit.listing.marketplace_listing_seller.id || '';
-        sellerInfo.profileLink = `https://www.facebook.com/${sellerInfo.id}`;
-    }
-    return sellerInfo;
-}
-
-function extractPostedDate(listing) {
-    return listing.creation_time ? new Date(listing.creation_time * 1000).toISOString() : null;
 }
 
 async function getNewItems(items) {
@@ -1750,7 +5628,7 @@ async function getNewItems(items) {
         if (duplicates.length === 0) {
             newItems.push(item);
             await storage.setItem(item.id, item);
-            console.log(`New item found: ${item.title}`);
+            console.log(`New item found: ${item.marketplace_title}`);
         }
     }
 
@@ -1765,7 +5643,7 @@ module.exports = { getSearchResults, getNewItems };
 # .upm/store.json
 
 ```json
-{"version":2,"languages":{"nodejs-npm":{"specfileHash":"613204116636df2664d59181a3e074a7","lockfileHash":"d9a66e2427466a93efb7146df0eabebd","guessedImports":["express"],"guessedImportsHash":"2d36ceacc5c72391fedb7b5f80429d6a"}}}
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"fd727fec3d5e737adb1e38f2a680b74d","lockfileHash":"9c89576fa52ec2315ac2fb3d2acc0434","guessedImports":["express","@supabase/supabase-js"],"guessedImportsHash":"7d8538a74de14b446b8013cb27fef442"}}}
 
 ```
 
